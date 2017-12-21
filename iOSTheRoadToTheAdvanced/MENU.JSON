@@ -1,0 +1,34 @@
+{"client.menulist": [
+                    {
+                    "type": "account",
+                    "name": "账户",
+                    "index": 1,
+                    "tip": "充值、代驾券、发票",
+                    "icon": "",
+                    "url" : ""
+                    },
+                    {
+                    "type": "message",
+                    "name": "消息",
+                    "index": 2,
+                    "tip": "",
+                    "icon": "",
+                    "url" : ""
+                    },
+                    {
+                    "type": "advise",
+                    "name": "意见反馈",
+                    "index": 3,
+                    "tip": "",
+                    "icon": "",
+                    "url" : ""
+                    },
+                    {
+                    "type": "settings",
+                    "name": "设置",
+                    "index": 4,
+                    "tip": "",
+                    "icon": "",
+                    "url" : ""
+                    }]
+}
