@@ -15,8 +15,10 @@
 		813743DD1FEB5AC200857CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743DC1FEB5AC200857CFD /* main.m */; };
 		813743E51FEB5D4600857CFD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743E41FEB5D4600857CFD /* MainViewController.m */; };
 		813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743E71FEB5F0900857CFD /* RunLoopViewController.m */; };
+		8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162A5451FECFDAC007E5AAC /* BaoXianOperation.m */; };
 		81E020DB1FEB98E9009709AA /* controllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 81E020DA1FEB98E9009709AA /* controllerConfig.json */; };
 		81E020DE1FEB9C99009709AA /* MENU.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 81E020DD1FEB9C99009709AA /* MENU.JSON */; };
+		81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E020E11FEC9FAE009709AA /* ThreadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +36,12 @@
 		813743E41FEB5D4600857CFD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		813743E61FEB5F0900857CFD /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		813743E71FEB5F0900857CFD /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		8162A5441FECFDAC007E5AAC /* BaoXianOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaoXianOperation.h; sourceTree = "<group>"; };
+		8162A5451FECFDAC007E5AAC /* BaoXianOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoXianOperation.m; sourceTree = "<group>"; };
 		81E020DA1FEB98E9009709AA /* controllerConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = controllerConfig.json; sourceTree = "<group>"; };
 		81E020DD1FEB9C99009709AA /* MENU.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MENU.JSON; sourceTree = "<group>"; };
+		81E020E01FEC9FAE009709AA /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		81E020E11FEC9FAE009709AA /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				8162A5401FECEC9A007E5AAC /* theadController */,
 				81E020DA1FEB98E9009709AA /* controllerConfig.json */,
 				81E020DD1FEB9C99009709AA /* MENU.JSON */,
 				817CE9161FEB979A008CC630 /* source */,
@@ -85,6 +92,41 @@
 				813743DC1FEB5AC200857CFD /* main.m */,
 			);
 			path = iOSTheRoadToTheAdvanced;
+			sourceTree = "<group>";
+		};
+		8162A5401FECEC9A007E5AAC /* theadController */ = {
+			isa = PBXGroup;
+			children = (
+				8162A5411FECEC9A007E5AAC /* controller */,
+				8162A5421FECEC9A007E5AAC /* model */,
+				8162A5431FECEC9A007E5AAC /* view */,
+			);
+			path = theadController;
+			sourceTree = "<group>";
+		};
+		8162A5411FECEC9A007E5AAC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				81E020E01FEC9FAE009709AA /* ThreadViewController.h */,
+				81E020E11FEC9FAE009709AA /* ThreadViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		8162A5421FECEC9A007E5AAC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8162A5441FECFDAC007E5AAC /* BaoXianOperation.h */,
+				8162A5451FECFDAC007E5AAC /* BaoXianOperation.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8162A5431FECEC9A007E5AAC /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		817CE9121FEB971C008CC630 /* mainController */ = {
@@ -200,8 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */,
 				813743D21FEB5AC200857CFD /* ViewController.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
+				8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
 				813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */,
 				813743E51FEB5D4600857CFD /* MainViewController.m in Sources */,
