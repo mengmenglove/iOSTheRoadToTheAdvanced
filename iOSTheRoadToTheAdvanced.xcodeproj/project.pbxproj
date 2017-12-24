@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743CE1FEB5AC200857CFD /* AppDelegate.m */; };
 		813743D21FEB5AC200857CFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743D11FEB5AC200857CFD /* ViewController.m */; };
-		813743D51FEB5AC200857CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813743D31FEB5AC200857CFD /* Main.storyboard */; };
 		813743D71FEB5AC200857CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813743D61FEB5AC200857CFD /* Assets.xcassets */; };
-		813743DA1FEB5AC200857CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813743D81FEB5AC200857CFD /* LaunchScreen.storyboard */; };
 		813743DD1FEB5AC200857CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743DC1FEB5AC200857CFD /* main.m */; };
 		813743E51FEB5D4600857CFD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743E41FEB5D4600857CFD /* MainViewController.m */; };
 		813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743E71FEB5F0900857CFD /* RunLoopViewController.m */; };
 		8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162A5451FECFDAC007E5AAC /* BaoXianOperation.m */; };
+		81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F21FEE8B1A0048D4B3 /* KVCAndKVOViewController.m */; };
+		81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F51FEE8B5C0048D4B3 /* Person.m */; };
+		81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F81FEE8DE40048D4B3 /* Dog.m */; };
+		81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */; };
 		81E020DB1FEB98E9009709AA /* controllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 81E020DA1FEB98E9009709AA /* controllerConfig.json */; };
 		81E020DE1FEB9C99009709AA /* MENU.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 81E020DD1FEB9C99009709AA /* MENU.JSON */; };
 		81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E020E11FEC9FAE009709AA /* ThreadViewController.m */; };
@@ -27,9 +29,7 @@
 		813743CE1FEB5AC200857CFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		813743D01FEB5AC200857CFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		813743D11FEB5AC200857CFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		813743D41FEB5AC200857CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		813743D61FEB5AC200857CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		813743D91FEB5AC200857CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		813743DB1FEB5AC200857CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		813743DC1FEB5AC200857CFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		813743E31FEB5D4600857CFD /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -38,6 +38,14 @@
 		813743E71FEB5F0900857CFD /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
 		8162A5441FECFDAC007E5AAC /* BaoXianOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaoXianOperation.h; sourceTree = "<group>"; };
 		8162A5451FECFDAC007E5AAC /* BaoXianOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoXianOperation.m; sourceTree = "<group>"; };
+		81B5A2F11FEE8B1A0048D4B3 /* KVCAndKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCAndKVOViewController.h; sourceTree = "<group>"; };
+		81B5A2F21FEE8B1A0048D4B3 /* KVCAndKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCAndKVOViewController.m; sourceTree = "<group>"; };
+		81B5A2F41FEE8B5C0048D4B3 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		81B5A2F51FEE8B5C0048D4B3 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		81B5A2F71FEE8DE40048D4B3 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		81B5A2F81FEE8DE40048D4B3 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		81B5A2FA1FEE918B0048D4B3 /* NSObject+BaoXianKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BaoXianKVC.h"; sourceTree = "<group>"; };
+		81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BaoXianKVC.m"; sourceTree = "<group>"; };
 		81E020DA1FEB98E9009709AA /* controllerConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = controllerConfig.json; sourceTree = "<group>"; };
 		81E020DD1FEB9C99009709AA /* MENU.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MENU.JSON; sourceTree = "<group>"; };
 		81E020E01FEC9FAE009709AA /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
@@ -74,6 +82,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81B5A2F01FEE8AF10048D4B3 /* KVCAndKVO */,
 				8162A5401FECEC9A007E5AAC /* theadController */,
 				81E020DA1FEB98E9009709AA /* controllerConfig.json */,
 				81E020DD1FEB9C99009709AA /* MENU.JSON */,
@@ -85,9 +94,7 @@
 				813743D11FEB5AC200857CFD /* ViewController.m */,
 				813743E61FEB5F0900857CFD /* RunLoopViewController.h */,
 				813743E71FEB5F0900857CFD /* RunLoopViewController.m */,
-				813743D31FEB5AC200857CFD /* Main.storyboard */,
 				813743D61FEB5AC200857CFD /* Assets.xcassets */,
-				813743D81FEB5AC200857CFD /* LaunchScreen.storyboard */,
 				813743DB1FEB5AC200857CFD /* Info.plist */,
 				813743DC1FEB5AC200857CFD /* main.m */,
 			);
@@ -169,6 +176,21 @@
 			path = source;
 			sourceTree = "<group>";
 		};
+		81B5A2F01FEE8AF10048D4B3 /* KVCAndKVO */ = {
+			isa = PBXGroup;
+			children = (
+				81B5A2F11FEE8B1A0048D4B3 /* KVCAndKVOViewController.h */,
+				81B5A2F21FEE8B1A0048D4B3 /* KVCAndKVOViewController.m */,
+				81B5A2F41FEE8B5C0048D4B3 /* Person.h */,
+				81B5A2F51FEE8B5C0048D4B3 /* Person.m */,
+				81B5A2F71FEE8DE40048D4B3 /* Dog.h */,
+				81B5A2F81FEE8DE40048D4B3 /* Dog.m */,
+				81B5A2FA1FEE918B0048D4B3 /* NSObject+BaoXianKVC.h */,
+				81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */,
+			);
+			path = KVCAndKVO;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,9 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				813743DA1FEB5AC200857CFD /* LaunchScreen.storyboard in Resources */,
 				813743D71FEB5AC200857CFD /* Assets.xcassets in Resources */,
-				813743D51FEB5AC200857CFD /* Main.storyboard in Resources */,
 				81E020DE1FEB9C99009709AA /* MENU.JSON in Resources */,
 				81E020DB1FEB98E9009709AA /* controllerConfig.json in Resources */,
 			);
@@ -244,34 +264,19 @@
 			files = (
 				81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */,
 				813743D21FEB5AC200857CFD /* ViewController.m in Sources */,
+				81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */,
+				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
+				81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */,
 				8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
+				81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */,
 				813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */,
 				813743E51FEB5D4600857CFD /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		813743D31FEB5AC200857CFD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				813743D41FEB5AC200857CFD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		813743D81FEB5AC200857CFD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				813743D91FEB5AC200857CFD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		813743DE1FEB5AC200857CFD /* Debug */ = {
@@ -322,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -371,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -387,7 +392,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.iOSTheRoadToTheAdvanced;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -400,7 +405,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.iOSTheRoadToTheAdvanced;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

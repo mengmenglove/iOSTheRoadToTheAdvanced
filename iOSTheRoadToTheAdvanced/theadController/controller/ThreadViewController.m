@@ -20,7 +20,7 @@
     self.title = @"Thread";
     self.view.backgroundColor = [UIColor grayColor];
 
-    [self GCDOnce];
+    
     
 }
 

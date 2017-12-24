@@ -12,5 +12,10 @@
               "image": "image",
               "target": "ThreadViewController"
               },
+              {
+              "name": "KvcAndKvo",
+              "image": "image",
+              "target": "KVCAndKVOViewController"
+              },
               ]
 }
