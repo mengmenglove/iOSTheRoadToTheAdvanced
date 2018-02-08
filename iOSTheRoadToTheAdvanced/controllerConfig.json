@@ -17,5 +17,10 @@
               "image": "image",
               "target": "KVCAndKVOViewController"
               },
+              {
+              "name": "KvcAndKvo",
+              "image": "image",
+              "target": "RunViewController"
+              },
               ]
 }

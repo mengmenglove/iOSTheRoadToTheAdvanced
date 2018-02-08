@@ -21,6 +21,8 @@
 		81E020DB1FEB98E9009709AA /* controllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 81E020DA1FEB98E9009709AA /* controllerConfig.json */; };
 		81E020DE1FEB9C99009709AA /* MENU.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 81E020DD1FEB9C99009709AA /* MENU.JSON */; };
 		81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E020E11FEC9FAE009709AA /* ThreadViewController.m */; };
+		81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E66DD41FF51E360077CCCB /* RunViewController.m */; };
+		81E66DD81FF51E530077CCCB /* Persion.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E66DD71FF51E530077CCCB /* Persion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,10 @@
 		81E020DD1FEB9C99009709AA /* MENU.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MENU.JSON; sourceTree = "<group>"; };
 		81E020E01FEC9FAE009709AA /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		81E020E11FEC9FAE009709AA /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		81E66DD31FF51E360077CCCB /* RunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunViewController.h; sourceTree = "<group>"; };
+		81E66DD41FF51E360077CCCB /* RunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunViewController.m; sourceTree = "<group>"; };
+		81E66DD61FF51E530077CCCB /* Persion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persion.h; sourceTree = "<group>"; };
+		81E66DD71FF51E530077CCCB /* Persion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Persion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81E66DCF1FF51DEE0077CCCB /* RunTimeViewController */,
 				81B5A2F01FEE8AF10048D4B3 /* KVCAndKVO */,
 				8162A5401FECEC9A007E5AAC /* theadController */,
 				81E020DA1FEB98E9009709AA /* controllerConfig.json */,
@@ -191,6 +198,41 @@
 			path = KVCAndKVO;
 			sourceTree = "<group>";
 		};
+		81E66DCF1FF51DEE0077CCCB /* RunTimeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				81E66DD01FF51DEE0077CCCB /* controller */,
+				81E66DD11FF51DEE0077CCCB /* model */,
+				81E66DD21FF51DEE0077CCCB /* view */,
+			);
+			path = RunTimeViewController;
+			sourceTree = "<group>";
+		};
+		81E66DD01FF51DEE0077CCCB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				81E66DD31FF51E360077CCCB /* RunViewController.h */,
+				81E66DD41FF51E360077CCCB /* RunViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		81E66DD11FF51DEE0077CCCB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				81E66DD61FF51E530077CCCB /* Persion.h */,
+				81E66DD71FF51E530077CCCB /* Persion.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		81E66DD21FF51DEE0077CCCB /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +306,7 @@
 			files = (
 				81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */,
 				813743D21FEB5AC200857CFD /* ViewController.m in Sources */,
+				81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */,
 				81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
@@ -272,6 +315,7 @@
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
 				81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */,
 				813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */,
+				81E66DD81FF51E530077CCCB /* Persion.m in Sources */,
 				813743E51FEB5D4600857CFD /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = iOSTheRoadToTheAdvanced/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.iOSTheRoadToTheAdvanced;
@@ -401,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = iOSTheRoadToTheAdvanced/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.iOSTheRoadToTheAdvanced;
