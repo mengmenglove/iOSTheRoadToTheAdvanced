@@ -22,5 +22,10 @@
               "image": "image",
               "target": "RunViewController"
               },
+              {
+              "name": "socket",
+              "image": "image",
+              "target": "SocketViewController"
+              },
               ]
 }
