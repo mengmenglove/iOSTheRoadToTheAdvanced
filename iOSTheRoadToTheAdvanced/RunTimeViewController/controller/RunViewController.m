@@ -38,7 +38,7 @@
     
     
     NSString *temp = NSTemporaryDirectory();
-    NSString *filePath =  [temp stringByAppendingPathComponent:@"baoxian"];
+//    NSString *filePath =  [temp stringByAppendingPathComponent:@"baoxian"];
     
     
     

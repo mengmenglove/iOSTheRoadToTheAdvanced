@@ -14,6 +14,8 @@
 		813743E51FEB5D4600857CFD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743E41FEB5D4600857CFD /* MainViewController.m */; };
 		813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743E71FEB5F0900857CFD /* RunLoopViewController.m */; };
 		8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162A5451FECFDAC007E5AAC /* BaoXianOperation.m */; };
+		8168856F204E41E500932943 /* DesignPatternsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168856E204E41E500932943 /* DesignPatternsViewController.m */; };
+		81688573204EAB3500932943 /* DesignClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81688572204EAB3500932943 /* DesignClassViewController.m */; };
 		81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B37FC12046A1E6006B1092 /* SocketViewController.m */; };
 		81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F21FEE8B1A0048D4B3 /* KVCAndKVOViewController.m */; };
 		81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F51FEE8B5C0048D4B3 /* Person.m */; };
@@ -41,6 +43,10 @@
 		813743E71FEB5F0900857CFD /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
 		8162A5441FECFDAC007E5AAC /* BaoXianOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaoXianOperation.h; sourceTree = "<group>"; };
 		8162A5451FECFDAC007E5AAC /* BaoXianOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoXianOperation.m; sourceTree = "<group>"; };
+		8168856D204E41E500932943 /* DesignPatternsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignPatternsViewController.h; sourceTree = "<group>"; };
+		8168856E204E41E500932943 /* DesignPatternsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternsViewController.m; sourceTree = "<group>"; };
+		81688571204EAB3500932943 /* DesignClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignClassViewController.h; sourceTree = "<group>"; };
+		81688572204EAB3500932943 /* DesignClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignClassViewController.m; sourceTree = "<group>"; };
 		81B37FC02046A1E6006B1092 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
 		81B37FC12046A1E6006B1092 /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
 		81B5A2F11FEE8B1A0048D4B3 /* KVCAndKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCAndKVOViewController.h; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81688569204E41CE00932943 /* DesignPatterns */,
 				81B37FBC20469DEF006B1092 /* Socket */,
 				81E66DCF1FF51DEE0077CCCB /* RunTimeViewController */,
 				81B5A2F01FEE8AF10048D4B3 /* KVCAndKVO */,
@@ -141,6 +148,41 @@
 			sourceTree = "<group>";
 		};
 		8162A5431FECEC9A007E5AAC /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		81688569204E41CE00932943 /* DesignPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				8168856A204E41CE00932943 /* controller */,
+				8168856B204E41CE00932943 /* model */,
+				8168856C204E41CE00932943 /* view */,
+			);
+			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		8168856A204E41CE00932943 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8168856D204E41E500932943 /* DesignPatternsViewController.h */,
+				8168856E204E41E500932943 /* DesignPatternsViewController.m */,
+				81688571204EAB3500932943 /* DesignClassViewController.h */,
+				81688572204EAB3500932943 /* DesignClassViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		8168856B204E41CE00932943 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8168856C204E41CE00932943 /* view */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -346,10 +388,12 @@
 				81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */,
 				81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
+				81688573204EAB3500932943 /* DesignClassViewController.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
 				81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */,
 				8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
+				8168856F204E41E500932943 /* DesignPatternsViewController.m in Sources */,
 				81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */,
 				81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */,
 				813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */,
