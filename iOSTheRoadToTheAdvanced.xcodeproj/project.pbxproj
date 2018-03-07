@@ -16,6 +16,15 @@
 		8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162A5451FECFDAC007E5AAC /* BaoXianOperation.m */; };
 		8168856F204E41E500932943 /* DesignPatternsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168856E204E41E500932943 /* DesignPatternsViewController.m */; };
 		81688573204EAB3500932943 /* DesignClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81688572204EAB3500932943 /* DesignClassViewController.m */; };
+		81688576204FD29400932943 /* DesignMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81688575204FD29400932943 /* DesignMViewController.m */; };
+		8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168857C204FE05000932943 /* HBXDelegateViewController.m */; };
+		81688580204FE6AD00932943 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168857F204FE6AD00932943 /* Person.m */; };
+		81688587204FEB1B00932943 /* read3.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688581204FEB1B00932943 /* read3.json */; };
+		81688588204FEB1B00932943 /* read4.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688582204FEB1B00932943 /* read4.json */; };
+		81688589204FEB1B00932943 /* 堆栈关系.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688583204FEB1B00932943 /* 堆栈关系.json */; };
+		8168858A204FEB1B00932943 /* 知识点消息转发.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688584204FEB1B00932943 /* 知识点消息转发.json */; };
+		8168858B204FEB1B00932943 /* read6.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688585204FEB1B00932943 /* read6.json */; };
+		8168858C204FEB1B00932943 /* read5.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688586204FEB1B00932943 /* read5.json */; };
 		81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B37FC12046A1E6006B1092 /* SocketViewController.m */; };
 		81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F21FEE8B1A0048D4B3 /* KVCAndKVOViewController.m */; };
 		81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F51FEE8B5C0048D4B3 /* Person.m */; };
@@ -47,6 +56,18 @@
 		8168856E204E41E500932943 /* DesignPatternsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternsViewController.m; sourceTree = "<group>"; };
 		81688571204EAB3500932943 /* DesignClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignClassViewController.h; sourceTree = "<group>"; };
 		81688572204EAB3500932943 /* DesignClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignClassViewController.m; sourceTree = "<group>"; };
+		81688574204FD29400932943 /* DesignMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignMViewController.h; sourceTree = "<group>"; };
+		81688575204FD29400932943 /* DesignMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignMViewController.m; sourceTree = "<group>"; };
+		8168857B204FE05000932943 /* HBXDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXDelegateViewController.h; sourceTree = "<group>"; };
+		8168857C204FE05000932943 /* HBXDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXDelegateViewController.m; sourceTree = "<group>"; };
+		8168857E204FE6AD00932943 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		8168857F204FE6AD00932943 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		81688581204FEB1B00932943 /* read3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = read3.json; sourceTree = "<group>"; };
+		81688582204FEB1B00932943 /* read4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = read4.json; sourceTree = "<group>"; };
+		81688583204FEB1B00932943 /* 堆栈关系.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "堆栈关系.json"; sourceTree = "<group>"; };
+		81688584204FEB1B00932943 /* 知识点消息转发.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "知识点消息转发.json"; sourceTree = "<group>"; };
+		81688585204FEB1B00932943 /* read6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = read6.json; sourceTree = "<group>"; };
+		81688586204FEB1B00932943 /* read5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = read5.json; sourceTree = "<group>"; };
 		81B37FC02046A1E6006B1092 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
 		81B37FC12046A1E6006B1092 /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
 		81B5A2F11FEE8B1A0048D4B3 /* KVCAndKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCAndKVOViewController.h; sourceTree = "<group>"; };
@@ -97,6 +118,13 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81688583204FEB1B00932943 /* 堆栈关系.json */,
+				81688584204FEB1B00932943 /* 知识点消息转发.json */,
+				81688581204FEB1B00932943 /* read3.json */,
+				81688582204FEB1B00932943 /* read4.json */,
+				81688586204FEB1B00932943 /* read5.json */,
+				81688585204FEB1B00932943 /* read6.json */,
+				81688577204FE03F00932943 /* delegate */,
 				81688569204E41CE00932943 /* DesignPatterns */,
 				81B37FBC20469DEF006B1092 /* Socket */,
 				81E66DCF1FF51DEE0077CCCB /* RunTimeViewController */,
@@ -171,6 +199,8 @@
 				8168856E204E41E500932943 /* DesignPatternsViewController.m */,
 				81688571204EAB3500932943 /* DesignClassViewController.h */,
 				81688572204EAB3500932943 /* DesignClassViewController.m */,
+				81688574204FD29400932943 /* DesignMViewController.h */,
+				81688575204FD29400932943 /* DesignMViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -183,6 +213,41 @@
 			sourceTree = "<group>";
 		};
 		8168856C204E41CE00932943 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		81688577204FE03F00932943 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				81688578204FE03F00932943 /* controller */,
+				81688579204FE03F00932943 /* model */,
+				8168857A204FE03F00932943 /* view */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		81688578204FE03F00932943 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8168857B204FE05000932943 /* HBXDelegateViewController.h */,
+				8168857C204FE05000932943 /* HBXDelegateViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		81688579204FE03F00932943 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8168857E204FE6AD00932943 /* Person.h */,
+				8168857F204FE6AD00932943 /* Person.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8168857A204FE03F00932943 /* view */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -370,9 +435,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81688588204FEB1B00932943 /* read4.json in Resources */,
 				813743D71FEB5AC200857CFD /* Assets.xcassets in Resources */,
+				8168858A204FEB1B00932943 /* 知识点消息转发.json in Resources */,
+				81688587204FEB1B00932943 /* read3.json in Resources */,
+				8168858B204FEB1B00932943 /* read6.json in Resources */,
 				81E020DE1FEB9C99009709AA /* MENU.JSON in Resources */,
+				8168858C204FEB1B00932943 /* read5.json in Resources */,
 				81E020DB1FEB98E9009709AA /* controllerConfig.json in Resources */,
+				81688589204FEB1B00932943 /* 堆栈关系.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,13 +456,16 @@
 			files = (
 				81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */,
 				813743D21FEB5AC200857CFD /* ViewController.m in Sources */,
+				81688580204FE6AD00932943 /* Person.m in Sources */,
 				81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */,
+				81688576204FD29400932943 /* DesignMViewController.m in Sources */,
 				81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
 				81688573204EAB3500932943 /* DesignClassViewController.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
 				81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */,
 				8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */,
+				8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
 				8168856F204E41E500932943 /* DesignPatternsViewController.m in Sources */,
 				81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */,
