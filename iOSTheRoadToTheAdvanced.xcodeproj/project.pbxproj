@@ -19,12 +19,15 @@
 		81688576204FD29400932943 /* DesignMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81688575204FD29400932943 /* DesignMViewController.m */; };
 		8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168857C204FE05000932943 /* HBXDelegateViewController.m */; };
 		81688580204FE6AD00932943 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168857F204FE6AD00932943 /* Person.m */; };
-		81688587204FEB1B00932943 /* read3.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688581204FEB1B00932943 /* read3.json */; };
+		81688587204FEB1B00932943 /* 代理没有实现方法.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688581204FEB1B00932943 /* 代理没有实现方法.json */; };
 		81688588204FEB1B00932943 /* read4.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688582204FEB1B00932943 /* read4.json */; };
 		81688589204FEB1B00932943 /* 堆栈关系.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688583204FEB1B00932943 /* 堆栈关系.json */; };
 		8168858A204FEB1B00932943 /* 知识点消息转发.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688584204FEB1B00932943 /* 知识点消息转发.json */; };
 		8168858B204FEB1B00932943 /* read6.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688585204FEB1B00932943 /* read6.json */; };
 		8168858C204FEB1B00932943 /* read5.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688586204FEB1B00932943 /* read5.json */; };
+		8168859220510F2C00932943 /* HBXNSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168859120510F2C00932943 /* HBXNSProxy.m */; };
+		816885952051102700932943 /* AbostrctStargeteMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885942051102700932943 /* AbostrctStargeteMessage.m */; };
+		8168859B2051160F00932943 /* ContentProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168859A2051160F00932943 /* ContentProxy.m */; };
 		81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B37FC12046A1E6006B1092 /* SocketViewController.m */; };
 		81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F21FEE8B1A0048D4B3 /* KVCAndKVOViewController.m */; };
 		81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F51FEE8B5C0048D4B3 /* Person.m */; };
@@ -62,12 +65,19 @@
 		8168857C204FE05000932943 /* HBXDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXDelegateViewController.m; sourceTree = "<group>"; };
 		8168857E204FE6AD00932943 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		8168857F204FE6AD00932943 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		81688581204FEB1B00932943 /* read3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = read3.json; sourceTree = "<group>"; };
+		81688581204FEB1B00932943 /* 代理没有实现方法.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "代理没有实现方法.json"; sourceTree = "<group>"; };
 		81688582204FEB1B00932943 /* read4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = read4.json; sourceTree = "<group>"; };
 		81688583204FEB1B00932943 /* 堆栈关系.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "堆栈关系.json"; sourceTree = "<group>"; };
 		81688584204FEB1B00932943 /* 知识点消息转发.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "知识点消息转发.json"; sourceTree = "<group>"; };
 		81688585204FEB1B00932943 /* read6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = read6.json; sourceTree = "<group>"; };
 		81688586204FEB1B00932943 /* read5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = read5.json; sourceTree = "<group>"; };
+		8168859020510F2C00932943 /* HBXNSProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXNSProxy.h; sourceTree = "<group>"; };
+		8168859120510F2C00932943 /* HBXNSProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXNSProxy.m; sourceTree = "<group>"; };
+		816885932051102700932943 /* AbostrctStargeteMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbostrctStargeteMessage.h; sourceTree = "<group>"; };
+		816885942051102700932943 /* AbostrctStargeteMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbostrctStargeteMessage.m; sourceTree = "<group>"; };
+		816885992051160F00932943 /* ContentProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentProxy.h; sourceTree = "<group>"; };
+		8168859A2051160F00932943 /* ContentProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentProxy.m; sourceTree = "<group>"; };
+		8168859C2051163200932943 /* MessageProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageProtocol.h; sourceTree = "<group>"; };
 		81B37FC02046A1E6006B1092 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
 		81B37FC12046A1E6006B1092 /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
 		81B5A2F11FEE8B1A0048D4B3 /* KVCAndKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCAndKVOViewController.h; sourceTree = "<group>"; };
@@ -120,7 +130,7 @@
 			children = (
 				81688583204FEB1B00932943 /* 堆栈关系.json */,
 				81688584204FEB1B00932943 /* 知识点消息转发.json */,
-				81688581204FEB1B00932943 /* read3.json */,
+				81688581204FEB1B00932943 /* 代理没有实现方法.json */,
 				81688582204FEB1B00932943 /* read4.json */,
 				81688586204FEB1B00932943 /* read5.json */,
 				81688585204FEB1B00932943 /* read6.json */,
@@ -201,6 +211,13 @@
 				81688572204EAB3500932943 /* DesignClassViewController.m */,
 				81688574204FD29400932943 /* DesignMViewController.h */,
 				81688575204FD29400932943 /* DesignMViewController.m */,
+				8168859020510F2C00932943 /* HBXNSProxy.h */,
+				8168859120510F2C00932943 /* HBXNSProxy.m */,
+				816885932051102700932943 /* AbostrctStargeteMessage.h */,
+				816885942051102700932943 /* AbostrctStargeteMessage.m */,
+				816885992051160F00932943 /* ContentProxy.h */,
+				8168859A2051160F00932943 /* ContentProxy.m */,
+				8168859C2051163200932943 /* MessageProtocol.h */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -438,7 +455,7 @@
 				81688588204FEB1B00932943 /* read4.json in Resources */,
 				813743D71FEB5AC200857CFD /* Assets.xcassets in Resources */,
 				8168858A204FEB1B00932943 /* 知识点消息转发.json in Resources */,
-				81688587204FEB1B00932943 /* read3.json in Resources */,
+				81688587204FEB1B00932943 /* 代理没有实现方法.json in Resources */,
 				8168858B204FEB1B00932943 /* read6.json in Resources */,
 				81E020DE1FEB9C99009709AA /* MENU.JSON in Resources */,
 				8168858C204FEB1B00932943 /* read5.json in Resources */,
@@ -454,12 +471,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8168859B2051160F00932943 /* ContentProxy.m in Sources */,
 				81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */,
 				813743D21FEB5AC200857CFD /* ViewController.m in Sources */,
 				81688580204FE6AD00932943 /* Person.m in Sources */,
 				81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */,
 				81688576204FD29400932943 /* DesignMViewController.m in Sources */,
 				81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */,
+				816885952051102700932943 /* AbostrctStargeteMessage.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
 				81688573204EAB3500932943 /* DesignClassViewController.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
@@ -470,6 +489,7 @@
 				8168856F204E41E500932943 /* DesignPatternsViewController.m in Sources */,
 				81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */,
 				81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */,
+				8168859220510F2C00932943 /* HBXNSProxy.m in Sources */,
 				813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */,
 				81E66DD81FF51E530077CCCB /* Persion.m in Sources */,
 				813743E51FEB5D4600857CFD /* MainViewController.m in Sources */,

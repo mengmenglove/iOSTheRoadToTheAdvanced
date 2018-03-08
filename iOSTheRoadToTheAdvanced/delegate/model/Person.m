@@ -46,11 +46,17 @@ void newRun(id self,SEL  _cmd){
 
 
 /*
- * 生成方法签名
+ * 生成方法签名 如果找不到对应的方式的时候就会进入这个方法
  */
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     
+    if (aSelector == @selector(run)) {
+        // 如果找不到方法，就生出新的方法签名
+        //class_addMethod(self, aSelector,  (IMP)newRun, "v@:");
+        return [NSMethodSignature signatureWithObjCTypes:"v@:"];
+    }
+    return [super methodSignatureForSelector:aSelector];
     
 }
 
@@ -60,8 +66,30 @@ void newRun(id self,SEL  _cmd){
  */
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
     
+    SEL selector = [anInvocation selector];
+    //拿到消息 找到一个实现run方法的类
+    Person *person = [[Person alloc] init];
+    if ([person respondsToSelector:selector]) {
+        [anInvocation  invokeWithTarget:person];
+    }
+
+    return [super forwardInvocation:anInvocation];
+}
+
+
+/**
+ * 抛出异常  
+ */
+
+- (void)doesNotRecognizeSelector:(SEL)aSelector {
+    NSString *str = NSStringFromSelector(aSelector);
+    NSLog(@"this function is not exist :%@",str);
+    
+    
     
 }
+
+
 
 
 
