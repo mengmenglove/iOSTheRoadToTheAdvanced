@@ -1,20 +1,18 @@
 //
-//  Person.m
+//  ShowDelegatePerson.m
 //  iOSTheRoadToTheAdvanced
 //
-//  Created by 黄保贤 on 2018/3/7.
+//  Created by 黄保贤 on 2018/3/8.
 //  Copyright © 2018年 黄保贤. All rights reserved.
 //
 
-#import "Person.h"
+#import "ShowDelegatePerson.h"
 #import <objc/runtime.h>
-#import <objc/message.h>
+#import <objc/message.h>"
 
 
 
-@implementation Person
-
-
+@implementation ShowDelegatePerson
 /*
  在这个地方动态添加方法
  */
@@ -68,17 +66,17 @@ void newRun(id self,SEL  _cmd){
     
     SEL selector = [anInvocation selector];
     //拿到消息 找到一个实现run方法的类
-    Person *person = [[Person alloc] init];
+    ShowDelegatePerson *person = [[ShowDelegatePerson alloc] init];
     if ([person respondsToSelector:selector]) {
         [anInvocation  invokeWithTarget:person];
     }
-
+    
     return [super forwardInvocation:anInvocation];
 }
 
 
 /**
- * 抛出异常  
+ * 抛出异常
  */
 
 - (void)doesNotRecognizeSelector:(SEL)aSelector {
@@ -88,9 +86,4 @@ void newRun(id self,SEL  _cmd){
     
     
 }
-
-
-
-
-
 @end

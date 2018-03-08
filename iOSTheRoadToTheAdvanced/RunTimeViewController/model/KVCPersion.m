@@ -6,10 +6,10 @@
 //  Copyright © 2017年 黄保贤. All rights reserved.
 //
 
-#import "Persion.h"
+#import "KVCPersion.h"
 #import <objc/runtime.h>
 #import <Foundation/Foundation.h>
-@implementation Persion
+@implementation KVCPersion
 
 - (void)eat {
     

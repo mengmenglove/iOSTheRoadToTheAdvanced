@@ -9,7 +9,7 @@
 #import "RunViewController.h"
 #import "Person.h"
 #import <objc/runtime.h>
-#import "Persion.h"
+#import "KVCPersion.h"
 
 //clang -rewrite-objc
 @interface RunViewController ()
@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    Person *p  = [[Person alloc] init];
+    KVCPersion *p  = [[KVCPersion alloc] init];
     
     
    
@@ -31,7 +31,7 @@
 
 - (void)save {
     
-    Persion *p = [[Persion alloc] init];
+    KVCPersion *p = [[KVCPersion alloc] init];
     
     p.name = @"baoxian";
     p.age = 10;

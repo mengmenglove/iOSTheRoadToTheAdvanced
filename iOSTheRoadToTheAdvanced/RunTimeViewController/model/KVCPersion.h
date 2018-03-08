@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Persion : NSObject <NSCoding, NSSecureCoding>
+@interface KVCPersion : NSObject <NSCoding, NSSecureCoding>
 
 @property(nonatomic,strong)NSString   *name;
 @property(nonatomic,assign)NSInteger  age;

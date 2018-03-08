@@ -27,5 +27,10 @@
               "image": "image",
               "target": "SocketViewController"
               },
+              {
+              "name": "协议聚合模式",
+              "image": "image",
+              "target": "BuilderViewController"
+              },
               ]
 }

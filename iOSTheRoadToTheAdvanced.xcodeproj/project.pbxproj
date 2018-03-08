@@ -18,7 +18,6 @@
 		81688573204EAB3500932943 /* DesignClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81688572204EAB3500932943 /* DesignClassViewController.m */; };
 		81688576204FD29400932943 /* DesignMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81688575204FD29400932943 /* DesignMViewController.m */; };
 		8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168857C204FE05000932943 /* HBXDelegateViewController.m */; };
-		81688580204FE6AD00932943 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168857F204FE6AD00932943 /* Person.m */; };
 		81688587204FEB1B00932943 /* 代理没有实现方法.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688581204FEB1B00932943 /* 代理没有实现方法.json */; };
 		81688588204FEB1B00932943 /* read4.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688582204FEB1B00932943 /* read4.json */; };
 		81688589204FEB1B00932943 /* 堆栈关系.json in Resources */ = {isa = PBXBuildFile; fileRef = 81688583204FEB1B00932943 /* 堆栈关系.json */; };
@@ -28,6 +27,10 @@
 		8168859220510F2C00932943 /* HBXNSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168859120510F2C00932943 /* HBXNSProxy.m */; };
 		816885952051102700932943 /* AbostrctStargeteMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885942051102700932943 /* AbostrctStargeteMessage.m */; };
 		8168859B2051160F00932943 /* ContentProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168859A2051160F00932943 /* ContentProxy.m */; };
+		816885A020511B4C00932943 /* ConcreatBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168859F20511B4C00932943 /* ConcreatBuild.m */; };
+		816885A320511BD300932943 /* Dorector.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A220511BD300932943 /* Dorector.m */; };
+		816885A62051256400932943 /* BuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A52051256400932943 /* BuilderViewController.m */; };
+		816885A920513B2200932943 /* ShowDelegatePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A820513B2200932943 /* ShowDelegatePerson.m */; };
 		81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B37FC12046A1E6006B1092 /* SocketViewController.m */; };
 		81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F21FEE8B1A0048D4B3 /* KVCAndKVOViewController.m */; };
 		81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F51FEE8B5C0048D4B3 /* Person.m */; };
@@ -37,7 +40,7 @@
 		81E020DE1FEB9C99009709AA /* MENU.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 81E020DD1FEB9C99009709AA /* MENU.JSON */; };
 		81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E020E11FEC9FAE009709AA /* ThreadViewController.m */; };
 		81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E66DD41FF51E360077CCCB /* RunViewController.m */; };
-		81E66DD81FF51E530077CCCB /* Persion.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E66DD71FF51E530077CCCB /* Persion.m */; };
+		81E66DD81FF51E530077CCCB /* KVCPersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E66DD71FF51E530077CCCB /* KVCPersion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +66,6 @@
 		81688575204FD29400932943 /* DesignMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignMViewController.m; sourceTree = "<group>"; };
 		8168857B204FE05000932943 /* HBXDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXDelegateViewController.h; sourceTree = "<group>"; };
 		8168857C204FE05000932943 /* HBXDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXDelegateViewController.m; sourceTree = "<group>"; };
-		8168857E204FE6AD00932943 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		8168857F204FE6AD00932943 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		81688581204FEB1B00932943 /* 代理没有实现方法.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "代理没有实现方法.json"; sourceTree = "<group>"; };
 		81688582204FEB1B00932943 /* read4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = read4.json; sourceTree = "<group>"; };
 		81688583204FEB1B00932943 /* 堆栈关系.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "堆栈关系.json"; sourceTree = "<group>"; };
@@ -78,6 +79,15 @@
 		816885992051160F00932943 /* ContentProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentProxy.h; sourceTree = "<group>"; };
 		8168859A2051160F00932943 /* ContentProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentProxy.m; sourceTree = "<group>"; };
 		8168859C2051163200932943 /* MessageProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageProtocol.h; sourceTree = "<group>"; };
+		8168859D20511ABB00932943 /* Build.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Build.h; sourceTree = "<group>"; };
+		8168859E20511B4C00932943 /* ConcreatBuild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreatBuild.h; sourceTree = "<group>"; };
+		8168859F20511B4C00932943 /* ConcreatBuild.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreatBuild.m; sourceTree = "<group>"; };
+		816885A120511BD300932943 /* Dorector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dorector.h; sourceTree = "<group>"; };
+		816885A220511BD300932943 /* Dorector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dorector.m; sourceTree = "<group>"; };
+		816885A42051256400932943 /* BuilderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderViewController.h; sourceTree = "<group>"; };
+		816885A52051256400932943 /* BuilderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderViewController.m; sourceTree = "<group>"; };
+		816885A720513B2200932943 /* ShowDelegatePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowDelegatePerson.h; sourceTree = "<group>"; };
+		816885A820513B2200932943 /* ShowDelegatePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowDelegatePerson.m; sourceTree = "<group>"; };
 		81B37FC02046A1E6006B1092 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
 		81B37FC12046A1E6006B1092 /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
 		81B5A2F11FEE8B1A0048D4B3 /* KVCAndKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCAndKVOViewController.h; sourceTree = "<group>"; };
@@ -94,8 +104,8 @@
 		81E020E11FEC9FAE009709AA /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		81E66DD31FF51E360077CCCB /* RunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunViewController.h; sourceTree = "<group>"; };
 		81E66DD41FF51E360077CCCB /* RunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunViewController.m; sourceTree = "<group>"; };
-		81E66DD61FF51E530077CCCB /* Persion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persion.h; sourceTree = "<group>"; };
-		81E66DD71FF51E530077CCCB /* Persion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Persion.m; sourceTree = "<group>"; };
+		81E66DD61FF51E530077CCCB /* KVCPersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCPersion.h; sourceTree = "<group>"; };
+		81E66DD71FF51E530077CCCB /* KVCPersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCPersion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +228,13 @@
 				816885992051160F00932943 /* ContentProxy.h */,
 				8168859A2051160F00932943 /* ContentProxy.m */,
 				8168859C2051163200932943 /* MessageProtocol.h */,
+				8168859D20511ABB00932943 /* Build.h */,
+				8168859E20511B4C00932943 /* ConcreatBuild.h */,
+				8168859F20511B4C00932943 /* ConcreatBuild.m */,
+				816885A120511BD300932943 /* Dorector.h */,
+				816885A220511BD300932943 /* Dorector.m */,
+				816885A42051256400932943 /* BuilderViewController.h */,
+				816885A52051256400932943 /* BuilderViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -258,8 +275,8 @@
 		81688579204FE03F00932943 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				8168857E204FE6AD00932943 /* Person.h */,
-				8168857F204FE6AD00932943 /* Person.m */,
+				816885A720513B2200932943 /* ShowDelegatePerson.h */,
+				816885A820513B2200932943 /* ShowDelegatePerson.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -381,8 +398,8 @@
 		81E66DD11FF51DEE0077CCCB /* model */ = {
 			isa = PBXGroup;
 			children = (
-				81E66DD61FF51E530077CCCB /* Persion.h */,
-				81E66DD71FF51E530077CCCB /* Persion.m */,
+				81E66DD61FF51E530077CCCB /* KVCPersion.h */,
+				81E66DD71FF51E530077CCCB /* KVCPersion.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -474,14 +491,17 @@
 				8168859B2051160F00932943 /* ContentProxy.m in Sources */,
 				81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */,
 				813743D21FEB5AC200857CFD /* ViewController.m in Sources */,
-				81688580204FE6AD00932943 /* Person.m in Sources */,
 				81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */,
 				81688576204FD29400932943 /* DesignMViewController.m in Sources */,
 				81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */,
+				816885A320511BD300932943 /* Dorector.m in Sources */,
+				816885A920513B2200932943 /* ShowDelegatePerson.m in Sources */,
 				816885952051102700932943 /* AbostrctStargeteMessage.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
+				816885A62051256400932943 /* BuilderViewController.m in Sources */,
 				81688573204EAB3500932943 /* DesignClassViewController.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
+				816885A020511B4C00932943 /* ConcreatBuild.m in Sources */,
 				81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */,
 				8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */,
 				8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */,
@@ -491,7 +511,7 @@
 				81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */,
 				8168859220510F2C00932943 /* HBXNSProxy.m in Sources */,
 				813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */,
-				81E66DD81FF51E530077CCCB /* Persion.m in Sources */,
+				81E66DD81FF51E530077CCCB /* KVCPersion.m in Sources */,
 				813743E51FEB5D4600857CFD /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,6 +628,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N59KJ676HE;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = iOSTheRoadToTheAdvanced/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -622,6 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N59KJ676HE;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = iOSTheRoadToTheAdvanced/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
