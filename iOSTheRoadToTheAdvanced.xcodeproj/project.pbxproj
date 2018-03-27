@@ -31,6 +31,9 @@
 		816885A320511BD300932943 /* Dorector.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A220511BD300932943 /* Dorector.m */; };
 		816885A62051256400932943 /* BuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A52051256400932943 /* BuilderViewController.m */; };
 		816885A920513B2200932943 /* ShowDelegatePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A820513B2200932943 /* ShowDelegatePerson.m */; };
+		81AD6301206A93A8002A465C /* CollectSilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6300206A93A8002A465C /* CollectSilderViewController.m */; };
+		81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6303206A940E002A465C /* LineCollectionViewCell.m */; };
+		81AD6307206A940F002A465C /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6305206A940E002A465C /* LineLayout.m */; };
 		81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B37FC12046A1E6006B1092 /* SocketViewController.m */; };
 		81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F21FEE8B1A0048D4B3 /* KVCAndKVOViewController.m */; };
 		81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F51FEE8B5C0048D4B3 /* Person.m */; };
@@ -88,6 +91,12 @@
 		816885A52051256400932943 /* BuilderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderViewController.m; sourceTree = "<group>"; };
 		816885A720513B2200932943 /* ShowDelegatePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowDelegatePerson.h; sourceTree = "<group>"; };
 		816885A820513B2200932943 /* ShowDelegatePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowDelegatePerson.m; sourceTree = "<group>"; };
+		81AD62FF206A93A8002A465C /* CollectSilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectSilderViewController.h; sourceTree = "<group>"; };
+		81AD6300206A93A8002A465C /* CollectSilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectSilderViewController.m; sourceTree = "<group>"; };
+		81AD6302206A940E002A465C /* LineCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineCollectionViewCell.h; sourceTree = "<group>"; };
+		81AD6303206A940E002A465C /* LineCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineCollectionViewCell.m; sourceTree = "<group>"; };
+		81AD6304206A940E002A465C /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
+		81AD6305206A940E002A465C /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
 		81B37FC02046A1E6006B1092 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
 		81B37FC12046A1E6006B1092 /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
 		81B5A2F11FEE8B1A0048D4B3 /* KVCAndKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCAndKVOViewController.h; sourceTree = "<group>"; };
@@ -138,6 +147,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81AD62FB206A9396002A465C /* collection滑动视图 */,
 				81688583204FEB1B00932943 /* 堆栈关系.json */,
 				81688584204FEB1B00932943 /* 知识点消息转发.json */,
 				81688581204FEB1B00932943 /* 代理没有实现方法.json */,
@@ -328,6 +338,43 @@
 			path = source;
 			sourceTree = "<group>";
 		};
+		81AD62FB206A9396002A465C /* collection滑动视图 */ = {
+			isa = PBXGroup;
+			children = (
+				81AD62FC206A9396002A465C /* controller */,
+				81AD62FD206A9396002A465C /* model */,
+				81AD62FE206A9397002A465C /* view */,
+			);
+			path = "collection滑动视图";
+			sourceTree = "<group>";
+		};
+		81AD62FC206A9396002A465C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				81AD62FF206A93A8002A465C /* CollectSilderViewController.h */,
+				81AD6300206A93A8002A465C /* CollectSilderViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		81AD62FD206A9396002A465C /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		81AD62FE206A9397002A465C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				81AD6302206A940E002A465C /* LineCollectionViewCell.h */,
+				81AD6303206A940E002A465C /* LineCollectionViewCell.m */,
+				81AD6304206A940E002A465C /* LineLayout.h */,
+				81AD6305206A940E002A465C /* LineLayout.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		81B37FBC20469DEF006B1092 /* Socket */ = {
 			isa = PBXGroup;
 			children = (
@@ -501,12 +548,15 @@
 				816885A62051256400932943 /* BuilderViewController.m in Sources */,
 				81688573204EAB3500932943 /* DesignClassViewController.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
+				81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */,
 				816885A020511B4C00932943 /* ConcreatBuild.m in Sources */,
 				81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */,
 				8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */,
 				8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
+				81AD6301206A93A8002A465C /* CollectSilderViewController.m in Sources */,
 				8168856F204E41E500932943 /* DesignPatternsViewController.m in Sources */,
+				81AD6307206A940F002A465C /* LineLayout.m in Sources */,
 				81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */,
 				81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */,
 				8168859220510F2C00932943 /* HBXNSProxy.m in Sources */,

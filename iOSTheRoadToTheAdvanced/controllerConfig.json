@@ -31,6 +31,10 @@
               "name": "协议聚合模式",
               "image": "image",
               "target": "BuilderViewController"
+              },{
+              "name": "CollectSilderViewController",
+              "image": "image",
+              "target": "CollectSilderViewController"
               },
               ]
 }
