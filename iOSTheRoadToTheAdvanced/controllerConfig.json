@@ -31,10 +31,29 @@
               "name": "协议聚合模式",
               "image": "image",
               "target": "BuilderViewController"
-              },{
+              },
+              {
               "name": "CollectSilderViewController",
               "image": "image",
               "target": "CollectSilderViewController"
               },
+              {
+              "name": "CollectTranFromViewController",
+              "image": "image",
+              "target": "CollectTranFromViewController"
+              },
+              {
+              "name": "TrScrollViewController",
+              "image": "image",
+              "target": "TrScrollViewController"
+              },
+              {
+              "name": "ScrollViewOneViewController",
+              "image": "image",
+              "target": "ScrollViewOneViewController"
+              },
+              
+              
               ]
+    
 }
