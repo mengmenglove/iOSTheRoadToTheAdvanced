@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8122E1A3209AE8F10087BF8A /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1A2209AE8F10087BF8A /* ImageUtil.m */; };
+		8122E1A7209AEB920087BF8A /* ToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1A6209AEB920087BF8A /* ToolViewController.m */; };
+		8122E1AB209AEDC80087BF8A /* UIimageRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1AA209AEDC80087BF8A /* UIimageRotateViewController.m */; };
+		8122E1AE209AFAE70087BF8A /* UIImageFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1AD209AFAE70087BF8A /* UIImageFilterViewController.m */; };
+		8122E1B1209AFB280087BF8A /* ImageFilterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1B0209AFB280087BF8A /* ImageFilterUtil.m */; };
+		8122E1B5209B0F890087BF8A /* NYXImagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1B3209B0F890087BF8A /* NYXImagesHelper.m */; };
+		8122E1B8209B113B0087BF8A /* ImageBlurring.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1B7209B113B0087BF8A /* ImageBlurring.m */; };
+		8122E1BB209B121A0087BF8A /* UIImageBurringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1BA209B121A0087BF8A /* UIImageBurringViewController.m */; };
+		8122E1BE209B13110087BF8A /* ImageResizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1BD209B13110087BF8A /* ImageResizing.m */; };
 		813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743CE1FEB5AC200857CFD /* AppDelegate.m */; };
 		813743D21FEB5AC200857CFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743D11FEB5AC200857CFD /* ViewController.m */; };
 		813743D71FEB5AC200857CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813743D61FEB5AC200857CFD /* Assets.xcassets */; };
@@ -83,6 +92,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8122E1A1209AE8F10087BF8A /* ImageUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		8122E1A2209AE8F10087BF8A /* ImageUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
+		8122E1A5209AEB920087BF8A /* ToolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolViewController.h; sourceTree = "<group>"; };
+		8122E1A6209AEB920087BF8A /* ToolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolViewController.m; sourceTree = "<group>"; };
+		8122E1A9209AEDC80087BF8A /* UIimageRotateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIimageRotateViewController.h; sourceTree = "<group>"; };
+		8122E1AA209AEDC80087BF8A /* UIimageRotateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIimageRotateViewController.m; sourceTree = "<group>"; };
+		8122E1AC209AFAE70087BF8A /* UIImageFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageFilterViewController.h; sourceTree = "<group>"; };
+		8122E1AD209AFAE70087BF8A /* UIImageFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageFilterViewController.m; sourceTree = "<group>"; };
+		8122E1AF209AFB280087BF8A /* ImageFilterUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFilterUtil.h; sourceTree = "<group>"; };
+		8122E1B0209AFB280087BF8A /* ImageFilterUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFilterUtil.m; sourceTree = "<group>"; };
+		8122E1B3209B0F890087BF8A /* NYXImagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYXImagesHelper.m; sourceTree = "<group>"; };
+		8122E1B4209B0F890087BF8A /* NYXImagesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYXImagesHelper.h; sourceTree = "<group>"; };
+		8122E1B6209B113B0087BF8A /* ImageBlurring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageBlurring.h; sourceTree = "<group>"; };
+		8122E1B7209B113B0087BF8A /* ImageBlurring.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageBlurring.m; sourceTree = "<group>"; };
+		8122E1B9209B121A0087BF8A /* UIImageBurringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageBurringViewController.h; sourceTree = "<group>"; };
+		8122E1BA209B121A0087BF8A /* UIImageBurringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageBurringViewController.m; sourceTree = "<group>"; };
+		8122E1BC209B13110087BF8A /* ImageResizing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageResizing.h; sourceTree = "<group>"; };
+		8122E1BD209B13110087BF8A /* ImageResizing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageResizing.m; sourceTree = "<group>"; };
 		813743CA1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTheRoadToTheAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813743CD1FEB5AC200857CFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		813743CE1FEB5AC200857CFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -237,6 +264,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8122E19F209AE8990087BF8A /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				8122E1A0209AE8A70087BF8A /* imageUtil */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		8122E1A0209AE8A70087BF8A /* imageUtil */ = {
+			isa = PBXGroup;
+			children = (
+				8122E1B4209B0F890087BF8A /* NYXImagesHelper.h */,
+				8122E1B3209B0F890087BF8A /* NYXImagesHelper.m */,
+				8122E1A1209AE8F10087BF8A /* ImageUtil.h */,
+				8122E1A2209AE8F10087BF8A /* ImageUtil.m */,
+				8122E1AF209AFB280087BF8A /* ImageFilterUtil.h */,
+				8122E1B0209AFB280087BF8A /* ImageFilterUtil.m */,
+				8122E1B6209B113B0087BF8A /* ImageBlurring.h */,
+				8122E1B7209B113B0087BF8A /* ImageBlurring.m */,
+				8122E1BC209B13110087BF8A /* ImageResizing.h */,
+				8122E1BD209B13110087BF8A /* ImageResizing.m */,
+			);
+			path = imageUtil;
+			sourceTree = "<group>";
+		};
+		8122E1A4209AEB7A0087BF8A /* ToolViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8122E1A5209AEB920087BF8A /* ToolViewController.h */,
+				8122E1A6209AEB920087BF8A /* ToolViewController.m */,
+				8122E1A8209AED9E0087BF8A /* DemoViewController */,
+			);
+			path = ToolViewController;
+			sourceTree = "<group>";
+		};
+		8122E1A8209AED9E0087BF8A /* DemoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8122E1A9209AEDC80087BF8A /* UIimageRotateViewController.h */,
+				8122E1AA209AEDC80087BF8A /* UIimageRotateViewController.m */,
+				8122E1AC209AFAE70087BF8A /* UIImageFilterViewController.h */,
+				8122E1AD209AFAE70087BF8A /* UIImageFilterViewController.m */,
+				8122E1B9209B121A0087BF8A /* UIImageBurringViewController.h */,
+				8122E1BA209B121A0087BF8A /* UIImageBurringViewController.m */,
+			);
+			path = DemoViewController;
+			sourceTree = "<group>";
+		};
 		813743C11FEB5AC100857CFD = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +331,8 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				8122E1A4209AEB7A0087BF8A /* ToolViewController */,
+				8122E19F209AE8990087BF8A /* tool */,
 				81FD9E36206D40B100DC3DC0 /* ScrollViewStyle1 */,
 				81FD9E29206D3E4800DC3DC0 /* 3DScrollView */,
 				81FD9DDF206D3D5400DC3DC0 /* SDWebImage */,
@@ -846,6 +923,7 @@
 				81FD9E4B206D413D00DC3DC0 /* WLSubView.m in Sources */,
 				816885A920513B2200932943 /* ShowDelegatePerson.m in Sources */,
 				81FD9E14206D3D5400DC3DC0 /* SDWebImageCoderHelper.m in Sources */,
+				8122E1AB209AEDC80087BF8A /* UIimageRotateViewController.m in Sources */,
 				816885952051102700932943 /* AbostrctStargeteMessage.m in Sources */,
 				81FD9E23206D3D5400DC3DC0 /* UIImageView+WebCache.m in Sources */,
 				81FD9E25206D3D5400DC3DC0 /* UIView+WebCacheOperation.m in Sources */,
@@ -857,14 +935,18 @@
 				816885A62051256400932943 /* BuilderViewController.m in Sources */,
 				81FD9DDE206D3D2200DC3DC0 /* ShowImageCell.m in Sources */,
 				81FD9E28206D3D8E00DC3DC0 /* CollectTranFromViewController.m in Sources */,
+				8122E1B8209B113B0087BF8A /* ImageBlurring.m in Sources */,
 				81FD9E19206D3D5400DC3DC0 /* SDWebImageFrame.m in Sources */,
 				81FD9E32206D3E6B00DC3DC0 /* UIView+Banner.m in Sources */,
 				81688573204EAB3500932943 /* DesignClassViewController.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
 				81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */,
+				8122E1AE209AFAE70087BF8A /* UIImageFilterViewController.m in Sources */,
 				81FD9E21206D3D5400DC3DC0 /* UIImage+MultiFormat.m in Sources */,
+				8122E1A3209AE8F10087BF8A /* ImageUtil.m in Sources */,
 				81FD9DDC206D3D2200DC3DC0 /* CircleLayout.m in Sources */,
 				81FD9E41206D40C500DC3DC0 /* textView.m in Sources */,
+				8122E1B1209AFB280087BF8A /* ImageFilterUtil.m in Sources */,
 				816885A020511B4C00932943 /* ConcreatBuild.m in Sources */,
 				81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */,
 				81FD9E18206D3D5400DC3DC0 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -873,12 +955,15 @@
 				81FD9E13206D3D5400DC3DC0 /* SDWebImageCoder.m in Sources */,
 				81FD9E17206D3D5400DC3DC0 /* SDWebImageDownloader.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
+				8122E1BE209B13110087BF8A /* ImageResizing.m in Sources */,
 				81FD9E42206D40C500DC3DC0 /* SubView.m in Sources */,
+				8122E1A7209AEB920087BF8A /* ToolViewController.m in Sources */,
 				81FD9DDD206D3D2200DC3DC0 /* HomeHeaderView.m in Sources */,
 				81FD9E1F206D3D5400DC3DC0 /* UIImage+ForceDecode.m in Sources */,
 				81AD6301206A93A8002A465C /* CollectSilderViewController.m in Sources */,
 				8168856F204E41E500932943 /* DesignPatternsViewController.m in Sources */,
 				81AD6307206A940F002A465C /* LineLayout.m in Sources */,
+				8122E1B5209B0F890087BF8A /* NYXImagesHelper.m in Sources */,
 				81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */,
 				81FD9E15206D3D5400DC3DC0 /* SDWebImageCodersManager.m in Sources */,
 				81FD9E1E206D3D5400DC3DC0 /* UIButton+WebCache.m in Sources */,
@@ -888,6 +973,7 @@
 				81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */,
 				81FD9E11206D3D5400DC3DC0 /* SDImageCache.m in Sources */,
 				81FD9E1B206D3D5400DC3DC0 /* SDWebImageImageIOCoder.m in Sources */,
+				8122E1BB209B121A0087BF8A /* UIImageBurringViewController.m in Sources */,
 				81FD9E45206D40F700DC3DC0 /* ScrollViewOneViewController.m in Sources */,
 				8168859220510F2C00932943 /* HBXNSProxy.m in Sources */,
 				813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */,
