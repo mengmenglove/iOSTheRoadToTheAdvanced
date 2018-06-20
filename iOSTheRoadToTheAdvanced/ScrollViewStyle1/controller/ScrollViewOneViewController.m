@@ -95,6 +95,14 @@
     static NSString *cellID2 = @"3453";
     static NSString *cellID3 = @"cell";
     
+    SubView *sub = (SubView *)[scrollView dequeueReuseCellWithIdentifier:cellID3];
+    if (!sub) {
+        sub = [[SubView alloc]initWithFrame:frame Identifier:cellID3];
+    }
+    sub.img.image = [UIImage imageNamed:@"4"];
+    return sub;
+    
+    
     if (index == 4 || index == 1) {
         textView *sub = (textView *)[scrollView dequeueReuseCellWithIdentifier:cellID2];
         if (!sub) {
@@ -180,22 +188,38 @@
 - (void)addWLScreenView4{
     [wlScrView removeFromSuperview];
     wlScrView = nil;
-    wlScrView = [[WLScrollView alloc]initWithFrame:CGRectMake(0, 150, WLScreen_width, 400)];
+    wlScrView = [[WLScrollView alloc] initWithFrame:CGRectMake(20, 150, WLScreen_width - 40, 200)];
     wlScrView.delegate = self;
     wlScrView.isAnimation = YES;
+    wlScrView.layer.masksToBounds = YES;
     
     //是否轮播。轮播设置为NO 或者不设置
     wlScrView.isEnableMargin = YES;
-    wlScrView.scale = 0.7;
+    wlScrView.scale = 0.3;
     wlScrView.marginX = 0;
     wlScrView.maxAnimationScale = 1;
-    wlScrView.minAnimationScale = 0.8;
+    wlScrView.minAnimationScale = 0.6;
     wlScrView.backgroundColor = [UIColor clearColor];
     
     //设置起始位置 默认 0
     //    [wlScrView setIndex:2];
     [wlScrView starRender];
     [self.view addSubview:wlScrView];
+    
+    UIScrollView *sctollVeiew =  [[UIScrollView alloc] initWithFrame:CGRectMake(30, 400, WLScreen_width - 60, 100)];
+    sctollVeiew.contentSize = CGSizeMake(220 * 5, 100);
+    sctollVeiew.pagingEnabled = YES;
+    for (int i = 0; i < 5; i ++) {
+        UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(200 * i + 20 * i, 0, 200, 100)];
+        [sctollVeiew addSubview:view];
+        view.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d",i + 1]];
+    }
+    [self.view addSubview:sctollVeiew];
+    
+    for (UIView *sub in sctollVeiew.subviews) {
+            sub.layer.transform = CATransform3DMakeScale(0.7, 0.7, 1.0);
+    }
+    
 }
 
 

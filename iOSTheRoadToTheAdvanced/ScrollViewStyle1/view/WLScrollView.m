@@ -39,6 +39,12 @@ WLSubViewDelegate
     return self;
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    NSLog(@"self.scrollView.frame: %@", NSStringFromCGRect(self.scrollView.frame) );
+    
+}
+
 #pragma  mark - 设置起始位置
 
 - (void)setIndex:(NSInteger)index{
@@ -82,7 +88,10 @@ WLSubViewDelegate
 }
 
 - (void)setSubView{
-    self.scrollView.frame = CGRectMake((self.frame.size.width-_subViewWith)/2, 0, _subViewWith, self.frame.size.height);
+    
+    self.backgroundColor = [UIColor yellowColor];
+    
+    self.scrollView.frame = CGRectMake((self.frame.size.width-_subViewWith)/2 , 0, _subViewWith, self.frame.size.height);
     self.scrollView.contentSize = CGSizeMake(_subViewWith*5, self.frame.size.height);
     
     [self.subViewAry removeAllObjects];
@@ -173,6 +182,7 @@ WLSubViewDelegate
             WLSubView *sub_view = [self.delegate scrollView:self subViewFrame:_subFrame cellAtIndex:index];
             sub_view.delegate = self;
             sub_view.isUser = YES;
+            NSLog(@"frame: %@", NSStringFromCGRect(subView.frame));
             [self.userViewAry addObject:sub_view];
             [subView addSubview:sub_view];
         }else{
@@ -293,6 +303,8 @@ WLSubViewDelegate
         CGFloat scale1 = _minAnimationScale+fabs(diff)/shortX * (_maxAnimationScale - _minAnimationScale);
         subLift.layer.transform = CATransform3DMakeScale(scale1, scale1, 1.0);
     }
+    
+    NSLog(@"sub.superview: %@",sub.superview);
 }
 
 

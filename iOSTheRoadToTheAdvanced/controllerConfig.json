@@ -52,6 +52,11 @@
               "image": "image",
               "target": "ScrollViewOneViewController"
               },
+              {
+              "name": "图片合成",
+              "image": "image",
+              "target": "UIImageSynthesisViewController"
+              },
               
               {
               "name": "工具栏demo集合",
