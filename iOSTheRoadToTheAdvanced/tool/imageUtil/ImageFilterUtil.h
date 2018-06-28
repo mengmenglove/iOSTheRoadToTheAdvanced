@@ -15,4 +15,6 @@
  */
 + (UIImage*)brightenWithValue:(float)value image:(UIImage *)valueImage;
 
++ (UIImage*)grayscale:(UIImage*)anImage type:(int)type;
+
 @end
