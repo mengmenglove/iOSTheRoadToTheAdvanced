@@ -125,6 +125,11 @@
                 *(tmp + 1) = 255 - green;
                 *(tmp + 2) = 255 - blue;
                 break;
+                case 4:
+                *(tmp + 0) = 0;
+                *(tmp + 1) = green;
+                *(tmp + 2) = blue;
+                break;
                 default:
                 *(tmp + 0) = red;
                 *(tmp + 1) = green;
@@ -145,7 +150,7 @@
                                                colorSpace, bitmapInfo, effectedDataProvider,
                                                NULL, shouldInterpolate, intent);
     
-    UIImage *effectedImage = [[UIImage alloc] initWithCGImage:effectedCgImage];
+    UIImage *effectedImage = [[UIImage alloc] initWithCGImage:effectedCgImage scale:1 orientation:anImage.imageOrientation];
     
     CGImageRelease(effectedCgImage);
     

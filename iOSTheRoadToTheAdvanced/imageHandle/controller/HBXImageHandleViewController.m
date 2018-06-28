@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) NSArray *btnArray;
 
 @end
 
@@ -42,86 +43,151 @@
     
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.frame = CGRectMake((screen_width - 300)/2, 120, 300, 300);
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:imageView];
     self.imageView = imageView;
     
     
-    btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"黑白1" forState:UIControlStateNormal];
-    btn.backgroundColor = [UIColor greenColor];
-    btn.frame = CGRectMake(0,500, 50, 50);
-    [btn addTarget:self action:@selector(photoChange1) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    self.btnArray = @[@"黑白", @"黑白2",@"黑白3",@"黑白4",@"黑白5",@"黑白2",@"原色"];
     
-    btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"黑白2" forState:UIControlStateNormal];
-    btn.backgroundColor = [UIColor greenColor];
-    btn.frame = CGRectMake(60  ,500, 50, 50);
-    [btn addTarget:self action:@selector(photoChange2) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-    
-    
-    btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"黑白3" forState:UIControlStateNormal];
-    btn.backgroundColor = [UIColor greenColor];
-    btn.frame = CGRectMake(120  ,500, 50, 50);
-    [btn addTarget:self action:@selector(photoChange3) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-    
-    
-    btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"黑白4" forState:UIControlStateNormal];
-    btn.backgroundColor = [UIColor greenColor];
-    btn.frame = CGRectMake(180  ,500, 50, 50);
-    [btn addTarget:self action:@selector(photoChange4) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-    
-    
-    btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"彩色" forState:UIControlStateNormal];
-    btn.backgroundColor = [UIColor greenColor];
-    btn.frame = CGRectMake(240  , 500, 50, 50);
-    [btn addTarget:self action:@selector(phontoChangeBack) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    CGFloat originX = 10;
+    CGFloat originY = 500;
+    for(int i = 0 ; i < self.btnArray.count; i++){
+        
+        btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.backgroundColor = [UIColor greenColor];
+        [btn setTitle:self.btnArray[i] forState:UIControlStateNormal];
+        btn.frame = CGRectMake(originX ,originY, 50, 50);
+        [self.view addSubview:btn];
+        originX += 60;
+        if(screen_width - originX < 60)
+        {
+            originX = 10;
+            originY = 500 + 60;
+        }
+        btn.tag = 100 + i;
+        [btn addTarget:self action:@selector(photoChange:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn];
+    }
     
 }
 
-- (void)photoChange1 {
+- (void)photoChange:(UIButton *)sender {
+    if(!self.image) {
+        return;
+    }
     UIImage *image = nil;
-    image = [ImageFilterUtil grayscale:self.image type:1];
-    self.imageView.image = image;
-}
+    NSInteger type = sender.tag - 100 + 1;
+    if (type == 6) {
+        image = self.image;
+        CIImage *ciImage = [CIImage imageWithCGImage:image.CGImage ];
+        
+        
+        CIFilter *filter = [CIFilter filterWithName:@"CISpotLight"];
+        [filter setValue:ciImage forKey: kCIInputImageKey];
+        
+       
+        [filter setValue:[NSNumber numberWithFloat:10.0] forKey:@"inputBrightness"];
+        [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:@"inputColor"];
+        [filter setValue:[NSNumber numberWithFloat:1.5] forKey:@"inputConcentration"];
+        CIVector *vect = [CIVector vectorWithX:200 Y:200 Z:0];
+        [filter setValue:vect forKey:@"inputLightPointsAt"];
+        
+        vect = [CIVector vectorWithX:400 Y:600 Z:150];
+         [filter setValue:vect forKey:@"inputLightPosition"];
+        
+        
+//        [filter setValue:[NSNumber numberWithFloat:200] forKey:@"inputWidth"];
 
-- (void)photoChange2 {
-    UIImage *image = nil;
-    image = [ImageFilterUtil grayscale:self.image type:2];
-    self.imageView.image = image;
-    
+        
+        
+        
+//        [filter setValue:[NSNumber numberWithFloat:10] forKey:@"inputRadius"];
+//        [filter setValue:[NSNumber numberWithFloat:1.0] forKey:@"inputSharpness"];
+        
+        
+        
+//
+//        [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:kCIInputColorKey];
+//        [filter setValue:@1.0 forKey:kCIInputIntensityKey];
+//
+        CIContext *context = [CIContext contextWithOptions:nil];
+        CIImage *outPutImage = filter.outputImage;
+        CGImageRef newCIImage = [context createCGImage:outPutImage fromRect: outPutImage.extent];
+        UIImage *resultImage = [UIImage imageWithCGImage:newCIImage scale:2.0 orientation:self.image.imageOrientation];
+        CGImageRelease(newCIImage);
+        self.imageView.image = resultImage;
+    }else if(type != self.btnArray.count) {
+        image = [ImageFilterUtil grayscale:self.image type:sender.tag - 100 + 1];
+        self.imageView.image = image;
+    }else {
+         self.imageView.image = self.image;
+    }
 }
+/*
+ /**
+ 
+ CIFilter *filter = [CIFilter filterWithName:@"CIColorControls"] ;
+ [filter setValue:ciImage forKey: kCIInputImageKey];
+ [filter setValue:[NSNumber numberWithFloat:0.3] forKey: @"inputSaturation"];
+ [filter setValue:[NSNumber numberWithFloat:0.3] forKey:@"inputBrightness"];
+ [filter setValue:[NSNumber numberWithFloat:2] forKey:@"inputContrast"];
+ */
 
 
-- (void)photoChange3 {
-    UIImage *image = nil;
-    image = [ImageFilterUtil grayscale:self.image type:3];
-    self.imageView.image = image;
-    
-}
+/*
+ //黑白处理
+ CIFilter *filter = [CIFilter filterWithName:@"CIColorMonochrome"];
+ [filter setValue:ciImage forKey: kCIInputImageKey];
+ [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:kCIInputColorKey];
+ [filter setValue:@1.0 forKey:kCIInputIntensityKey];
+ 
+ */
 
-- (void)photoChange4 {
-    UIImage *image = nil;
-    image = [ImageFilterUtil grayscale:self.image type:4];
-    self.imageView.image = image;
-    
-}
+/**
+ 降噪音
+ CIFilter *filter = [CIFilter filterWithName:@"CINoiseReduction"];
+ [filter setValue:ciImage forKey: kCIInputImageKey];
+ [filter setValue:[NSNumber numberWithFloat:0.02] forKey:@"inputNoiseLevel"];
+ [filter setValue:[NSNumber numberWithFloat:0.4] forKey:@"inputSharpness"];
+ 
+ */
+
+
+/**
+ 清楚明亮
+ CIFilter *filter = [CIFilter filterWithName:@"CISharpenLuminance"];
+ [filter setValue:ciImage forKey: kCIInputImageKey];
+ //        [filter setValue:@"CICategoryStillImage" forKey:@"CIAttributeFilterCategories"];
+ [filter setValue:[NSNumber numberWithFloat:10] forKey:@"inputRadius"];
+ [filter setValue:[NSNumber numberWithFloat:1.0] forKey:@"inputSharpness"];
+ */
+
+/**
+ 
+ 条纹发电机
+ CIFilter *filter = [CIFilter filterWithName:@"CIStripesGenerator"];
+ [filter setValue:ciImage forKey: kCIInputImageKey];
+ 
+ CIVector *vol = [CIVector vectorWithX:150 Y:150];
+ [filter setValue:vol forKey:@"inputCenter"];
+ [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:@"inputColor0"];
+ [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:@"inputColor1"];
+ [filter setValue:[NSNumber numberWithFloat:1.0] forKey:@"inputSharpness"];
+ [filter setValue:[NSNumber numberWithFloat:200] forKey:@"inputWidth"];
+ 
+ */
+
+
+
 
 
 - (void)phontoChangeBack {
-    
+    if(!self.image) {
+        return;
+    }
     self.imageView.image = self.image;
-    
-    
-    
-    
+ 
 }
 
 
@@ -159,7 +225,13 @@
 }
 
 - (void)choosePic {
-    
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.delegate = self;
+    //    imagePickerController.allowsEditing = YES;
+    imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [self presentViewController:imagePickerController animated:true completion:^{
+        
+    }];
     
 }
 
