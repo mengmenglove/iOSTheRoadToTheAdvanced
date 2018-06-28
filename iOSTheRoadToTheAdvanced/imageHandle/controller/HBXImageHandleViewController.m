@@ -83,18 +83,34 @@
         CIImage *ciImage = [CIImage imageWithCGImage:image.CGImage ];
         
         
-        CIFilter *filter = [CIFilter filterWithName:@"CISpotLight"];
+        CIFilter *filter = [CIFilter filterWithName:@"CIConvolution3X3"];
         [filter setValue:ciImage forKey: kCIInputImageKey];
         
-       
-        [filter setValue:[NSNumber numberWithFloat:10.0] forKey:@"inputBrightness"];
-        [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:@"inputColor"];
-        [filter setValue:[NSNumber numberWithFloat:1.5] forKey:@"inputConcentration"];
-        CIVector *vect = [CIVector vectorWithX:200 Y:200 Z:0];
-        [filter setValue:vect forKey:@"inputLightPointsAt"];
+        [filter setValue:[NSNumber numberWithInteger:0] forKey:@"inputBias"];
+        CGFloat weights[] = {0,-1,0,
+            -1,5,-1,
+            0,-1,0};
         
-        vect = [CIVector vectorWithX:400 Y:600 Z:150];
-         [filter setValue:vect forKey:@"inputLightPosition"];
+//        CGFloat weights[] = {0.5,0,0,0,0,
+//                                         0,0,0,0,0,
+//                                         0,0,0,0,0,
+//                                         0,0,0,0,0,
+//            0,0,0,0,0.5};
+        CIVector *inputWeights = [CIVector vectorWithValues:weights count:9];
+        
+        
+        [filter setValue:inputWeights forKey:@"inputWeights"];
+        
+        
+//
+//        [filter setValue:[NSNumber numberWithFloat:10.0] forKey:@"inputBrightness"];
+//        [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:@"inputColor"];
+//        [filter setValue:[NSNumber numberWithFloat:1.5] forKey:@"inputConcentration"];
+//        CIVector *vect = [CIVector vectorWithX:200 Y:200 Z:0];
+//        [filter setValue:vect forKey:@"inputLightPointsAt"];
+//
+//        vect = [CIVector vectorWithX:400 Y:600 Z:150];
+//         [filter setValue:vect forKey:@"inputLightPosition"];
         
         
 //        [filter setValue:[NSNumber numberWithFloat:200] forKey:@"inputWidth"];
