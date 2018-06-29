@@ -83,50 +83,11 @@
         CIImage *ciImage = [CIImage imageWithCGImage:image.CGImage ];
         
         
-        CIFilter *filter = [CIFilter filterWithName:@"CIConvolution3X3"];
+        CIFilter *filter = [CIFilter filterWithName:@"CIColorMonochrome"];
         [filter setValue:ciImage forKey: kCIInputImageKey];
-        
-        [filter setValue:[NSNumber numberWithInteger:0] forKey:@"inputBias"];
-        CGFloat weights[] = {0,-1,0,
-            -1,5,-1,
-            0,-1,0};
-        
-//        CGFloat weights[] = {0.5,0,0,0,0,
-//                                         0,0,0,0,0,
-//                                         0,0,0,0,0,
-//                                         0,0,0,0,0,
-//            0,0,0,0,0.5};
-        CIVector *inputWeights = [CIVector vectorWithValues:weights count:9];
-        
-        
-        [filter setValue:inputWeights forKey:@"inputWeights"];
-        
-        
-//
-//        [filter setValue:[NSNumber numberWithFloat:10.0] forKey:@"inputBrightness"];
-//        [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:@"inputColor"];
-//        [filter setValue:[NSNumber numberWithFloat:1.5] forKey:@"inputConcentration"];
-//        CIVector *vect = [CIVector vectorWithX:200 Y:200 Z:0];
-//        [filter setValue:vect forKey:@"inputLightPointsAt"];
-//
-//        vect = [CIVector vectorWithX:400 Y:600 Z:150];
-//         [filter setValue:vect forKey:@"inputLightPosition"];
-        
-        
-//        [filter setValue:[NSNumber numberWithFloat:200] forKey:@"inputWidth"];
+        [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:kCIInputColorKey];
+        [filter setValue:@1.0 forKey:kCIInputIntensityKey];
 
-        
-        
-        
-//        [filter setValue:[NSNumber numberWithFloat:10] forKey:@"inputRadius"];
-//        [filter setValue:[NSNumber numberWithFloat:1.0] forKey:@"inputSharpness"];
-        
-        
-        
-//
-//        [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:kCIInputColorKey];
-//        [filter setValue:@1.0 forKey:kCIInputIntensityKey];
-//
         CIContext *context = [CIContext contextWithOptions:nil];
         CIImage *outPutImage = filter.outputImage;
         CGImageRef newCIImage = [context createCGImage:outPutImage fromRect: outPutImage.extent];
@@ -191,6 +152,28 @@
  [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:@"inputColor1"];
  [filter setValue:[NSNumber numberWithFloat:1.0] forKey:@"inputSharpness"];
  [filter setValue:[NSNumber numberWithFloat:200] forKey:@"inputWidth"];
+ 
+ */
+
+
+/*
+ 
+ 锐化效果
+ CIFilter *filter = [CIFilter filterWithName:@"CIConvolution3X3"];
+ [filter setValue:ciImage forKey: kCIInputImageKey];
+ 
+ [filter setValue:[NSNumber numberWithInteger:0] forKey:@"inputBias"];
+ CGFloat weights[] = {0,-1,0,
+ -1,5,-1,
+ 0,-1,0};
+ 
+ //        CGFloat weights[] = {0.5,0,0,0,0,
+ //                                         0,0,0,0,0,
+ //                                         0,0,0,0,0,
+ //                                         0,0,0,0,0,
+ //            0,0,0,0,0.5};
+ CIVector *inputWeights = [CIVector vectorWithValues:weights count:9];
+ [filter setValue:inputWeights forKey:@"inputWeights"];
  
  */
 

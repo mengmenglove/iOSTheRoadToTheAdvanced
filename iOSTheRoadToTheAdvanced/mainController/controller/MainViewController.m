@@ -61,9 +61,14 @@
     
     NSDictionary *dict = self.dataArray[indexPath.row];
     if (dict) {
-        if (dict && dict[@"target"]) {
+        if (dict && dict[@"target"]) {            
+            NSString *pushType = dict[@"type"];
             UIViewController *vc = [[NSClassFromString(dict[@"target"]) alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
+            if (pushType && [pushType isEqualToString:@"2"]) {
+                 [self presentViewController:vc animated:YES completion:nil];
+            }else {
+                 [self.navigationController pushViewController:vc animated:YES];
+            }
         }
     }    
 }

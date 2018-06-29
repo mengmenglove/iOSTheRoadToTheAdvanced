@@ -1,6 +1,22 @@
 {
     "name": "BeJson",
     "links": [
+              
+              {
+              "name": "自定义相机1",
+              "image": "image",
+              "target": "CustomDefineCameraViewController",
+              "type": "2",
+              },
+              
+              
+              {
+              "name": "自定义相机2",
+              "image": "image",
+              "target": "UserDefinePickerViewController"
+              
+              },
+              
               {
               "name": "图片过滤功能",
               "image": "image",
