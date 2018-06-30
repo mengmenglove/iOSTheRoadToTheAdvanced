@@ -45,7 +45,12 @@
     imageView.frame = CGRectMake((screen_width - 300)/2, 120, 300, 300);
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:imageView];
+    UIPanGestureRecognizer *panGuest = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGuest:)];
     self.imageView = imageView;
+    [self.imageView setUserInteractionEnabled:YES];
+    [self.imageView addGestureRecognizer:panGuest];
+    
+   
     
     
     self.btnArray = @[@"黑白", @"黑白2",@"黑白3",@"黑白4",@"黑白5",@"黑白2",@"原色"];
@@ -101,6 +106,35 @@
          self.imageView.image = self.image;
     }
 }
+
+- (void)panGuest:(UIPanGestureRecognizer *)sender {
+    
+    //获取当前点
+    CGPoint moveP = [sender locationInView:self.imageView];
+    
+    //获取擦除的矩形范围
+    CGFloat wh = 30;
+    CGFloat x = moveP.x - wh *0.5;
+    CGFloat y = moveP.y - wh *0.5;
+    
+    CGRect rect = CGRectMake(x, y, wh, wh);
+    
+    //创建位图上下文
+    UIGraphicsBeginImageContextWithOptions(self.imageView.bounds.size, NO, 0);
+    
+    //获取当前上下文
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    //把控件上的内容渲染到上下文
+    [self.imageView.layer renderInContext:ctx];
+    //擦除图片
+    CGContextClearRect(ctx, rect);
+    
+    //获取图片
+    self.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+    //关闭上下文
+    UIGraphicsEndImageContext();
+}
+
 /*
  /**
  

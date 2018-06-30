@@ -89,10 +89,20 @@
         UIImage *image = nil;
         image = self.image;
         CIImage *ciImage = [CIImage imageWithCGImage:image.CGImage ];
-        CIFilter *filter = [CIFilter filterWithName:@"CIColorMonochrome"];
+        
+        
+//        CIFilter *filter = [CIFilter filterWithName:@"CIColorMonochrome"];
+//        [filter setValue:ciImage forKey: kCIInputImageKey];
+//        [filter setValue:[CIColor colorWithRed:0.6 green:0.45 blue:0.31 alpha:1.0] forKey:kCIInputColorKey];
+//        [filter setValue:@1.0 forKey:kCIInputIntensityKey];
+
+        CIFilter *filter = [CIFilter filterWithName:@"CIColorPolynomial"];
         [filter setValue:ciImage forKey: kCIInputImageKey];
-        [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:kCIInputColorKey];
+        [filter setValue:[CIColor colorWithRed:0.6 green:0.45 blue:0.31 alpha:1.0] forKey:kCIInputColorKey];
         [filter setValue:@1.0 forKey:kCIInputIntensityKey];
+        
+        
+        
         CIContext *context = [CIContext contextWithOptions:nil];
         CIImage *outPutImage = filter.outputImage;
         CGImageRef newCIImage = [context createCGImage:outPutImage fromRect: outPutImage.extent];
