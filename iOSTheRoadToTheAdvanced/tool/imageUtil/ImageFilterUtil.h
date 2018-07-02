@@ -17,4 +17,6 @@
 
 + (UIImage*)grayscale:(UIImage*)anImage type:(int)type;
 
++ (UIImage*)grayHandlescale:(UIImage*)anImage type:(int)type;
+
 @end

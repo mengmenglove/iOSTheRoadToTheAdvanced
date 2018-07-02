@@ -83,24 +83,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSTheRoadToTheAdvanced/DefineImagePivker/controller/ImageChangeViewController.m"
-            timestampString = "552220094.570619"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-initWithImage:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "iOSTheRoadToTheAdvanced/imageHandle/controller/HBXImageHandleViewController.m"
-            timestampString = "552220094.571723"
+            timestampString = "552221829.901987"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "112"
@@ -115,13 +99,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSTheRoadToTheAdvanced/DefineImagePivker/controller/CustomDefineCameraViewController.m"
-            timestampString = "552220094.57187"
+            filePath = "iOSTheRoadToTheAdvanced/tool/imageUtil/ImageFilterUtil.m"
+            timestampString = "552221829.902074"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
-            landmarkName = "-viewOrientationChange"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "+grayscale:type:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

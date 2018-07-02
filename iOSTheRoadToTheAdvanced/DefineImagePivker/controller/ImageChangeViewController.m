@@ -10,8 +10,7 @@
 #import "ViewUtils.h"
 #define  screen_width [UIScreen mainScreen].bounds.size.width
 #define  screen_height [UIScreen mainScreen].bounds.size.height
-
-
+#import "ImageFilterUtil.h"
 
 @interface ImageChangeViewController ()
 
@@ -36,21 +35,7 @@
 
 - (instancetype)initWithImage:(UIImage *)image {
     if (self = [super init]) {
-        CIImage *ciImage = [CIImage imageWithCGImage:image.CGImage ];
-        CIFilter *filter = [CIFilter filterWithName:@"CIConvolution3X3"];
-        [filter setValue:ciImage forKey: kCIInputImageKey];
-        [filter setValue:[NSNumber numberWithInteger:0] forKey:@"inputBias"];
-        CGFloat weights[] = {0,-1,0,
-            -1,5,-1,
-            0,-1,0};
-        CIVector *inputWeights = [CIVector vectorWithValues:weights count:9];
-        [filter setValue:inputWeights forKey:@"inputWeights"];
-        CIContext *context = [CIContext contextWithOptions:nil];
-        CIImage *outPutImage = filter.outputImage;
-        CGImageRef newCIImage = [context createCGImage:outPutImage fromRect: outPutImage.extent];
-        UIImage *resultImage = [UIImage imageWithCGImage:newCIImage scale:2.0 orientation:image.imageOrientation];
-        CGImageRelease(newCIImage);
-        self.image = resultImage;
+        self.image =  [ImageFilterUtil  grayHandlescale:image type:1];;
     }
     return self;
 }

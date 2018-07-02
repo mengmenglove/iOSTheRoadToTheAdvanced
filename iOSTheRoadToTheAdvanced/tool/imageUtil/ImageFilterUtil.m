@@ -110,7 +110,8 @@
             UInt8 brightness;
             switch (type) {
                 case 1:
-                brightness = (77 * red + 28 * green + 151 * blue) / 256;
+                brightness = (77 * red + 28 * green + 151 * blue) /  256;
+                brightness = brightness/3;
                 *(tmp + 0) = brightness;
                 *(tmp + 1) = brightness;
                 *(tmp + 2) = brightness;
@@ -161,6 +162,140 @@
     CFRelease(data);
     
     return effectedImage;
+    
+}
+
+
++ (UIImage*)grayHandlescale:(UIImage*)input type:(int)type {
+    
+    
+    CIImage * inputCIImage = [[CIImage alloc] initWithImage:input];
+    // 1. Create a grayscale filter
+    CIFilter * grayFilter = [CIFilter filterWithName:@"CIColorControls"];
+    [grayFilter setValue:@(0) forKeyPath:@"inputSaturation"];
+    // 2. Create your ghost filter
+    // Use Core Graphics for this
+    UIImage * ghostImage = input;
+    CIImage * ghostCIImage = [[CIImage alloc] initWithImage:ghostImage];
+    // 3. Apply alpha to Ghosty
+    CIFilter * alphaFilter = [CIFilter filterWithName:@"CIColorMatrix"];
+    CIVector * alphaVector = [CIVector vectorWithX:0 Y:0 Z:0.5 W:0];
+    [alphaFilter setValue:alphaVector forKeyPath:@"inputAVector"];
+    // 4. Alpha blend filter
+    CIFilter * blendFilter = [CIFilter filterWithName:@"CISourceAtopCompositing"];
+    // 5. Apply your filters
+    [alphaFilter setValue:ghostCIImage forKeyPath:@"inputImage"];
+    ghostCIImage = [alphaFilter outputImage];
+    [blendFilter setValue:ghostCIImage forKeyPath:@"inputImage"];
+    [blendFilter setValue:inputCIImage forKeyPath:@"inputBackgroundImage"];
+    CIImage * blendOutput = [blendFilter outputImage];
+    [grayFilter setValue:blendOutput forKeyPath:@"inputImage"];
+    CIImage * outputCIImage = [grayFilter outputImage];
+    // 6. Render your output image
+    CIContext * context = [CIContext contextWithOptions:nil];
+    CGImageRef outputCGImage = [context createCGImage:outputCIImage fromRect:[outputCIImage extent]];
+    UIImage * outputImage = [UIImage imageWithCGImage:outputCGImage];
+    CGImageRelease(outputCGImage);
+    return outputImage;
+    
+    
+    
+    
+    
+    
+    /*
+    CGImageRef imageRef = anImage.CGImage;
+    
+    size_t width  = CGImageGetWidth(imageRef);
+    size_t height = CGImageGetHeight(imageRef);
+    
+    size_t bitsPerComponent = CGImageGetBitsPerComponent(imageRef);
+    size_t bitsPerPixel = CGImageGetBitsPerPixel(imageRef);
+    
+    size_t bytesPerRow = CGImageGetBytesPerRow(imageRef);
+    
+    CGColorSpaceRef colorSpace = CGImageGetColorSpace(imageRef);
+    
+    CGBitmapInfo bitmapInfo = CGImageGetBitmapInfo(imageRef);
+    
+    
+    bool shouldInterpolate = CGImageGetShouldInterpolate(imageRef);
+    
+    CGColorRenderingIntent intent = CGImageGetRenderingIntent(imageRef);
+    
+    CGDataProviderRef dataProvider = CGImageGetDataProvider(imageRef);
+    
+    CFDataRef data = CGDataProviderCopyData(dataProvider);
+    
+    UInt8 *buffer = (UInt8*)CFDataGetBytePtr(data);
+    
+    NSUInteger  x, y;
+    for (y = 0; y < height; y++) {
+        for (x = 0; x < width; x++) {
+            UInt8 *tmp;
+            tmp = buffer + y * bytesPerRow + x * 4;
+            
+            UInt8 red,green,blue;
+            red = *(tmp + 0);
+            green = *(tmp + 1);
+            blue = *(tmp + 2);
+            
+            UInt8 brightness;
+            switch (type) {
+                case 1:
+                    brightness = (77 * red + 28 * green + 151 * blue) /  256;
+//                    brightness = brightness/3;
+                    *(tmp + 0) = brightness;
+                    *(tmp + 1) = brightness;
+                    *(tmp + 2) = brightness;
+                    break;
+                case 2:
+                    *(tmp + 0) = red;
+                    *(tmp + 1) = green * 0.7;
+                    *(tmp + 2) = blue * 0.4;
+                    break;
+                case 3:
+                    *(tmp + 0) = 255 - red;
+                    *(tmp + 1) = 255 - green;
+                    *(tmp + 2) = 255 - blue;
+                    break;
+                case 4:
+                    *(tmp + 0) = 0;
+                    *(tmp + 1) = green;
+                    *(tmp + 2) = blue;
+                    break;
+                default:
+                    *(tmp + 0) = red;
+                    *(tmp + 1) = green;
+                    *(tmp + 2) = blue;
+                    break;
+            }
+        }
+    }
+    
+    
+    CFDataRef effectedData = CFDataCreate(NULL, buffer, CFDataGetLength(data));
+    
+    CGDataProviderRef effectedDataProvider = CGDataProviderCreateWithCFData(effectedData);
+    
+    CGImageRef effectedCgImage = CGImageCreate(
+                                               width, height,
+                                               bitsPerComponent, bitsPerPixel, bytesPerRow,
+                                               colorSpace, bitmapInfo, effectedDataProvider,
+                                               NULL, shouldInterpolate, intent);
+    
+    UIImage *effectedImage = [[UIImage alloc] initWithCGImage:effectedCgImage scale:1 orientation:anImage.imageOrientation];
+    
+    CGImageRelease(effectedCgImage);
+    
+    CFRelease(effectedDataProvider);
+    
+    CFRelease(effectedData);
+    
+    CFRelease(data);
+    
+    return effectedImage;
+ */
     
 }
 
