@@ -133,9 +133,18 @@
     return _imageView;
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return NO;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+
 - (UIInterfaceOrientation) preferredInterfaceOrientationForPresentation
 {
-    return UIInterfaceOrientationPortrait;
+    return UIInterfaceOrientationLandscapeRight;
 }
 
 
