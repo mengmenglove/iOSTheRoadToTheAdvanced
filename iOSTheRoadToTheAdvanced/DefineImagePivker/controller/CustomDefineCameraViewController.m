@@ -12,6 +12,12 @@
 #import "ImageChangeViewController.h"
 
 
+#define VIEW_WIDTH [UIScreen mainScreen].bounds.size.width
+
+#define VIEW_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define VIEW_TOOLBARHEIGHT 100
+
 @interface CustomDefineCameraViewController ()
 
 @property (strong, nonatomic) SimpleCamera *camera;
@@ -21,10 +27,20 @@
 @property (strong, nonatomic) UIButton *flashButton;
 @property (nonatomic, strong) UIButton *closeButton;
 @property (strong, nonatomic) UISegmentedControl *segmentedControl;
+@property (nonatomic, strong) UIButton *labiaryBtn;
+@property (nonatomic, strong) UIView *toolBar;
+
+@property (nonatomic, strong) UIImageView *showOrientationsView;
+@property (nonatomic, strong) UIImageView *orientationsView;
 
 @end
 
 @implementation CustomDefineCameraViewController
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,6 +49,7 @@
     self.view.backgroundColor = [UIColor blackColor];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     [self addsubView];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(viewOrientationChange) name:UIDeviceOrientationDidChangeNotification object:nil];
     
 }
 
@@ -47,7 +64,6 @@
     self.camera.fixOrientationAfterCapture = NO;
     __weak typeof(self) weakSelf = self;
     [self.camera setOnDeviceChange:^(SimpleCamera *camera, AVCaptureDevice * device) {
-        
         NSLog(@"Device changed.");
         if([camera isFlashAvailable]) {
             weakSelf.flashButton.hidden = NO;
@@ -88,13 +104,23 @@
     }];
     
     
+    
+    [self.view addSubview:self.toolBar];
+    
+   
+    
     self.closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.closeButton.frame = CGRectMake(20, 20, 40.f, 40.0f);
-    [self.closeButton setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
+    [self.closeButton setImage:[UIImage imageNamed:@"abc_ic_clear_mtrl_alpha"] forState:UIControlStateNormal];
     [self.closeButton addTarget:self action:@selector(cloesVC:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.closeButton];
+    [self.toolBar addSubview:self.closeButton];
     
-
+    self.labiaryBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.labiaryBtn.frame = CGRectMake(20, 20, 40.f, 40.0f);
+    [self.labiaryBtn setImage:[UIImage imageNamed:@"cg_album"] forState:UIControlStateNormal];
+    [self.labiaryBtn addTarget:self action:@selector(cloesVC:) forControlEvents:UIControlEventTouchUpInside];
+    [self.toolBar addSubview:self.labiaryBtn];
+    
     
     self.snapButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.snapButton.frame = CGRectMake(0, 0, 70.0f, 70.0f);
@@ -106,7 +132,7 @@
     self.snapButton.layer.rasterizationScale = [UIScreen mainScreen].scale;
     self.snapButton.layer.shouldRasterize = YES;
     [self.snapButton addTarget:self action:@selector(snapButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.snapButton];
+    [self.toolBar addSubview:self.snapButton];
     
     // button to toggle flash
     self.flashButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -117,21 +143,34 @@
     [self.flashButton addTarget:self action:@selector(flashButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.flashButton];
     
-    if([SimpleCamera isFrontCameraAvailable] ) {
-        self.switchButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        self.switchButton.frame = CGRectMake(0, 0, 29.0f + 20.0f, 22.0f + 20.0f);
-        self.switchButton.tintColor = [UIColor whiteColor];
-        [self.switchButton setImage:[UIImage imageNamed:@"camera-switch.png"] forState:UIControlStateNormal];
-        self.switchButton.imageEdgeInsets = UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f);
-        [self.switchButton addTarget:self action:@selector(switchButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:self.switchButton];
-    }
+//    if([SimpleCamera isFrontCameraAvailable] ) {
+//        self.switchButton = [UIButton buttonWithType:UIButtonTypeSystem];
+//        self.switchButton.frame = CGRectMake(0, 0, 29.0f + 20.0f, 22.0f + 20.0f);
+//        self.switchButton.tintColor = [UIColor whiteColor];
+//        [self.switchButton setImage:[UIImage imageNamed:@"camera-switch.png"] forState:UIControlStateNormal];
+//        self.switchButton.imageEdgeInsets = UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f);
+//        [self.switchButton addTarget:self action:@selector(switchButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+//        [self.view addSubview:self.switchButton];
+//    }
     // Do any additional setup after loading the view.
+    [self.view addSubview:self.showOrientationsView];
+    [self.showOrientationsView addSubview:self.orientationsView];
+    
+}
+- (void)viewOrientationChange {
+    
+    
+    if ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight) {
+        self.showOrientationsView.alpha = 0.0;
+    }else {
+         self.showOrientationsView.alpha = 0.6;
+    }
+    
 }
 
 
 - (void)cloesVC:(UIButton *)sender {
-    [self popoverPresentationController];
+    [self dismissViewControllerAnimated:true completion:nil];
 }
 
 - (void)segmentedControlValueChanged:(UISegmentedControl *)control
@@ -201,7 +240,7 @@
         } else {
             self.segmentedControl.hidden = NO;
             self.flashButton.hidden = NO;
-            self.switchButton.hidden = NO;
+//            self.switchButton.hidden = NO;
             
             self.snapButton.layer.borderColor = [UIColor whiteColor].CGColor;
             self.snapButton.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
@@ -218,18 +257,28 @@
     [super viewWillLayoutSubviews];
     
     self.camera.view.frame = self.view.contentBounds;
+    self.showOrientationsView.frame = self.view.contentBounds;
+    self.orientationsView.center = self.showOrientationsView.center;
     
-    self.snapButton.center = self.view.contentCenter;
-    self.snapButton.bottom = self.view.height - 15.0f;
     
     self.flashButton.center = self.view.contentCenter;
     self.flashButton.top = 5.0f;
     
-    self.switchButton.top = 5.0f;
-    self.switchButton.right = self.view.width - 5.0f;
+//    self.switchButton.top = 5.0f;
+//    self.switchButton.right = self.view.width - 5.0f;
     
-    self.segmentedControl.left = 12.0f;
-    self.segmentedControl.bottom = self.view.height - 35.0f;
+//    self.segmentedControl.left = 12.0f;
+//    self.segmentedControl.bottom = self.view.height - 35.0f;
+    
+    
+    CGFloat width = (VIEW_WIDTH > VIEW_HEIGHT) ? VIEW_WIDTH: VIEW_HEIGHT;
+    CGFloat height = (VIEW_WIDTH > VIEW_HEIGHT) ? VIEW_HEIGHT: VIEW_WIDTH;
+    self.toolBar.frame = CGRectMake(width - VIEW_TOOLBARHEIGHT, 0, VIEW_TOOLBARHEIGHT, height);
+    
+    self.closeButton.origin = CGPointMake((self.toolBar.width - 40)/2, 10);
+    self.labiaryBtn.origin = CGPointMake((self.toolBar.width - 40)/2, self.toolBar.height - 60);
+    self.snapButton.center = self.toolBar.contentCenter;
+    
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -250,5 +299,35 @@
 {
     [super didReceiveMemoryWarning];
 }
+
+- (UIView *)toolBar {
+    if (!_toolBar) {
+        _toolBar = [[UIView alloc] init];
+        _toolBar.backgroundColor = [UIColor blackColor];
+    }
+    return _toolBar;
+}
+
+-  (UIImageView *)showOrientationsView {
+    if (!_showOrientationsView) {
+        _showOrientationsView = [[UIImageView alloc] init];
+        _showOrientationsView.backgroundColor = [UIColor blackColor];
+        _showOrientationsView.alpha = 0.0;
+//        _showOrientationsView.image = [UIImage imageNamed:@"cg_orientation"];
+    }
+    return _showOrientationsView;
+}
+
+- (UIImageView *)orientationsView {
+    
+    if (!_orientationsView) {
+        _orientationsView = [[UIImageView alloc] init];
+        _orientationsView.size = CGSizeMake(150, 150);
+        _orientationsView.contentMode = UIViewContentModeScaleAspectFit;
+        _orientationsView.image = [UIImage imageNamed:@"cg_orientation"];
+    }
+    return _orientationsView;
+}
+
 
 @end

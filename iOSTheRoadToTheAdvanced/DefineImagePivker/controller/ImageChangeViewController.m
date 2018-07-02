@@ -17,6 +17,11 @@
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) UIButton *closeButton;
 @property (nonatomic, strong) NSArray *btnArray;
+
+@property (nonatomic, strong) UIView *nagationBar;
+@property (nonatomic, strong) UIView *toolBar;
+
+
 @end
 
 @implementation ImageChangeViewController
@@ -45,16 +50,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+}
+
+- (void)creatSubView {
+    
     [self.view addSubview:self.imageView];
     self.imageView.frame = self.view.bounds;
     self.imageView.image = self.image;
-    
-    
     self.closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.closeButton.frame = CGRectMake(20, 20, 40.f, 40.0f);
-    [self.closeButton setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
+    [self.closeButton setImage:[UIImage imageNamed:@"abc_ic_clear_mtrl_alpha"] forState:UIControlStateNormal];
     [self.closeButton addTarget:self action:@selector(cloesVC:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.closeButton];
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     self.btnArray = @[@"黑白",@"原色"];
@@ -79,7 +98,9 @@
         [btn addTarget:self action:@selector(photoChange:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:btn];
     }
+    
 }
+
 
 - (void)photoChange:(UIButton *)sender {
     UIImage *image = nil;
@@ -98,7 +119,7 @@
 
         CIFilter *filter = [CIFilter filterWithName:@"CIColorPolynomial"];
         [filter setValue:ciImage forKey: kCIInputImageKey];
-        [filter setValue:[CIColor colorWithRed:0.6 green:0.45 blue:0.31 alpha:1.0] forKey:kCIInputColorKey];
+        [filter setValue:[CIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] forKey:kCIInputColorKey];
         [filter setValue:@1.0 forKey:kCIInputIntensityKey];
         
         
@@ -145,6 +166,20 @@
 - (UIInterfaceOrientation) preferredInterfaceOrientationForPresentation
 {
     return UIInterfaceOrientationLandscapeRight;
+}
+
+- (UIView *)nagationBar {
+    if (!_nagationBar) {
+        _nagationBar = [[UIView alloc] init];
+    }
+    return _nagationBar;
+}
+
+- (UIView *)toolBar {
+    if (!_toolBar) {
+        _toolBar = [[UIView alloc] init];
+    }
+    return _toolBar;
 }
 
 
