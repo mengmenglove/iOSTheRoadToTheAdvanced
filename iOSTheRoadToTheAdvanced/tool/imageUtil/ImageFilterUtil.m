@@ -299,6 +299,49 @@
     
 }
 
++ (UIImage *)changePicColorPartial:(UIImage *)image{
+    //1.get the image into your data buffer
+    CGImageRef imageRef = [image CGImage];
+    NSUInteger imageW = CGImageGetWidth(imageRef);
+    NSUInteger imageH = CGImageGetHeight(imageRef);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    NSUInteger bytesPerPixel = 4;//一个像素四个分量，即ARGB
+    NSUInteger bytesPerRow = bytesPerPixel * imageW;
+    unsigned char *rawData = (unsigned char *)calloc(imageH*imageW*bytesPerPixel, sizeof(unsigned char));
+    NSUInteger bitsPerComponent = 8;//每个分量8个字节
+    CGContextRef context = CGBitmapContextCreate(rawData, imageW, imageH, bitsPerComponent, bytesPerRow, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGContextDrawImage(context, CGRectMake(0, 0, imageW, imageH), imageRef);
+    
+    //2.Now your rawData contains the image data int the RGBA8888 pixel format
+    for (int y = 0; y < imageH; y++) {
+        for (int x = 0; x < imageW; x++) {
+            NSUInteger byteIndex = bytesPerRow*y + bytesPerPixel*x;
+            //rawData一维数组存储方式RGBA(第一个像素)RGBA(第二个像素)
+            NSUInteger red = rawData[byteIndex];
+            NSUInteger green = rawData[byteIndex+1];
+            NSUInteger blue = rawData[byteIndex+2];
+            NSUInteger alpha = rawData[byteIndex+3];
+             if(red+green+blue == 255*3 && (alpha/255.0 >= 0.5)){//白色部分
+                rawData[byteIndex] = 255;
+                rawData[byteIndex+1] = 255;
+                rawData[byteIndex+2] = 255;
+                rawData[byteIndex+3] = 255;
+             }else if (red+green+blue == 0 && (alpha/255.0 >= 0.5)) {//黑色部分
+                 rawData[byteIndex] = 0;
+                 rawData[byteIndex+1] = 0;
+                 rawData[byteIndex+2] = 0;
+                 rawData[byteIndex+3] = 0;
+             }
+        }
+    }
+    imageRef = CGBitmapContextCreateImage(context);
+    CGContextRelease(context);
+    CGColorSpaceRelease(colorSpace);
+    free(rawData);
+    return [UIImage imageWithCGImage:imageRef scale:1.0 orientation:image.imageOrientation];
+}
+
+
 
 
 @end

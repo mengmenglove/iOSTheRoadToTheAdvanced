@@ -15,7 +15,13 @@ typedef NS_ENUM(NSInteger, buttonActionType) {
     buttonActionTypeRemoveRed,
     buttonActionTypeRemoveBlue,
     buttonActionTypeReduceNoice,
-    buttonActionTypeSuccess,
+    buttonActionTypeColorSuccess,
+    buttonActionTypeRemoveContentSmall,
+    buttonActionTypeRemoveContentMid,
+    buttonActionTypeRemoveContentLarge,
+    buttonActionTypeRemoveContentRect,
+    buttonActionTypeDrawSuccess,
+    
 };
 
 
@@ -32,6 +38,12 @@ typedef NS_ENUM(NSInteger, buttonActionType) {
 @property (nonatomic, assign) int type;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *icon;
+
+@property (nonatomic, strong) UIColor *iconColor;
+@property (nonatomic, strong) UIColor *iconSelectedColor;
+
+@property (nonatomic, assign) CGSize btnSize;
+
 
 + (ButtonModel *)initWithTitle:(NSString *)title icon:(NSString *)icon;
 

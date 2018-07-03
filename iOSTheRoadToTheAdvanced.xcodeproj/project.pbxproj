@@ -93,6 +93,8 @@
 		81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F51FEE8B5C0048D4B3 /* Person.m */; };
 		81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F81FEE8DE40048D4B3 /* Dog.m */; };
 		81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */; };
+		81DB9C7D20EB17E700B9F860 /* TKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB9C7C20EB17E700B9F860 /* TKImageView.m */; };
+		81DB9C8020EB2CE200B9F860 /* ZJDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB9C7F20EB2CE200B9F860 /* ZJDrawTool.m */; };
 		81E020DB1FEB98E9009709AA /* controllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 81E020DA1FEB98E9009709AA /* controllerConfig.json */; };
 		81E020DE1FEB9C99009709AA /* MENU.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 81E020DD1FEB9C99009709AA /* MENU.JSON */; };
 		81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E020E11FEC9FAE009709AA /* ThreadViewController.m */; };
@@ -278,6 +280,10 @@
 		81B5A2F81FEE8DE40048D4B3 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		81B5A2FA1FEE918B0048D4B3 /* NSObject+BaoXianKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BaoXianKVC.h"; sourceTree = "<group>"; };
 		81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BaoXianKVC.m"; sourceTree = "<group>"; };
+		81DB9C7B20EB17E700B9F860 /* TKImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKImageView.h; sourceTree = "<group>"; };
+		81DB9C7C20EB17E700B9F860 /* TKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKImageView.m; sourceTree = "<group>"; };
+		81DB9C7E20EB2CE200B9F860 /* ZJDrawTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJDrawTool.h; sourceTree = "<group>"; };
+		81DB9C7F20EB2CE200B9F860 /* ZJDrawTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJDrawTool.m; sourceTree = "<group>"; };
 		81E020DA1FEB98E9009709AA /* controllerConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = controllerConfig.json; sourceTree = "<group>"; };
 		81E020DD1FEB9C99009709AA /* MENU.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MENU.JSON; sourceTree = "<group>"; };
 		81E020E01FEC9FAE009709AA /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
@@ -622,6 +628,8 @@
 				8144D59C20E630F900263DF9 /* SimpleCamera+Helper.m */,
 				8144D59E20E6312800263DF9 /* UIImage+fixOrientation.h */,
 				8144D59F20E6312800263DF9 /* UIImage+fixOrientation.m */,
+				81DB9C7E20EB2CE200B9F860 /* ZJDrawTool.h */,
+				81DB9C7F20EB2CE200B9F860 /* ZJDrawTool.m */,
 			);
 			path = mode;
 			sourceTree = "<group>";
@@ -642,6 +650,8 @@
 		8144D58B20E62D7500263DF9 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				81DB9C7B20EB17E700B9F860 /* TKImageView.h */,
+				81DB9C7C20EB17E700B9F860 /* TKImageView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1152,11 +1162,13 @@
 				8142D8F120DAB1AB00C2E1A5 /* SDImageCache.m in Sources */,
 				816885952051102700932943 /* AbostrctStargeteMessage.m in Sources */,
 				8142D8F520DAB1AB00C2E1A5 /* UIImageView+WebCache.m in Sources */,
+				81DB9C7D20EB17E700B9F860 /* TKImageView.m in Sources */,
 				8142D8EA20DAB1AB00C2E1A5 /* UIImage+MultiFormat.m in Sources */,
 				81FD9E31206D3E6B00DC3DC0 /* HW3DBannerView.m in Sources */,
 				8142D85020DAB06200C2E1A5 /* ZJImageSynthesusUtil.m in Sources */,
 				81FD9E40206D40C500DC3DC0 /* LableView.m in Sources */,
 				8142D8E320DAB1AB00C2E1A5 /* SDWebImageDecoder.m in Sources */,
+				81DB9C8020EB2CE200B9F860 /* ZJDrawTool.m in Sources */,
 				8136708B20E4C2DD009A42A7 /* HBXImageHandleViewController.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
 				8142D8E920DAB1AB00C2E1A5 /* UIImage+GIF.m in Sources */,
@@ -1345,6 +1357,7 @@
 				PROVISIONING_PROFILE = "dc443654-4022-46ad-97c2-2c8e197218d4";
 				PROVISIONING_PROFILE_SPECIFIER = wild_develop;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -1363,6 +1376,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
