@@ -1,93 +1,79 @@
-{
-    "name": "BeJson",
-    "links": [
-              
-              {
-              "name": "自定义相机1",
-              "image": "image",
-              "target": "CustomDefineCameraViewController",
-              "type": "2",
-              },
-              
-              
-              {
-              "name": "自定义相机2",
-              "image": "image",
-              "target": "UserDefinePickerViewController"
-              
-              },
-              
-              {
-              "name": "图片过滤功能",
-              "image": "image",
-              "target": "HBXImageHandleViewController"
-              
-              },
-              
-              {
-              "name": "runLoop",
-              "image": "image",
-              "target": "RunLoopViewController"
-        
-              },
-              {
-              "name": "thread",
-              "image": "image",
-              "target": "ThreadViewController"
-              },
-              {
-              "name": "KvcAndKvo",
-              "image": "image",
-              "target": "KVCAndKVOViewController"
-              },
-              {
-              "name": "KvcAndKvo",
-              "image": "image",
-              "target": "RunViewController"
-              },
-              {
-              "name": "socket",
-              "image": "image",
-              "target": "SocketViewController"
-              },
-              {
-              "name": "协议聚合模式",
-              "image": "image",
-              "target": "BuilderViewController"
-              },
-              {
-              "name": "CollectSilderViewController",
-              "image": "image",
-              "target": "CollectSilderViewController"
-              },
-              {
-              "name": "CollectTranFromViewController",
-              "image": "image",
-              "target": "CollectTranFromViewController"
-              },
-              {
-              "name": "TrScrollViewController",
-              "image": "image",
-              "target": "TrScrollViewController"
-              },
-              {
-              "name": "ScrollViewOneViewController",
-              "image": "image",
-              "target": "ScrollViewOneViewController"
-              },
-              {
-              "name": "图片合成",
-              "image": "image",
-              "target": "UIImageSynthesisViewController"
-              },
-              
-              {
-              "name": "工具栏demo集合",
-              "image": "image",
-              "target": "ToolViewController"
-              },
-              
-              
-              ]
+{ "links": [{ "title" : "自定义相机",
+                "data":[
+                      {
+                      "name": "自定义相机1",
+                      "image": "image",
+                      "target": "CustomDefineCameraViewController",
+                      "type": "2",
+                      },                      {
+                      "name": "自定义相机2",
+                      "image": "image",
+                      "target": "UserDefinePickerViewController"
+                      },{
+                      "name": "图片过滤功能",
+                      "image": "image",
+                      "target": "HBXImageHandleViewController"
+                      },                      {
+                      "name": "runLoop",
+                      "image": "image",
+                      "target": "RunLoopViewController"
+                      },                    {
+                      "name": "thread",
+                      "image": "image",
+                      "target": "ThreadViewController"
+                      },                      {
+                      "name": "KvcAndKvo",
+                      "image": "image",
+                      "target": "KVCAndKVOViewController"
+                      },
+                      {
+                      "name": "KvcAndKvo",
+                      "image": "image",
+                      "target": "RunViewController"
+                      },
+                      {
+                      "name": "socket",
+                      "image": "image",
+                      "target": "SocketViewController"
+                      },
+                      {
+                      "name": "协议聚合模式",
+                      "image": "image",
+                      "target": "BuilderViewController"
+                      },
+                      {
+                      "name": "CollectSilderViewController",
+                      "image": "image",
+                      "target": "CollectSilderViewController"
+                      },
+                      {
+                      "name": "CollectTranFromViewController",
+                      "image": "image",
+                      "target": "CollectTranFromViewController"
+                      },
+                      {
+                      "name": "TrScrollViewController",
+                      "image": "image",
+                      "target": "TrScrollViewController"
+                      },
+                      {
+                      "name": "ScrollViewOneViewController",
+                      "image": "image",
+                      "target": "ScrollViewOneViewController"
+                      },
+                      {
+                      "name": "图片合成",
+                      "image": "image",
+                      "target": "UIImageSynthesisViewController"
+                      },
+                      
+                      {
+                      "name": "工具栏demo集合",
+                      "image": "image",
+                      "target": "ToolViewController"
+                      },
+                      ]
+                },
+            ]
     
 }

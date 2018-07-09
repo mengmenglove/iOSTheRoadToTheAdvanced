@@ -93,6 +93,7 @@
 		81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F51FEE8B5C0048D4B3 /* Person.m */; };
 		81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F81FEE8DE40048D4B3 /* Dog.m */; };
 		81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */; };
+		81BF2A4E20F391CB00144EB4 /* MainSubViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A4D20F391CB00144EB4 /* MainSubViewViewController.m */; };
 		81DB9C7D20EB17E700B9F860 /* TKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB9C7C20EB17E700B9F860 /* TKImageView.m */; };
 		81DB9C8020EB2CE200B9F860 /* ZJDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB9C7F20EB2CE200B9F860 /* ZJDrawTool.m */; };
 		81DB9C8520EC6DAD00B9F860 /* showSuccessImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB9C8420EC6DAD00B9F860 /* showSuccessImageViewController.m */; };
@@ -290,6 +291,8 @@
 		81B5A2F81FEE8DE40048D4B3 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		81B5A2FA1FEE918B0048D4B3 /* NSObject+BaoXianKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BaoXianKVC.h"; sourceTree = "<group>"; };
 		81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BaoXianKVC.m"; sourceTree = "<group>"; };
+		81BF2A4C20F391CB00144EB4 /* MainSubViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSubViewViewController.h; sourceTree = "<group>"; };
+		81BF2A4D20F391CB00144EB4 /* MainSubViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSubViewViewController.m; sourceTree = "<group>"; };
 		81DB9C7B20EB17E700B9F860 /* TKImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKImageView.h; sourceTree = "<group>"; };
 		81DB9C7C20EB17E700B9F860 /* TKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKImageView.m; sourceTree = "<group>"; };
 		81DB9C7E20EB2CE200B9F860 /* ZJDrawTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJDrawTool.h; sourceTree = "<group>"; };
@@ -828,6 +831,8 @@
 			children = (
 				813743E31FEB5D4600857CFD /* MainViewController.h */,
 				813743E41FEB5D4600857CFD /* MainViewController.m */,
+				81BF2A4C20F391CB00144EB4 /* MainSubViewViewController.h */,
+				81BF2A4D20F391CB00144EB4 /* MainSubViewViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1262,6 +1267,7 @@
 				8144D5A720E632B200263DF9 /* ViewUtils.m in Sources */,
 				81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */,
 				8122E1AE209AFAE70087BF8A /* UIImageFilterViewController.m in Sources */,
+				81BF2A4E20F391CB00144EB4 /* MainSubViewViewController.m in Sources */,
 				8122E1A3209AE8F10087BF8A /* ImageUtil.m in Sources */,
 				81FD9DDC206D3D2200DC3DC0 /* CircleLayout.m in Sources */,
 				81FD9E41206D40C500DC3DC0 /* textView.m in Sources */,
