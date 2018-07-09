@@ -12,6 +12,8 @@
 
 typedef NS_ENUM(NSInteger, buttonActionType) {
     buttonActionTypeClose,
+    buttonActionTypeOrigin,
+    buttonActionTypeNormal,
     buttonActionTypeRemoveRed,
     buttonActionTypeRemoveBlue,
     buttonActionTypeReduceNoice,
@@ -24,10 +26,22 @@ typedef NS_ENUM(NSInteger, buttonActionType) {
     
 };
 
+typedef NS_ENUM(NSInteger, colorRange) {
+    colorRangeNoRedGreen = 5,
+    colorRangeNormal = 10,
+    colorRangeReleaseVoice = 15,
+};
+
+typedef NS_ENUM(NSInteger, ImageEditType) {
+    ImageEditTypeColor = 1,
+    ImageEditTypeElement = 2,
+    ImageEditTypeUnkown = 3,
+};
 
 @interface ImageChangeViewController : UIViewController
 
 - (instancetype)initWithImage:(UIImage *)image;
+
 
 @end
 

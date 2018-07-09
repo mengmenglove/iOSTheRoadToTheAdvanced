@@ -342,6 +342,49 @@
 }
 
 
++ (UIImage *)removeRedGreen:(UIImage *)image {
+    //1.get the image into your data buffer
+    CGImageRef imageRef = [image CGImage];
+    NSUInteger imageW = CGImageGetWidth(imageRef);
+    NSUInteger imageH = CGImageGetHeight(imageRef);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    NSUInteger bytesPerPixel = 4;//一个像素四个分量，即ARGB
+    NSUInteger bytesPerRow = bytesPerPixel * imageW;
+    unsigned char *rawData = (unsigned char *)calloc(imageH*imageW*bytesPerPixel, sizeof(unsigned char));
+    NSUInteger bitsPerComponent = 8;//每个分量8个字节
+    CGContextRef context = CGBitmapContextCreate(rawData, imageW, imageH, bitsPerComponent, bytesPerRow, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGContextDrawImage(context, CGRectMake(0, 0, imageW, imageH), imageRef);
+    
+    //2.Now your rawData contains the image data int the RGBA8888 pixel format
+    for (int y = 0; y < imageH; y++) {
+        for (int x = 0; x < imageW; x++) {
+            NSUInteger byteIndex = bytesPerRow*y + bytesPerPixel*x;
+            //rawData一维数组存储方式RGBA(第一个像素)RGBA(第二个像素)
+            NSUInteger red = rawData[byteIndex];
+            NSUInteger green = rawData[byteIndex+1];
+            NSUInteger blue = rawData[byteIndex+2];
+            NSUInteger alpha = rawData[byteIndex+3];
+           
+            if ((green < 210) && (((red >= 100) && (red > MAX(green, blue)) && (red > green + 15)) || ((red < 100) && (red > MAX(green, blue)) && (red > green + 30)))) {
+                  rawData[byteIndex] = 1;
+            }else {
+                
+                if ((MAX(MAX(green, blue), red) < 150) && (MAX(MAX(green, blue), red) - MIN(MIN(green, blue), red) < 20)) {
+                   rawData[byteIndex] = 0;
+                } else if ((blue > 240) || (blue > MAX(red, green))) {
+                   rawData[byteIndex] = 2;
+                }
+            }
+        }
+    }
+    imageRef = CGBitmapContextCreateImage(context);
+    CGContextRelease(context);
+    CGColorSpaceRelease(colorSpace);
+    free(rawData);
+    return [UIImage imageWithCGImage:imageRef scale:1.0 orientation:image.imageOrientation];
+}
+
+
 
 
 @end

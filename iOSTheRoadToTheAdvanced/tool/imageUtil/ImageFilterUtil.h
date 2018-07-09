@@ -20,5 +20,6 @@
 + (UIImage*)grayHandlescale:(UIImage*)anImage type:(int)type;
 + (UIImage *)changePicColorPartial:(UIImage *)image;
 
++ (UIImage *)removeRedGreen:(UIImage *)image;
 
 @end

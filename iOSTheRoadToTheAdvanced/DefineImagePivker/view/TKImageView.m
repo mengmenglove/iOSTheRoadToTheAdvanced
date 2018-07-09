@@ -501,7 +501,7 @@ typedef NS_ENUM(NSInteger, TKMidLineType) {
     [self addSubview: _imageView];
     
     _cropMaskView = [[UIView alloc]initWithFrame: _imageView.bounds];
-    _cropMaskView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
+    _cropMaskView.backgroundColor = [UIColor redColor];//[UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
     _cropMaskView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [_imageView addSubview: _cropMaskView];
     

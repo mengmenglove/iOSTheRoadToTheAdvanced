@@ -18,7 +18,7 @@
 
 #define VIEW_TOOLBARHEIGHT 100
 
-@interface CustomDefineCameraViewController ()
+@interface CustomDefineCameraViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (strong, nonatomic) SimpleCamera *camera;
 @property (strong, nonatomic) UILabel *errorLabel;
@@ -49,7 +49,8 @@
     self.view.backgroundColor = [UIColor blackColor];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     [self addsubView];
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(viewOrientationChange) name:UIDeviceOrientationDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isCanTakePhotot)
+                                                 name:UIDeviceOrientationDidChangeNotification object:nil];
     
 }
 
@@ -60,7 +61,7 @@
                                                position:LLCameraPositionRear
                                            videoEnabled:YES];
     
-    [self.camera attachToViewController:self withFrame:CGRectMake(0, 0, screenRect.size.width, screenRect.size.height)];
+    [self.camera attachToViewController:self withFrame:CGRectMake(0, 20, screenRect.size.width, screenRect.size.height - 40)];
     self.camera.fixOrientationAfterCapture = NO;
     __weak typeof(self) weakSelf = self;
     [self.camera setOnDeviceChange:^(SimpleCamera *camera, AVCaptureDevice * device) {
@@ -106,9 +107,7 @@
     
     
     [self.view addSubview:self.toolBar];
-    
-   
-    
+
     self.closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.closeButton.frame = CGRectMake(20, 20, 40.f, 40.0f);
     [self.closeButton setImage:[UIImage imageNamed:@"abc_ic_clear_mtrl_alpha"] forState:UIControlStateNormal];
@@ -118,19 +117,13 @@
     self.labiaryBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.labiaryBtn.frame = CGRectMake(20, 20, 40.f, 40.0f);
     [self.labiaryBtn setImage:[UIImage imageNamed:@"cg_album"] forState:UIControlStateNormal];
-    [self.labiaryBtn addTarget:self action:@selector(cloesVC:) forControlEvents:UIControlEventTouchUpInside];
+    [self.labiaryBtn addTarget:self action:@selector(getImage:) forControlEvents:UIControlEventTouchUpInside];
     [self.toolBar addSubview:self.labiaryBtn];
     
     
     self.snapButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.snapButton setImage:[UIImage imageNamed:@"cg_camera"] forState:UIControlStateNormal];
     self.snapButton.frame = CGRectMake(0, 0, 70.0f, 70.0f);
-    self.snapButton.clipsToBounds = YES;
-    self.snapButton.layer.cornerRadius = self.snapButton.width / 2.0f;
-    self.snapButton.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.snapButton.layer.borderWidth = 2.0f;
-    self.snapButton.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
-    self.snapButton.layer.rasterizationScale = [UIScreen mainScreen].scale;
-    self.snapButton.layer.shouldRasterize = YES;
     [self.snapButton addTarget:self action:@selector(snapButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.toolBar addSubview:self.snapButton];
     
@@ -143,31 +136,89 @@
     [self.flashButton addTarget:self action:@selector(flashButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.flashButton];
     
-//    if([SimpleCamera isFrontCameraAvailable] ) {
-//        self.switchButton = [UIButton buttonWithType:UIButtonTypeSystem];
-//        self.switchButton.frame = CGRectMake(0, 0, 29.0f + 20.0f, 22.0f + 20.0f);
-//        self.switchButton.tintColor = [UIColor whiteColor];
-//        [self.switchButton setImage:[UIImage imageNamed:@"camera-switch.png"] forState:UIControlStateNormal];
-//        self.switchButton.imageEdgeInsets = UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f);
-//        [self.switchButton addTarget:self action:@selector(switchButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-//        [self.view addSubview:self.switchButton];
-//    }
-    // Do any additional setup after loading the view.
+    
     [self.view addSubview:self.showOrientationsView];
     [self.showOrientationsView addSubview:self.orientationsView];
     
 }
-- (void)viewOrientationChange {
-    
-    
-    if ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight) {
+- (BOOL)isCanTakePhotot {
+    if ([self isProtraitLockOn]) {
         self.showOrientationsView.alpha = 0.0;
+        return YES;
+    }
+    
+    if (([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft)
+        || ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
+        || ([UIDevice currentDevice].orientation == UIDeviceOrientationUnknown)
+        || ([UIDevice currentDevice].orientation == UIDeviceOrientationFaceDown)
+        || ([UIDevice currentDevice].orientation == UIDeviceOrientationFaceUp)
+        || ([UIDevice currentDevice].orientation == UIDeviceOrientationUnknown)
+        ) {
+        self.showOrientationsView.alpha = 0.0;
+        return YES;
     }else {
          self.showOrientationsView.alpha = 0.6;
     }
+    return NO;
+}
+
+- (BOOL)isProtraitLockOn {
+    UIApplication *app = [UIApplication sharedApplication];
+    UIView *foregroundView = [[app valueForKeyPath:@"statusBar"] valueForKeyPath:@"foregroundView"];
+    BOOL isOn = NO;
+    for (id child in foregroundView.subviews) {
+        @try {
+            id item = [child valueForKey:@"item"];
+            int type = [[item valueForKey:@"type"] intValue];
+            /*
+             UIStatusBarItem.type
+             0, 时间
+             3, 信号强度
+             4, 运营商
+             6, 网络
+             8, 电池
+             9, 电量百分比
+             12, 蓝牙
+             14, 闹钟
+             18, 竖屏锁定
+             34, 耳机
+             */
+            if (type == 18) {
+                isOn = YES;
+                break;
+            }
+        }@catch (NSException *e) {}
+    }
+    return isOn;
+}
+
+
+
+- (void)getImage:(UIButton *)sender {
+    
+    
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.delegate = self;
+   
+    imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [self presentViewController:imagePickerController animated:YES completion:nil];
+//    [AppNavigator showModalViewController:imagePickerController animated:YES];
     
 }
 
+#pragma mark - imagepicker
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    
+    ImageChangeViewController *vc = [[ImageChangeViewController alloc] initWithImage:image];
+    [self presentViewController:vc animated:NO completion:nil];
+    
+    
+}
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (void)cloesVC:(UIButton *)sender {
     [self dismissViewControllerAnimated:true completion:nil];
@@ -220,6 +271,9 @@
 {
     __weak typeof(self) weakSelf = self;
     
+    if (![self isCanTakePhotot]) {
+        return;
+    }
     if(self.segmentedControl.selectedSegmentIndex == 0) {
         // capture
         [self.camera capture:^(SimpleCamera *camera, UIImage *image, NSDictionary *metadata, NSError *error) {
@@ -240,7 +294,6 @@
         } else {
             self.segmentedControl.hidden = NO;
             self.flashButton.hidden = NO;
-//            self.switchButton.hidden = NO;
             
             self.snapButton.layer.borderColor = [UIColor whiteColor].CGColor;
             self.snapButton.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
@@ -263,12 +316,6 @@
     
     self.flashButton.center = self.view.contentCenter;
     self.flashButton.top = 5.0f;
-    
-//    self.switchButton.top = 5.0f;
-//    self.switchButton.right = self.view.width - 5.0f;
-    
-//    self.segmentedControl.left = 12.0f;
-//    self.segmentedControl.bottom = self.view.height - 35.0f;
     
     
     CGFloat width = (VIEW_WIDTH > VIEW_HEIGHT) ? VIEW_WIDTH: VIEW_HEIGHT;
