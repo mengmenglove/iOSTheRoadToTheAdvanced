@@ -94,6 +94,9 @@
 		81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F81FEE8DE40048D4B3 /* Dog.m */; };
 		81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */; };
 		81BF2A4E20F391CB00144EB4 /* MainSubViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A4D20F391CB00144EB4 /* MainSubViewViewController.m */; };
+		81BF2A5220F3956400144EB4 /* EffectSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A5120F3956400144EB4 /* EffectSelectorViewController.m */; };
+		81BF2A5520F3963D00144EB4 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A5420F3963D00144EB4 /* BaseTableViewController.m */; };
+		81BF2A5920F39C1E00144EB4 /* BXMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A5820F39C1E00144EB4 /* BXMessageView.m */; };
 		81DB9C7D20EB17E700B9F860 /* TKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB9C7C20EB17E700B9F860 /* TKImageView.m */; };
 		81DB9C8020EB2CE200B9F860 /* ZJDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB9C7F20EB2CE200B9F860 /* ZJDrawTool.m */; };
 		81DB9C8520EC6DAD00B9F860 /* showSuccessImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB9C8420EC6DAD00B9F860 /* showSuccessImageViewController.m */; };
@@ -293,6 +296,13 @@
 		81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BaoXianKVC.m"; sourceTree = "<group>"; };
 		81BF2A4C20F391CB00144EB4 /* MainSubViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSubViewViewController.h; sourceTree = "<group>"; };
 		81BF2A4D20F391CB00144EB4 /* MainSubViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSubViewViewController.m; sourceTree = "<group>"; };
+		81BF2A5020F3956400144EB4 /* EffectSelectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectSelectorViewController.h; sourceTree = "<group>"; };
+		81BF2A5120F3956400144EB4 /* EffectSelectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectSelectorViewController.m; sourceTree = "<group>"; };
+		81BF2A5320F3963D00144EB4 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		81BF2A5420F3963D00144EB4 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		81BF2A5620F3998600144EB4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		81BF2A5720F39C1E00144EB4 /* BXMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXMessageView.h; sourceTree = "<group>"; };
+		81BF2A5820F39C1E00144EB4 /* BXMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BXMessageView.m; sourceTree = "<group>"; };
 		81DB9C7B20EB17E700B9F860 /* TKImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKImageView.h; sourceTree = "<group>"; };
 		81DB9C7C20EB17E700B9F860 /* TKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKImageView.m; sourceTree = "<group>"; };
 		81DB9C7E20EB2CE200B9F860 /* ZJDrawTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJDrawTool.h; sourceTree = "<group>"; };
@@ -482,6 +492,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81BF2A4F20F3954800144EB4 /* EffectController */,
 				8144D58820E62D7500263DF9 /* DefineImagePivker */,
 				8144D57C20E5CFF300263DF9 /* userDefineImagePivker */,
 				8136708520E4C2C3009A42A7 /* imageHandle */,
@@ -518,6 +529,7 @@
 				813743D61FEB5AC200857CFD /* Assets.xcassets */,
 				813743DB1FEB5AC200857CFD /* Info.plist */,
 				813743DC1FEB5AC200857CFD /* main.m */,
+				81BF2A5620F3998600144EB4 /* PrefixHeader.pch */,
 			);
 			path = iOSTheRoadToTheAdvanced;
 			sourceTree = "<group>";
@@ -833,6 +845,8 @@
 				813743E41FEB5D4600857CFD /* MainViewController.m */,
 				81BF2A4C20F391CB00144EB4 /* MainSubViewViewController.h */,
 				81BF2A4D20F391CB00144EB4 /* MainSubViewViewController.m */,
+				81BF2A5320F3963D00144EB4 /* BaseTableViewController.h */,
+				81BF2A5420F3963D00144EB4 /* BaseTableViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -941,6 +955,17 @@
 				81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */,
 			);
 			path = KVCAndKVO;
+			sourceTree = "<group>";
+		};
+		81BF2A4F20F3954800144EB4 /* EffectController */ = {
+			isa = PBXGroup;
+			children = (
+				81BF2A5020F3956400144EB4 /* EffectSelectorViewController.h */,
+				81BF2A5120F3956400144EB4 /* EffectSelectorViewController.m */,
+				81BF2A5720F39C1E00144EB4 /* BXMessageView.h */,
+				81BF2A5820F39C1E00144EB4 /* BXMessageView.m */,
+			);
+			path = EffectController;
 			sourceTree = "<group>";
 		};
 		81DB9CA120EDB09B00B9F860 /* Models */ = {
@@ -1220,6 +1245,7 @@
 				813743D21FEB5AC200857CFD /* ViewController.m in Sources */,
 				81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */,
 				81FD9E4A206D413D00DC3DC0 /* WLScrollView.m in Sources */,
+				81BF2A5920F39C1E00144EB4 /* BXMessageView.m in Sources */,
 				81FD9E35206D3E9700DC3DC0 /* TrScrollViewController.m in Sources */,
 				81688576204FD29400932943 /* DesignMViewController.m in Sources */,
 				81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */,
@@ -1242,6 +1268,7 @@
 				81FD9E40206D40C500DC3DC0 /* LableView.m in Sources */,
 				8142D8E320DAB1AB00C2E1A5 /* SDWebImageDecoder.m in Sources */,
 				81DB9C8020EB2CE200B9F860 /* ZJDrawTool.m in Sources */,
+				81BF2A5220F3956400144EB4 /* EffectSelectorViewController.m in Sources */,
 				8136708B20E4C2DD009A42A7 /* HBXImageHandleViewController.m in Sources */,
 				81DB9CB420EDB09C00B9F860 /* UIImage+CropRotate.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
@@ -1305,6 +1332,7 @@
 				8142D8E620DAB1AB00C2E1A5 /* UIImage+ForceDecode.m in Sources */,
 				8142D8EE20DAB1AB00C2E1A5 /* SDWebImageCoder.m in Sources */,
 				81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */,
+				81BF2A5520F3963D00144EB4 /* BaseTableViewController.m in Sources */,
 				8122E1BB209B121A0087BF8A /* UIImageBurringViewController.m in Sources */,
 				81FD9E45206D40F700DC3DC0 /* ScrollViewOneViewController.m in Sources */,
 				8144D5A820E632B200263DF9 /* UIImage+Crop.m in Sources */,
@@ -1437,6 +1465,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSTheRoadToTheAdvanced",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iOSTheRoadToTheAdvanced/PrefixHeader.pch;
 				INFOPLIST_FILE = iOSTheRoadToTheAdvanced/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.iOSTheRoadToTheAdvanced;
@@ -1460,6 +1490,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSTheRoadToTheAdvanced",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iOSTheRoadToTheAdvanced/PrefixHeader.pch;
 				INFOPLIST_FILE = iOSTheRoadToTheAdvanced/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hbx.iOSTheRoadToTheAdvanced;

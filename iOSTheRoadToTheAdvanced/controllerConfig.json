@@ -74,6 +74,16 @@
                       },
                       ]
                 },
+            
+                {   "title" : "视图集合",
+                    "data":[
+                            {
+                             "name": "视图效果",
+                             "image": "image",
+                             "target": "EffectSelectorViewController"
+                            },
+                            ]
+                }
             ]
     
 }

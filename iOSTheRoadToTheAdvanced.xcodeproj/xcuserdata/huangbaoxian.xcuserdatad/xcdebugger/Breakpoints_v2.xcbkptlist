@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSTheRoadToTheAdvanced/DefineImagePivker/controller/ImageChangeViewController.mm"
-            timestampString = "552833970.324766"
+            timestampString = "552836043.7067651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "437"
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSTheRoadToTheAdvanced/mainController/controller/MainViewController.m"
-            timestampString = "552833970.324914"
+            filePath = "iOSTheRoadToTheAdvanced/mainController/controller/BaseTableViewController.m"
+            timestampString = "552836043.706928"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "-loadConfig"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
