@@ -92,6 +92,15 @@
                             "target": "HBXShowSystemPlayViewController"
                             },
                             ]
+                },
+                {   "title" : "工具栏",
+                    "data":[
+                            {
+                            "name": "陀螺仪 区分真机横竖屏",
+                            "image": "image",
+                            "target": "HBXDeviceOrientationViewController"
+                            },
+                            ]
                 }
             
             

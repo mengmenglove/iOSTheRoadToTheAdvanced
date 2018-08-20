@@ -16,6 +16,8 @@
 		8122E1B8209B113B0087BF8A /* ImageBlurring.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1B7209B113B0087BF8A /* ImageBlurring.m */; };
 		8122E1BB209B121A0087BF8A /* UIImageBurringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1BA209B121A0087BF8A /* UIImageBurringViewController.m */; };
 		8122E1BE209B13110087BF8A /* ImageResizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1BD209B13110087BF8A /* ImageResizing.m */; };
+		812B4885212ABC4300E3E2E3 /* DeviceOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B4884212ABC4200E3E2E3 /* DeviceOrientation.m */; };
+		812B4888212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B4887212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.m */; };
 		8136708B20E4C2DD009A42A7 /* HBXImageHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8136708A20E4C2DD009A42A7 /* HBXImageHandleViewController.m */; };
 		8136708E20E4CB51009A42A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136708D20E4CB51009A42A7 /* CoreGraphics.framework */; };
 		8136709020E4CB5D009A42A7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136708F20E4CB5D009A42A7 /* CoreImage.framework */; };
@@ -151,6 +153,10 @@
 		8122E1BA209B121A0087BF8A /* UIImageBurringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageBurringViewController.m; sourceTree = "<group>"; };
 		8122E1BC209B13110087BF8A /* ImageResizing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageResizing.h; sourceTree = "<group>"; };
 		8122E1BD209B13110087BF8A /* ImageResizing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageResizing.m; sourceTree = "<group>"; };
+		812B4883212ABC4200E3E2E3 /* DeviceOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceOrientation.h; sourceTree = "<group>"; };
+		812B4884212ABC4200E3E2E3 /* DeviceOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceOrientation.m; sourceTree = "<group>"; };
+		812B4886212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXDeviceOrientationViewController.h; sourceTree = "<group>"; };
+		812B4887212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXDeviceOrientationViewController.m; sourceTree = "<group>"; };
 		8136708920E4C2DD009A42A7 /* HBXImageHandleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXImageHandleViewController.h; sourceTree = "<group>"; };
 		8136708A20E4C2DD009A42A7 /* HBXImageHandleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXImageHandleViewController.m; sourceTree = "<group>"; };
 		8136708D20E4CB51009A42A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -436,6 +442,17 @@
 			path = DemoViewController;
 			sourceTree = "<group>";
 		};
+		812B4882212ABC4200E3E2E3 /* deviceOrientation */ = {
+			isa = PBXGroup;
+			children = (
+				812B4883212ABC4200E3E2E3 /* DeviceOrientation.h */,
+				812B4884212ABC4200E3E2E3 /* DeviceOrientation.m */,
+				812B4886212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.h */,
+				812B4887212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.m */,
+			);
+			path = deviceOrientation;
+			sourceTree = "<group>";
+		};
 		8136708520E4C2C3009A42A7 /* imageHandle */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +520,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				812B4882212ABC4200E3E2E3 /* deviceOrientation */,
 				8181D6C321241AE000F9866C /* playerviewController */,
 				81BF2A4F20F3954800144EB4 /* EffectController */,
 				8144D58820E62D7500263DF9 /* DefineImagePivker */,
@@ -1300,6 +1318,7 @@
 				8144D5A920E632B200263DF9 /* UIImage+Resize.m in Sources */,
 				81FD9DDE206D3D2200DC3DC0 /* ShowImageCell.m in Sources */,
 				81FD9E28206D3D8E00DC3DC0 /* CollectTranFromViewController.m in Sources */,
+				812B4885212ABC4300E3E2E3 /* DeviceOrientation.m in Sources */,
 				8122E1B8209B113B0087BF8A /* ImageBlurring.m in Sources */,
 				8144D5AC20E6360500263DF9 /* ImageChangeViewController.mm in Sources */,
 				8144D59D20E630F900263DF9 /* SimpleCamera+Helper.m in Sources */,
@@ -1342,6 +1361,7 @@
 				8142D8F420DAB1AB00C2E1A5 /* NSData+ImageContentType.m in Sources */,
 				8142D8F020DAB1AB00C2E1A5 /* SDAnimatedImageRep.m in Sources */,
 				8142D8FB20DAB1AB00C2E1A5 /* SDWebImageImageIOCoder.m in Sources */,
+				812B4888212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.m in Sources */,
 				81FD9DDD206D3D2200DC3DC0 /* HomeHeaderView.m in Sources */,
 				81AD6301206A93A8002A465C /* CollectSilderViewController.m in Sources */,
 				81DB9CB820EDB09C00B9F860 /* TOCropView.m in Sources */,
