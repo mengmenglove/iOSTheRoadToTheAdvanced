@@ -105,6 +105,12 @@
                             "image": "image",
                             "target": "ZJScanViewController"
                             },
+                            {
+                            "name": "图片去红去蓝",
+                            "image": "image",
+                            "target": "RemoveImageRedPointViewController"
+                            },
+                                                        
                             ]
                 }
             

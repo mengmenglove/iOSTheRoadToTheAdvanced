@@ -28,6 +28,8 @@
 		812B48AC212AEBF100E3E2E3 /* LBXScanNetAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B489E212AEBF100E3E2E3 /* LBXScanNetAnimation.m */; };
 		812B48AD212AEBF100E3E2E3 /* LBXScanTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B48A2212AEBF100E3E2E3 /* LBXScanTypes.m */; };
 		812B48AE212AEBF100E3E2E3 /* LBXScanNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B48A5212AEBF100E3E2E3 /* LBXScanNative.m */; };
+		812B48B2212AF84200E3E2E3 /* RemoveImageRedPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B48B1212AF84200E3E2E3 /* RemoveImageRedPointViewController.m */; };
+		812B48B4212AF91E00E3E2E3 /* 1532946340216.png in Resources */ = {isa = PBXBuildFile; fileRef = 812B48B3212AF91E00E3E2E3 /* 1532946340216.png */; };
 		8136708B20E4C2DD009A42A7 /* HBXImageHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8136708A20E4C2DD009A42A7 /* HBXImageHandleViewController.m */; };
 		8136708E20E4CB51009A42A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136708D20E4CB51009A42A7 /* CoreGraphics.framework */; };
 		8136709020E4CB5D009A42A7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136708F20E4CB5D009A42A7 /* CoreImage.framework */; };
@@ -186,6 +188,9 @@
 		812B48A3212AEBF100E3E2E3 /* LBXScanNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanNative.h; sourceTree = "<group>"; };
 		812B48A4212AEBF100E3E2E3 /* LBXScanTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanTypes.h; sourceTree = "<group>"; };
 		812B48A5212AEBF100E3E2E3 /* LBXScanNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanNative.m; sourceTree = "<group>"; };
+		812B48B0212AF84200E3E2E3 /* RemoveImageRedPointViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveImageRedPointViewController.h; sourceTree = "<group>"; };
+		812B48B1212AF84200E3E2E3 /* RemoveImageRedPointViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveImageRedPointViewController.m; sourceTree = "<group>"; };
+		812B48B3212AF91E00E3E2E3 /* 1532946340216.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1532946340216.png; sourceTree = "<group>"; };
 		8136708920E4C2DD009A42A7 /* HBXImageHandleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXImageHandleViewController.h; sourceTree = "<group>"; };
 		8136708A20E4C2DD009A42A7 /* HBXImageHandleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXImageHandleViewController.m; sourceTree = "<group>"; };
 		8136708D20E4CB51009A42A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -524,6 +529,16 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		812B48AF212AF82C00E3E2E3 /* imageRemoveRed */ = {
+			isa = PBXGroup;
+			children = (
+				812B48B3212AF91E00E3E2E3 /* 1532946340216.png */,
+				812B48B0212AF84200E3E2E3 /* RemoveImageRedPointViewController.h */,
+				812B48B1212AF84200E3E2E3 /* RemoveImageRedPointViewController.m */,
+			);
+			path = imageRemoveRed;
+			sourceTree = "<group>";
+		};
 		8136708520E4C2C3009A42A7 /* imageHandle */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +606,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				812B48AF212AF82C00E3E2E3 /* imageRemoveRed */,
 				812B4889212AE5AD00E3E2E3 /* scanViewController */,
 				812B4882212ABC4200E3E2E3 /* deviceOrientation */,
 				8181D6C321241AE000F9866C /* playerviewController */,
@@ -1337,6 +1353,7 @@
 				812B48A6212AEBF100E3E2E3 /* CodeScan.bundle in Resources */,
 				81E020DE1FEB9C99009709AA /* MENU.JSON in Resources */,
 				8168858C204FEB1B00932943 /* read5.json in Resources */,
+				812B48B4212AF91E00E3E2E3 /* 1532946340216.png in Resources */,
 				81E020DB1FEB98E9009709AA /* controllerConfig.json in Resources */,
 				81688589204FEB1B00932943 /* 堆栈关系.json in Resources */,
 			);
@@ -1412,6 +1429,7 @@
 				8144D5A720E632B200263DF9 /* ViewUtils.m in Sources */,
 				81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */,
 				8122E1AE209AFAE70087BF8A /* UIImageFilterViewController.m in Sources */,
+				812B48B2212AF84200E3E2E3 /* RemoveImageRedPointViewController.m in Sources */,
 				81BF2A4E20F391CB00144EB4 /* MainSubViewViewController.m in Sources */,
 				8122E1A3209AE8F10087BF8A /* ImageUtil.m in Sources */,
 				81FD9DDC206D3D2200DC3DC0 /* CircleLayout.m in Sources */,
