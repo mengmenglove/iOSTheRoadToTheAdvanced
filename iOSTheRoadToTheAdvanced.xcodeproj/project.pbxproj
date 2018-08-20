@@ -18,6 +18,16 @@
 		8122E1BE209B13110087BF8A /* ImageResizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1BD209B13110087BF8A /* ImageResizing.m */; };
 		812B4885212ABC4300E3E2E3 /* DeviceOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B4884212ABC4200E3E2E3 /* DeviceOrientation.m */; };
 		812B4888212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B4887212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.m */; };
+		812B4892212AEBAA00E3E2E3 /* ZJScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B4891212AEBAA00E3E2E3 /* ZJScanViewController.m */; };
+		812B48A6212AEBF100E3E2E3 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 812B4895212AEBF100E3E2E3 /* CodeScan.bundle */; };
+		812B48A7212AEBF100E3E2E3 /* LBXScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B4898212AEBF100E3E2E3 /* LBXScanViewController.m */; };
+		812B48A8212AEBF100E3E2E3 /* LBXScanViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B4899212AEBF100E3E2E3 /* LBXScanViewStyle.m */; };
+		812B48A9212AEBF100E3E2E3 /* LBXScanVideoZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B489A212AEBF100E3E2E3 /* LBXScanVideoZoomView.m */; };
+		812B48AA212AEBF100E3E2E3 /* LBXScanLineAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B489B212AEBF100E3E2E3 /* LBXScanLineAnimation.m */; };
+		812B48AB212AEBF100E3E2E3 /* LBXScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B489C212AEBF100E3E2E3 /* LBXScanView.m */; };
+		812B48AC212AEBF100E3E2E3 /* LBXScanNetAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B489E212AEBF100E3E2E3 /* LBXScanNetAnimation.m */; };
+		812B48AD212AEBF100E3E2E3 /* LBXScanTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B48A2212AEBF100E3E2E3 /* LBXScanTypes.m */; };
+		812B48AE212AEBF100E3E2E3 /* LBXScanNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 812B48A5212AEBF100E3E2E3 /* LBXScanNative.m */; };
 		8136708B20E4C2DD009A42A7 /* HBXImageHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8136708A20E4C2DD009A42A7 /* HBXImageHandleViewController.m */; };
 		8136708E20E4CB51009A42A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136708D20E4CB51009A42A7 /* CoreGraphics.framework */; };
 		8136709020E4CB5D009A42A7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136708F20E4CB5D009A42A7 /* CoreImage.framework */; };
@@ -157,6 +167,25 @@
 		812B4884212ABC4200E3E2E3 /* DeviceOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceOrientation.m; sourceTree = "<group>"; };
 		812B4886212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXDeviceOrientationViewController.h; sourceTree = "<group>"; };
 		812B4887212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXDeviceOrientationViewController.m; sourceTree = "<group>"; };
+		812B4890212AEBAA00E3E2E3 /* ZJScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScanViewController.h; sourceTree = "<group>"; };
+		812B4891212AEBAA00E3E2E3 /* ZJScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScanViewController.m; sourceTree = "<group>"; };
+		812B4895212AEBF100E3E2E3 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
+		812B4896212AEBF100E3E2E3 /* LBXScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanView.h; sourceTree = "<group>"; };
+		812B4897212AEBF100E3E2E3 /* LBXScanNetAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanNetAnimation.h; sourceTree = "<group>"; };
+		812B4898212AEBF100E3E2E3 /* LBXScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanViewController.m; sourceTree = "<group>"; };
+		812B4899212AEBF100E3E2E3 /* LBXScanViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanViewStyle.m; sourceTree = "<group>"; };
+		812B489A212AEBF100E3E2E3 /* LBXScanVideoZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanVideoZoomView.m; sourceTree = "<group>"; };
+		812B489B212AEBF100E3E2E3 /* LBXScanLineAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanLineAnimation.m; sourceTree = "<group>"; };
+		812B489C212AEBF100E3E2E3 /* LBXScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanView.m; sourceTree = "<group>"; };
+		812B489D212AEBF100E3E2E3 /* LBXScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanViewController.h; sourceTree = "<group>"; };
+		812B489E212AEBF100E3E2E3 /* LBXScanNetAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanNetAnimation.m; sourceTree = "<group>"; };
+		812B489F212AEBF100E3E2E3 /* LBXScanLineAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanLineAnimation.h; sourceTree = "<group>"; };
+		812B48A0212AEBF100E3E2E3 /* LBXScanVideoZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanVideoZoomView.h; sourceTree = "<group>"; };
+		812B48A1212AEBF100E3E2E3 /* LBXScanViewStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanViewStyle.h; sourceTree = "<group>"; };
+		812B48A2212AEBF100E3E2E3 /* LBXScanTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanTypes.m; sourceTree = "<group>"; };
+		812B48A3212AEBF100E3E2E3 /* LBXScanNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanNative.h; sourceTree = "<group>"; };
+		812B48A4212AEBF100E3E2E3 /* LBXScanTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanTypes.h; sourceTree = "<group>"; };
+		812B48A5212AEBF100E3E2E3 /* LBXScanNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanNative.m; sourceTree = "<group>"; };
 		8136708920E4C2DD009A42A7 /* HBXImageHandleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXImageHandleViewController.h; sourceTree = "<group>"; };
 		8136708A20E4C2DD009A42A7 /* HBXImageHandleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXImageHandleViewController.m; sourceTree = "<group>"; };
 		8136708D20E4CB51009A42A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -453,6 +482,48 @@
 			path = deviceOrientation;
 			sourceTree = "<group>";
 		};
+		812B4889212AE5AD00E3E2E3 /* scanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				812B4893212AEBF100E3E2E3 /* scan */,
+				812B4890212AEBAA00E3E2E3 /* ZJScanViewController.h */,
+				812B4891212AEBAA00E3E2E3 /* ZJScanViewController.m */,
+			);
+			path = scanViewController;
+			sourceTree = "<group>";
+		};
+		812B4893212AEBF100E3E2E3 /* scan */ = {
+			isa = PBXGroup;
+			children = (
+				812B4894212AEBF100E3E2E3 /* UI */,
+				812B48A2212AEBF100E3E2E3 /* LBXScanTypes.m */,
+				812B48A3212AEBF100E3E2E3 /* LBXScanNative.h */,
+				812B48A4212AEBF100E3E2E3 /* LBXScanTypes.h */,
+				812B48A5212AEBF100E3E2E3 /* LBXScanNative.m */,
+			);
+			path = scan;
+			sourceTree = "<group>";
+		};
+		812B4894212AEBF100E3E2E3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				812B4895212AEBF100E3E2E3 /* CodeScan.bundle */,
+				812B4896212AEBF100E3E2E3 /* LBXScanView.h */,
+				812B4897212AEBF100E3E2E3 /* LBXScanNetAnimation.h */,
+				812B4898212AEBF100E3E2E3 /* LBXScanViewController.m */,
+				812B4899212AEBF100E3E2E3 /* LBXScanViewStyle.m */,
+				812B489A212AEBF100E3E2E3 /* LBXScanVideoZoomView.m */,
+				812B489B212AEBF100E3E2E3 /* LBXScanLineAnimation.m */,
+				812B489C212AEBF100E3E2E3 /* LBXScanView.m */,
+				812B489D212AEBF100E3E2E3 /* LBXScanViewController.h */,
+				812B489E212AEBF100E3E2E3 /* LBXScanNetAnimation.m */,
+				812B489F212AEBF100E3E2E3 /* LBXScanLineAnimation.h */,
+				812B48A0212AEBF100E3E2E3 /* LBXScanVideoZoomView.h */,
+				812B48A1212AEBF100E3E2E3 /* LBXScanViewStyle.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		8136708520E4C2C3009A42A7 /* imageHandle */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,6 +591,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				812B4889212AE5AD00E3E2E3 /* scanViewController */,
 				812B4882212ABC4200E3E2E3 /* deviceOrientation */,
 				8181D6C321241AE000F9866C /* playerviewController */,
 				81BF2A4F20F3954800144EB4 /* EffectController */,
@@ -1262,6 +1334,7 @@
 				8168858A204FEB1B00932943 /* 知识点消息转发.json in Resources */,
 				81688587204FEB1B00932943 /* 代理没有实现方法.json in Resources */,
 				8168858B204FEB1B00932943 /* read6.json in Resources */,
+				812B48A6212AEBF100E3E2E3 /* CodeScan.bundle in Resources */,
 				81E020DE1FEB9C99009709AA /* MENU.JSON in Resources */,
 				8168858C204FEB1B00932943 /* read5.json in Resources */,
 				81E020DB1FEB98E9009709AA /* controllerConfig.json in Resources */,
@@ -1287,17 +1360,20 @@
 				81BF2A5920F39C1E00144EB4 /* BXMessageView.m in Sources */,
 				81FD9E35206D3E9700DC3DC0 /* TrScrollViewController.m in Sources */,
 				81688576204FD29400932943 /* DesignMViewController.m in Sources */,
+				812B48AB212AEBF100E3E2E3 /* LBXScanView.m in Sources */,
 				81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */,
 				8142D8FA20DAB1AB00C2E1A5 /* UIView+WebCache.m in Sources */,
 				816885A320511BD300932943 /* Dorector.m in Sources */,
 				8142D8E720DAB1AB00C2E1A5 /* SDWebImageCodersManager.m in Sources */,
 				81FD9E4B206D413D00DC3DC0 /* WLSubView.m in Sources */,
 				816885A920513B2200932943 /* ShowDelegatePerson.m in Sources */,
+				812B48AC212AEBF100E3E2E3 /* LBXScanNetAnimation.m in Sources */,
 				8122E1AB209AEDC80087BF8A /* UIimageRotateViewController.m in Sources */,
 				8144D58220E5D00F00263DF9 /* UserDefinePickerViewController.m in Sources */,
 				8142D8F120DAB1AB00C2E1A5 /* SDImageCache.m in Sources */,
 				81DB9CB320EDB09C00B9F860 /* TOActivityCroppedImageProvider.m in Sources */,
 				81DB9CB920EDB09C00B9F860 /* TOCropOverlayView.m in Sources */,
+				812B48AD212AEBF100E3E2E3 /* LBXScanTypes.m in Sources */,
 				816885952051102700932943 /* AbostrctStargeteMessage.m in Sources */,
 				8142D8F520DAB1AB00C2E1A5 /* UIImageView+WebCache.m in Sources */,
 				81DB9C7D20EB17E700B9F860 /* TKImageView.m in Sources */,
@@ -1309,6 +1385,7 @@
 				81DB9C8020EB2CE200B9F860 /* ZJDrawTool.m in Sources */,
 				81BF2A5220F3956400144EB4 /* EffectSelectorViewController.m in Sources */,
 				8136708B20E4C2DD009A42A7 /* HBXImageHandleViewController.m in Sources */,
+				812B48AE212AEBF100E3E2E3 /* LBXScanNative.m in Sources */,
 				81DB9CB420EDB09C00B9F860 /* UIImage+CropRotate.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
 				8142D8E920DAB1AB00C2E1A5 /* UIImage+GIF.m in Sources */,
@@ -1328,6 +1405,7 @@
 				8142D8EF20DAB1AB00C2E1A5 /* NSButton+WebCache.m in Sources */,
 				8142D8E220DAB1AB00C2E1A5 /* SDWebImageManager.m in Sources */,
 				81DB9CB620EDB09C00B9F860 /* TOCroppedImageAttributes.m in Sources */,
+				812B48A8212AEBF100E3E2E3 /* LBXScanViewStyle.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
 				81DB9C8520EC6DAD00B9F860 /* showSuccessImageViewController.m in Sources */,
 				81DB9CA020ECF3F500B9F860 /* ZJTKImageView.m in Sources */,
@@ -1339,6 +1417,7 @@
 				81FD9DDC206D3D2200DC3DC0 /* CircleLayout.m in Sources */,
 				8181D6C621241B0900F9866C /* HBXShowSystemPlayViewController.m in Sources */,
 				81FD9E41206D40C500DC3DC0 /* textView.m in Sources */,
+				812B48A9212AEBF100E3E2E3 /* LBXScanVideoZoomView.m in Sources */,
 				8122E1B1209AFB280087BF8A /* ImageFilterUtil.m in Sources */,
 				816885A020511B4C00932943 /* ConcreatBuild.m in Sources */,
 				8144D59A20E6307F00263DF9 /* SimpleCamera.m in Sources */,
@@ -1352,6 +1431,7 @@
 				8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */,
 				8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */,
 				8142D8E820DAB1AB00C2E1A5 /* SDWebImageDownloader.m in Sources */,
+				812B48A7212AEBF100E3E2E3 /* LBXScanViewController.m in Sources */,
 				8142D8F620DAB1AB00C2E1A5 /* NSImage+WebCache.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
 				8122E1BE209B13110087BF8A /* ImageResizing.m in Sources */,
@@ -1383,6 +1463,8 @@
 				8168859220510F2C00932943 /* HBXNSProxy.m in Sources */,
 				81DB9CB720EDB09C00B9F860 /* TOCropScrollView.m in Sources */,
 				813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */,
+				812B48AA212AEBF100E3E2E3 /* LBXScanLineAnimation.m in Sources */,
+				812B4892212AEBAA00E3E2E3 /* ZJScanViewController.m in Sources */,
 				81E66DD81FF51E530077CCCB /* KVCPersion.m in Sources */,
 				813743E51FEB5D4600857CFD /* MainViewController.m in Sources */,
 			);

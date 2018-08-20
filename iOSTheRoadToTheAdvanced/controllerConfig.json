@@ -100,6 +100,11 @@
                             "image": "image",
                             "target": "HBXDeviceOrientationViewController"
                             },
+                            {
+                            "name": "二维码 扫描",
+                            "image": "image",
+                            "target": "ZJScanViewController"
+                            },
                             ]
                 }
             

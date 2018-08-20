@@ -39,4 +39,6 @@ static NSString  * const cellID = @"cellid";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     LineCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     return cell;
-}@end
+}
+
+@end
