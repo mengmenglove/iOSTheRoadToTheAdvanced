@@ -83,7 +83,21 @@
                              "target": "EffectSelectorViewController"
                             },
                             ]
+                },
+                {   "title" : "系统音频播放",
+                    "data":[
+                            {
+                            "name": "系统音频播放集合",
+                            "image": "image",
+                            "target": "HBXShowSystemPlayViewController"
+                            },
+                            ]
                 }
+            
+            
+            
+            
+            
             ]
     
 }

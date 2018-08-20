@@ -85,6 +85,9 @@
 		816885A320511BD300932943 /* Dorector.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A220511BD300932943 /* Dorector.m */; };
 		816885A62051256400932943 /* BuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A52051256400932943 /* BuilderViewController.m */; };
 		816885A920513B2200932943 /* ShowDelegatePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A820513B2200932943 /* ShowDelegatePerson.m */; };
+		8181D6C621241B0900F9866C /* HBXShowSystemPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8181D6C521241B0900F9866C /* HBXShowSystemPlayViewController.m */; };
+		8181D6C821241ED600F9866C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8181D6C721241ED600F9866C /* AVKit.framework */; };
+		8181D6CA21241F9F00F9866C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8181D6C921241F9F00F9866C /* MediaPlayer.framework */; };
 		81AD6301206A93A8002A465C /* CollectSilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6300206A93A8002A465C /* CollectSilderViewController.m */; };
 		81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6303206A940E002A465C /* LineCollectionViewCell.m */; };
 		81AD6307206A940F002A465C /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6305206A940E002A465C /* LineLayout.m */; };
@@ -278,6 +281,10 @@
 		816885A52051256400932943 /* BuilderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderViewController.m; sourceTree = "<group>"; };
 		816885A720513B2200932943 /* ShowDelegatePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowDelegatePerson.h; sourceTree = "<group>"; };
 		816885A820513B2200932943 /* ShowDelegatePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowDelegatePerson.m; sourceTree = "<group>"; };
+		8181D6C421241B0900F9866C /* HBXShowSystemPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXShowSystemPlayViewController.h; sourceTree = "<group>"; };
+		8181D6C521241B0900F9866C /* HBXShowSystemPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXShowSystemPlayViewController.m; sourceTree = "<group>"; };
+		8181D6C721241ED600F9866C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		8181D6C921241F9F00F9866C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		81AD62FF206A93A8002A465C /* CollectSilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectSilderViewController.h; sourceTree = "<group>"; };
 		81AD6300206A93A8002A465C /* CollectSilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectSilderViewController.m; sourceTree = "<group>"; };
 		81AD6302206A940E002A465C /* LineCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineCollectionViewCell.h; sourceTree = "<group>"; };
@@ -368,6 +375,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8181D6CA21241F9F00F9866C /* MediaPlayer.framework in Frameworks */,
+				8181D6C821241ED600F9866C /* AVKit.framework in Frameworks */,
 				8144D58720E5D80F00263DF9 /* AVFoundation.framework in Frameworks */,
 				8136709420E4CBBC009A42A7 /* CoreFoundation.framework in Frameworks */,
 				8136709220E4CB63009A42A7 /* ImageIO.framework in Frameworks */,
@@ -463,6 +472,8 @@
 		8136708C20E4CB50009A42A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8181D6C921241F9F00F9866C /* MediaPlayer.framework */,
+				8181D6C721241ED600F9866C /* AVKit.framework */,
 				8144D58620E5D80F00263DF9 /* AVFoundation.framework */,
 				8136709320E4CBBC009A42A7 /* CoreFoundation.framework */,
 				8136709120E4CB63009A42A7 /* ImageIO.framework */,
@@ -492,6 +503,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				8181D6C321241AE000F9866C /* playerviewController */,
 				81BF2A4F20F3954800144EB4 /* EffectController */,
 				8144D58820E62D7500263DF9 /* DefineImagePivker */,
 				8144D57C20E5CFF300263DF9 /* userDefineImagePivker */,
@@ -870,6 +882,15 @@
 			children = (
 			);
 			path = source;
+			sourceTree = "<group>";
+		};
+		8181D6C321241AE000F9866C /* playerviewController */ = {
+			isa = PBXGroup;
+			children = (
+				8181D6C421241B0900F9866C /* HBXShowSystemPlayViewController.h */,
+				8181D6C521241B0900F9866C /* HBXShowSystemPlayViewController.m */,
+			);
+			path = playerviewController;
 			sourceTree = "<group>";
 		};
 		81AD62FB206A9396002A465C /* collection滑动视图 */ = {
@@ -1297,6 +1318,7 @@
 				81BF2A4E20F391CB00144EB4 /* MainSubViewViewController.m in Sources */,
 				8122E1A3209AE8F10087BF8A /* ImageUtil.m in Sources */,
 				81FD9DDC206D3D2200DC3DC0 /* CircleLayout.m in Sources */,
+				8181D6C621241B0900F9866C /* HBXShowSystemPlayViewController.m in Sources */,
 				81FD9E41206D40C500DC3DC0 /* textView.m in Sources */,
 				8122E1B1209AFB280087BF8A /* ImageFilterUtil.m in Sources */,
 				816885A020511B4C00932943 /* ConcreatBuild.m in Sources */,
