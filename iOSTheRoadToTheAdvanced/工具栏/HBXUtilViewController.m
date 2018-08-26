@@ -11,7 +11,7 @@
 #import "JDLoadingView.h"
 #import "JDGuidePageView.h"
 #import "JDIDCardScanViewController.h"
-
+#import "JDBankScanViewController.h"
 #import "JDUtils.h"
 
 typedef void(^ActionBlock)(int a);
@@ -68,6 +68,11 @@ typedef void(^ActionBlock)(int a);
     [self.dataArray addObject:@{@"title":@"身份证识别",@"action":^(int param){
         JDIDCardScanViewController *vc = [[JDIDCardScanViewController alloc] init];
         [weakSelf.navigationController pushViewController:vc animated:YES];        
+    } }];
+    
+    [self.dataArray addObject:@{@"title":@"银行卡识别",@"action":^(int param){
+        JDBankScanViewController *vc = [[JDBankScanViewController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
     } }];
     
     
