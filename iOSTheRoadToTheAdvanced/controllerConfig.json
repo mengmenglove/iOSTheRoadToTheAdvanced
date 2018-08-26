@@ -110,7 +110,26 @@
                             "image": "image",
                             "target": "RemoveImageRedPointViewController"
                             },
-                                                        
+                            {
+                            "name": "强红包",
+                            "image": "image",
+                            "target": "HBXGetRedPackageViewController"
+                            },
+                            {
+                            "name": "文字提示框",
+                            "image": "image",
+                            "target": "HBXAlertViewController"
+                            },
+                            {
+                            "name": "权限获取",
+                            "image": "image",
+                            "target": "HBXAuthorityViewController"
+                            },
+                            {
+                            "name": "工具栏",
+                            "image": "image",
+                            "target": "HBXUtilViewController"
+                            },
                             ]
                 }
             
