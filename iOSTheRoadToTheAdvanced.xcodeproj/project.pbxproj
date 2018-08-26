@@ -33,6 +33,8 @@
 		81227CE321329061002B2E57 /* libbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81227CDA21329061002B2E57 /* libbankcard.a */; };
 		81227CE421329061002B2E57 /* JDBandCardScanResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227CDD21329061002B2E57 /* JDBandCardScanResultModel.m */; };
 		81227CE521329061002B2E57 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227CE021329061002B2E57 /* OverlayView.m */; };
+		81227CE9213292D7002B2E57 /* HBXChangeIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227CE8213292D7002B2E57 /* HBXChangeIconViewController.m */; };
+		81227CED213295B8002B2E57 /* HBXTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227CEC213295B8002B2E57 /* HBXTouchIDViewController.m */; };
 		8122E1A3209AE8F10087BF8A /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1A2209AE8F10087BF8A /* ImageUtil.m */; };
 		8122E1A7209AEB920087BF8A /* ToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1A6209AEB920087BF8A /* ToolViewController.m */; };
 		8122E1AB209AEDC80087BF8A /* UIimageRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122E1AA209AEDC80087BF8A /* UIimageRotateViewController.m */; };
@@ -107,6 +109,9 @@
 		8144D5A820E632B200263DF9 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 8144D5A220E632B200263DF9 /* UIImage+Crop.m */; };
 		8144D5A920E632B200263DF9 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8144D5A320E632B200263DF9 /* UIImage+Resize.m */; };
 		8144D5AC20E6360500263DF9 /* ImageChangeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8144D5AB20E6360500263DF9 /* ImageChangeViewController.mm */; };
+		8145A55F2132994300431B9D /* HBXBaseAnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8145A55E2132994300431B9D /* HBXBaseAnimalViewController.m */; };
+		8145A5612132998800431B9D /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 8145A5602132998800431B9D /* apple.png */; };
+		8145A56521329A6D00431B9D /* HBXSystemTranViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8145A56421329A6D00431B9D /* HBXSystemTranViewController.m */; };
 		81594338213272B5002026BA /* HBXGetRedPackageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81594337213272B5002026BA /* HBXGetRedPackageViewController.m */; };
 		8159434321327313002026BA /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159433921327313002026BA /* avatar@2x.png */; };
 		8159434421327313002026BA /* red_packet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159433A21327313002026BA /* red_packet@2x.png */; };
@@ -258,6 +263,10 @@
 		81227CDE21329061002B2E57 /* JDBandCardScanResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBandCardScanResultModel.h; sourceTree = "<group>"; };
 		81227CE021329061002B2E57 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		81227CE121329061002B2E57 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		81227CE7213292D7002B2E57 /* HBXChangeIconViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXChangeIconViewController.h; sourceTree = "<group>"; };
+		81227CE8213292D7002B2E57 /* HBXChangeIconViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXChangeIconViewController.m; sourceTree = "<group>"; };
+		81227CEB213295B8002B2E57 /* HBXTouchIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXTouchIDViewController.h; sourceTree = "<group>"; };
+		81227CEC213295B8002B2E57 /* HBXTouchIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXTouchIDViewController.m; sourceTree = "<group>"; };
 		8122E1A1209AE8F10087BF8A /* ImageUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
 		8122E1A2209AE8F10087BF8A /* ImageUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
 		8122E1A5209AEB920087BF8A /* ToolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolViewController.h; sourceTree = "<group>"; };
@@ -400,6 +409,11 @@
 		8144D5A620E632B200263DF9 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
 		8144D5AA20E6360500263DF9 /* ImageChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageChangeViewController.h; sourceTree = "<group>"; };
 		8144D5AB20E6360500263DF9 /* ImageChangeViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageChangeViewController.mm; sourceTree = "<group>"; };
+		8145A55D2132994300431B9D /* HBXBaseAnimalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXBaseAnimalViewController.h; sourceTree = "<group>"; };
+		8145A55E2132994300431B9D /* HBXBaseAnimalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXBaseAnimalViewController.m; sourceTree = "<group>"; };
+		8145A5602132998800431B9D /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		8145A56321329A6D00431B9D /* HBXSystemTranViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXSystemTranViewController.h; sourceTree = "<group>"; };
+		8145A56421329A6D00431B9D /* HBXSystemTranViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXSystemTranViewController.m; sourceTree = "<group>"; };
 		81594336213272B5002026BA /* HBXGetRedPackageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXGetRedPackageViewController.h; sourceTree = "<group>"; };
 		81594337213272B5002026BA /* HBXGetRedPackageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXGetRedPackageViewController.m; sourceTree = "<group>"; };
 		8159433921327313002026BA /* avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@2x.png"; sourceTree = "<group>"; };
@@ -625,6 +639,10 @@
 		81227C4E21327B5D002B2E57 /* 工具栏 */ = {
 			isa = PBXGroup;
 			children = (
+				8145A56221329A5900431B9D /* 系统转场动画 */,
+				8145A55C2132992800431B9D /* 动画 */,
+				81227CEA213295AB002B2E57 /* touchID */,
+				81227CE6213292C5002B2E57 /* 更换图标 */,
 				81227CD321329061002B2E57 /* BankCard(银行卡识别) */,
 				81227CA021328C55002B2E57 /* IDCard(身份证识别) */,
 				81227C7821328429002B2E57 /* propertyCode(自动生成model 属性) */,
@@ -793,6 +811,24 @@
 				81227CE121329061002B2E57 /* OverlayView.h */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		81227CE6213292C5002B2E57 /* 更换图标 */ = {
+			isa = PBXGroup;
+			children = (
+				81227CE7213292D7002B2E57 /* HBXChangeIconViewController.h */,
+				81227CE8213292D7002B2E57 /* HBXChangeIconViewController.m */,
+			);
+			path = "更换图标";
+			sourceTree = "<group>";
+		};
+		81227CEA213295AB002B2E57 /* touchID */ = {
+			isa = PBXGroup;
+			children = (
+				81227CEB213295B8002B2E57 /* HBXTouchIDViewController.h */,
+				81227CEC213295B8002B2E57 /* HBXTouchIDViewController.m */,
+			);
+			path = touchID;
 			sourceTree = "<group>";
 		};
 		8122E19F209AE8990087BF8A /* tool */ = {
@@ -1195,6 +1231,25 @@
 				81DB9C7C20EB17E700B9F860 /* TKImageView.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		8145A55C2132992800431B9D /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				8145A5602132998800431B9D /* apple.png */,
+				8145A55D2132994300431B9D /* HBXBaseAnimalViewController.h */,
+				8145A55E2132994300431B9D /* HBXBaseAnimalViewController.m */,
+			);
+			path = "动画";
+			sourceTree = "<group>";
+		};
+		8145A56221329A5900431B9D /* 系统转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				8145A56321329A6D00431B9D /* HBXSystemTranViewController.h */,
+				8145A56421329A6D00431B9D /* HBXSystemTranViewController.m */,
+			);
+			path = "系统转场动画";
 			sourceTree = "<group>";
 		};
 		815943352132729F002026BA /* redPackage */ = {
@@ -1825,6 +1880,7 @@
 				81227C75213282F4002B2E57 /* guide_02@2x.png in Resources */,
 				812B48B4212AF91E00E3E2E3 /* 1532946340216.png in Resources */,
 				8159434321327313002026BA /* avatar@2x.png in Resources */,
+				8145A5612132998800431B9D /* apple.png in Resources */,
 				81E020DB1FEB98E9009709AA /* controllerConfig.json in Resources */,
 				8159434921327313002026BA /* redpacket_open_btn@2x.png in Resources */,
 				81688589204FEB1B00932943 /* 堆栈关系.json in Resources */,
@@ -1870,6 +1926,7 @@
 				8122E1AB209AEDC80087BF8A /* UIimageRotateViewController.m in Sources */,
 				8144D58220E5D00F00263DF9 /* UserDefinePickerViewController.m in Sources */,
 				8142D8F120DAB1AB00C2E1A5 /* SDImageCache.m in Sources */,
+				8145A55F2132994300431B9D /* HBXBaseAnimalViewController.m in Sources */,
 				81DB9CB320EDB09C00B9F860 /* TOActivityCroppedImageProvider.m in Sources */,
 				81DB9CB920EDB09C00B9F860 /* TOCropOverlayView.m in Sources */,
 				812B48AD212AEBF100E3E2E3 /* LBXScanTypes.m in Sources */,
@@ -1954,6 +2011,7 @@
 				8159437F2132752D002026BA /* EasyTextConfig.m in Sources */,
 				8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */,
 				8142D8E820DAB1AB00C2E1A5 /* SDWebImageDownloader.m in Sources */,
+				8145A56521329A6D00431B9D /* HBXSystemTranViewController.m in Sources */,
 				812B48A7212AEBF100E3E2E3 /* LBXScanViewController.m in Sources */,
 				815943912132752D002026BA /* EasyEmptyGlobalConfig.m in Sources */,
 				8142D8F620DAB1AB00C2E1A5 /* NSImage+WebCache.m in Sources */,
@@ -1963,6 +2021,7 @@
 				81594338213272B5002026BA /* HBXGetRedPackageViewController.m in Sources */,
 				815943902132752D002026BA /* EasyAlertConfig.m in Sources */,
 				8122E1BE209B13110087BF8A /* ImageResizing.m in Sources */,
+				81227CED213295B8002B2E57 /* HBXTouchIDViewController.m in Sources */,
 				815943862132752D002026BA /* EasyLoadingConfig.m in Sources */,
 				81FD9E42206D40C500DC3DC0 /* SubView.m in Sources */,
 				8122E1A7209AEB920087BF8A /* ToolViewController.m in Sources */,
@@ -1994,6 +2053,7 @@
 				8144D5A820E632B200263DF9 /* UIImage+Crop.m in Sources */,
 				8142D8F720DAB1AB00C2E1A5 /* SDWebImageGIFCoder.m in Sources */,
 				8142D84D20DAB00A00C2E1A5 /* UIImageSynthesisViewController.m in Sources */,
+				81227CE9213292D7002B2E57 /* HBXChangeIconViewController.m in Sources */,
 				8168859220510F2C00932943 /* HBXNSProxy.m in Sources */,
 				81DB9CB720EDB09C00B9F860 /* TOCropScrollView.m in Sources */,
 				815943932132752D002026BA /* EasyEmptyTypes.m in Sources */,

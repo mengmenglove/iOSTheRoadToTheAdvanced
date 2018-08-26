@@ -13,6 +13,8 @@
 #import "JDIDCardScanViewController.h"
 #import "JDBankScanViewController.h"
 #import "JDUtils.h"
+#import "HBXTouchIDViewController.h"
+#import "HBXBaseAnimalViewController.h"
 
 typedef void(^ActionBlock)(int a);
 
@@ -75,6 +77,17 @@ typedef void(^ActionBlock)(int a);
         [weakSelf.navigationController pushViewController:vc animated:YES];
     } }];
     
+    
+    [self.dataArray addObject:@{@"title":@"touchID识别",@"action":^(int param){
+        HBXTouchIDViewController *vc = [[HBXTouchIDViewController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    } }];
+    
+    
+    [self.dataArray addObject:@{@"title":@"基础动画",@"action":^(int param){
+        HBXBaseAnimalViewController *vc = [[HBXBaseAnimalViewController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    } }];
     
     [self.tableView reloadData];
 }
