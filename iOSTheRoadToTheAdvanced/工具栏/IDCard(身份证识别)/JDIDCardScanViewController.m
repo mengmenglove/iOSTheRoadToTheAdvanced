@@ -50,7 +50,7 @@
     
 #if TARGET_IPHONE_SIMULATOR
     int ret =0;
-    DLog(@"%s",thePath);
+//    DLog(@"%s",thePath);
 #else
     int ret = EXCARDS_Init(thePath);
 #endif

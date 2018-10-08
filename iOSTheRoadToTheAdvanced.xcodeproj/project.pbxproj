@@ -112,6 +112,7 @@
 		8145A55F2132994300431B9D /* HBXBaseAnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8145A55E2132994300431B9D /* HBXBaseAnimalViewController.m */; };
 		8145A5612132998800431B9D /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 8145A5602132998800431B9D /* apple.png */; };
 		8145A56521329A6D00431B9D /* HBXSystemTranViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8145A56421329A6D00431B9D /* HBXSystemTranViewController.m */; };
+		8145A56A2135028900431B9D /* HBXFilePathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8145A5692135028900431B9D /* HBXFilePathViewController.m */; };
 		81594338213272B5002026BA /* HBXGetRedPackageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81594337213272B5002026BA /* HBXGetRedPackageViewController.m */; };
 		8159434321327313002026BA /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159433921327313002026BA /* avatar@2x.png */; };
 		8159434421327313002026BA /* red_packet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159433A21327313002026BA /* red_packet@2x.png */; };
@@ -169,6 +170,7 @@
 		81AD6301206A93A8002A465C /* CollectSilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6300206A93A8002A465C /* CollectSilderViewController.m */; };
 		81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6303206A940E002A465C /* LineCollectionViewCell.m */; };
 		81AD6307206A940F002A465C /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6305206A940E002A465C /* LineLayout.m */; };
+		81B19585216B86CA0041E0EA /* HandleLaunchOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B19584216B86CA0041E0EA /* HandleLaunchOptionsViewController.m */; };
 		81B37FC22046A1E6006B1092 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B37FC12046A1E6006B1092 /* SocketViewController.m */; };
 		81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F21FEE8B1A0048D4B3 /* KVCAndKVOViewController.m */; };
 		81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F51FEE8B5C0048D4B3 /* Person.m */; };
@@ -414,6 +416,8 @@
 		8145A5602132998800431B9D /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		8145A56321329A6D00431B9D /* HBXSystemTranViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXSystemTranViewController.h; sourceTree = "<group>"; };
 		8145A56421329A6D00431B9D /* HBXSystemTranViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXSystemTranViewController.m; sourceTree = "<group>"; };
+		8145A5682135028900431B9D /* HBXFilePathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXFilePathViewController.h; sourceTree = "<group>"; };
+		8145A5692135028900431B9D /* HBXFilePathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXFilePathViewController.m; sourceTree = "<group>"; };
 		81594336213272B5002026BA /* HBXGetRedPackageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXGetRedPackageViewController.h; sourceTree = "<group>"; };
 		81594337213272B5002026BA /* HBXGetRedPackageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXGetRedPackageViewController.m; sourceTree = "<group>"; };
 		8159433921327313002026BA /* avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@2x.png"; sourceTree = "<group>"; };
@@ -517,6 +521,8 @@
 		81AD6303206A940E002A465C /* LineCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineCollectionViewCell.m; sourceTree = "<group>"; };
 		81AD6304206A940E002A465C /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
 		81AD6305206A940E002A465C /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
+		81B19583216B86CA0041E0EA /* HandleLaunchOptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandleLaunchOptionsViewController.h; sourceTree = "<group>"; };
+		81B19584216B86CA0041E0EA /* HandleLaunchOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandleLaunchOptionsViewController.m; sourceTree = "<group>"; };
 		81B37FC02046A1E6006B1092 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
 		81B37FC12046A1E6006B1092 /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
 		81B5A2F11FEE8B1A0048D4B3 /* KVCAndKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCAndKVOViewController.h; sourceTree = "<group>"; };
@@ -639,6 +645,7 @@
 		81227C4E21327B5D002B2E57 /* 工具栏 */ = {
 			isa = PBXGroup;
 			children = (
+				8145A5662132A07800431B9D /* avplayer */,
 				8145A56221329A5900431B9D /* 系统转场动画 */,
 				8145A55C2132992800431B9D /* 动画 */,
 				81227CEA213295AB002B2E57 /* touchID */,
@@ -1009,6 +1016,8 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81B19582216B86AA0041E0EA /* codeViewController */,
+				8145A5672135027400431B9D /* 文件路径 */,
 				81227C4E21327B5D002B2E57 /* 工具栏 */,
 				81227C4721327AB1002B2E57 /* 文件管理 */,
 				81227C402132796A002B2E57 /* 获取权限 */,
@@ -1250,6 +1259,22 @@
 				8145A56421329A6D00431B9D /* HBXSystemTranViewController.m */,
 			);
 			path = "系统转场动画";
+			sourceTree = "<group>";
+		};
+		8145A5662132A07800431B9D /* avplayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = avplayer;
+			sourceTree = "<group>";
+		};
+		8145A5672135027400431B9D /* 文件路径 */ = {
+			isa = PBXGroup;
+			children = (
+				8145A5682135028900431B9D /* HBXFilePathViewController.h */,
+				8145A5692135028900431B9D /* HBXFilePathViewController.m */,
+			);
+			path = "文件路径";
 			sourceTree = "<group>";
 		};
 		815943352132729F002026BA /* redPackage */ = {
@@ -1552,6 +1577,15 @@
 				81AD6305206A940E002A465C /* LineLayout.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		81B19582216B86AA0041E0EA /* codeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				81B19583216B86CA0041E0EA /* HandleLaunchOptionsViewController.h */,
+				81B19584216B86CA0041E0EA /* HandleLaunchOptionsViewController.m */,
+			);
+			path = codeViewController;
 			sourceTree = "<group>";
 		};
 		81B37FBC20469DEF006B1092 /* Socket */ = {
@@ -1950,6 +1984,7 @@
 				8159438F2132752D002026BA /* EasyTextTypes.m in Sources */,
 				812B48AE212AEBF100E3E2E3 /* LBXScanNative.m in Sources */,
 				815943892132752D002026BA /* EasyTextGlobalConfig.m in Sources */,
+				81B19585216B86CA0041E0EA /* HandleLaunchOptionsViewController.m in Sources */,
 				815943842132752D002026BA /* EasyShowUtils.m in Sources */,
 				81DB9CB420EDB09C00B9F860 /* UIImage+CropRotate.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
@@ -2026,6 +2061,7 @@
 				81FD9E42206D40C500DC3DC0 /* SubView.m in Sources */,
 				8122E1A7209AEB920087BF8A /* ToolViewController.m in Sources */,
 				8144D5A020E6312800263DF9 /* UIImage+fixOrientation.m in Sources */,
+				8145A56A2135028900431B9D /* HBXFilePathViewController.m in Sources */,
 				8142D8F420DAB1AB00C2E1A5 /* NSData+ImageContentType.m in Sources */,
 				815943882132752D002026BA /* EasyAlertView.m in Sources */,
 				8142D8F020DAB1AB00C2E1A5 /* SDAnimatedImageRep.m in Sources */,

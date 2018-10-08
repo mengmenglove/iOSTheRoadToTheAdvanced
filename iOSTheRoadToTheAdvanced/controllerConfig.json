@@ -132,7 +132,17 @@
                             },
                             ]
                 }
-            
+                ,
+                {   "title" : "代码逻辑手机",
+                    "data":[
+                        {
+                            "name": "处理启动 的推送消息",
+                            "image": "image",
+                            "target": "HandleLaunchOptionsViewController"
+                        }
+                        
+                    ]
+                }
             
             
             
