@@ -129,6 +129,11 @@
                             "name": "工具栏",
                             "image": "image",
                             "target": "HBXUtilViewController"
+                            },                          
+                            {
+                                "name": "图片压缩",
+                                "image": "image",
+                                "target": "HBXImagePressViewController"
                             },
                             ]
                 }
@@ -143,7 +148,17 @@
                         
                     ]
                 }
-            
+                ,
+                {   "title" : "来电提醒",
+                    "data":[
+                        {
+                            "name": "来电提示",
+                            "image": "image",
+                            "target": "CallPhoneNotificationViewController"
+                        }
+                        
+                    ]
+                }
             
             
             

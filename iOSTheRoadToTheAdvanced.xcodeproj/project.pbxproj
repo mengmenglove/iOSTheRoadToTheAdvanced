@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811DD3162195738F00960F4F /* CallPhoneNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811DD3152195738F00960F4F /* CallPhoneNotificationViewController.m */; };
 		81227C4321327985002B2E57 /* HBXAuthorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227C4221327985002B2E57 /* HBXAuthorityViewController.m */; };
 		81227C4621327998002B2E57 /* JDAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227C4421327997002B2E57 /* JDAuthorityManager.m */; };
 		81227C4A21327AC0002B2E57 /* JDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227C4921327AC0002B2E57 /* JDFileManager.m */; };
@@ -69,6 +70,11 @@
 		813743DD1FEB5AC200857CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743DC1FEB5AC200857CFD /* main.m */; };
 		813743E51FEB5D4600857CFD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743E41FEB5D4600857CFD /* MainViewController.m */; };
 		813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743E71FEB5F0900857CFD /* RunLoopViewController.m */; };
+		8142C1C921BA52220080C63A /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142C1C821BA52220080C63A /* UIImage+Resize.m */; };
+		8142C1D021BA5B730080C63A /* HBXImagePressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142C1CE21BA5B730080C63A /* HBXImagePressViewController.m */; };
+		8142C1D121BA5B730080C63A /* HBXImagePressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8142C1CF21BA5B730080C63A /* HBXImagePressViewController.xib */; };
+		8142C1D621BA5F370080C63A /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142C1D221BA5F360080C63A /* UIImage+Alpha.m */; };
+		8142C1D721BA5F370080C63A /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142C1D321BA5F360080C63A /* UIImage+RoundedCorner.m */; };
 		8142D84D20DAB00A00C2E1A5 /* UIImageSynthesisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142D84C20DAB00A00C2E1A5 /* UIImageSynthesisViewController.m */; };
 		8142D85020DAB06200C2E1A5 /* ZJImageSynthesusUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142D84E20DAB06200C2E1A5 /* ZJImageSynthesusUtil.m */; };
 		8142D8E220DAB1AB00C2E1A5 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142D8B220DAB1AB00C2E1A5 /* SDWebImageManager.m */; };
@@ -113,6 +119,7 @@
 		8145A5612132998800431B9D /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 8145A5602132998800431B9D /* apple.png */; };
 		8145A56521329A6D00431B9D /* HBXSystemTranViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8145A56421329A6D00431B9D /* HBXSystemTranViewController.m */; };
 		8145A56A2135028900431B9D /* HBXFilePathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8145A5692135028900431B9D /* HBXFilePathViewController.m */; };
+		8157669021BA9FE400E2BB56 /* HBXPressImageShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8157668F21BA9FE400E2BB56 /* HBXPressImageShowViewController.m */; };
 		81594338213272B5002026BA /* HBXGetRedPackageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81594337213272B5002026BA /* HBXGetRedPackageViewController.m */; };
 		8159434321327313002026BA /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159433921327313002026BA /* avatar@2x.png */; };
 		8159434421327313002026BA /* red_packet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159433A21327313002026BA /* red_packet@2x.png */; };
@@ -213,6 +220,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		811DD3142195738F00960F4F /* CallPhoneNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallPhoneNotificationViewController.h; sourceTree = "<group>"; };
+		811DD3152195738F00960F4F /* CallPhoneNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallPhoneNotificationViewController.m; sourceTree = "<group>"; };
 		81227C4121327985002B2E57 /* HBXAuthorityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXAuthorityViewController.h; sourceTree = "<group>"; };
 		81227C4221327985002B2E57 /* HBXAuthorityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXAuthorityViewController.m; sourceTree = "<group>"; };
 		81227C4421327997002B2E57 /* JDAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAuthorityManager.m; sourceTree = "<group>"; };
@@ -331,6 +340,15 @@
 		813743E41FEB5D4600857CFD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		813743E61FEB5F0900857CFD /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		813743E71FEB5F0900857CFD /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		8142C1C721BA52220080C63A /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		8142C1C821BA52220080C63A /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		8142C1CD21BA5B730080C63A /* HBXImagePressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXImagePressViewController.h; sourceTree = "<group>"; };
+		8142C1CE21BA5B730080C63A /* HBXImagePressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXImagePressViewController.m; sourceTree = "<group>"; };
+		8142C1CF21BA5B730080C63A /* HBXImagePressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBXImagePressViewController.xib; sourceTree = "<group>"; };
+		8142C1D221BA5F360080C63A /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		8142C1D321BA5F360080C63A /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		8142C1D421BA5F370080C63A /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		8142C1D521BA5F370080C63A /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		8142D84B20DAB00A00C2E1A5 /* UIImageSynthesisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageSynthesisViewController.h; sourceTree = "<group>"; };
 		8142D84C20DAB00A00C2E1A5 /* UIImageSynthesisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageSynthesisViewController.m; sourceTree = "<group>"; };
 		8142D84E20DAB06200C2E1A5 /* ZJImageSynthesusUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJImageSynthesusUtil.m; sourceTree = "<group>"; };
@@ -418,6 +436,8 @@
 		8145A56421329A6D00431B9D /* HBXSystemTranViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXSystemTranViewController.m; sourceTree = "<group>"; };
 		8145A5682135028900431B9D /* HBXFilePathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXFilePathViewController.h; sourceTree = "<group>"; };
 		8145A5692135028900431B9D /* HBXFilePathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXFilePathViewController.m; sourceTree = "<group>"; };
+		8157668E21BA9FE400E2BB56 /* HBXPressImageShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXPressImageShowViewController.h; sourceTree = "<group>"; };
+		8157668F21BA9FE400E2BB56 /* HBXPressImageShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXPressImageShowViewController.m; sourceTree = "<group>"; };
 		81594336213272B5002026BA /* HBXGetRedPackageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXGetRedPackageViewController.h; sourceTree = "<group>"; };
 		81594337213272B5002026BA /* HBXGetRedPackageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXGetRedPackageViewController.m; sourceTree = "<group>"; };
 		8159433921327313002026BA /* avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@2x.png"; sourceTree = "<group>"; };
@@ -622,6 +642,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		811DD3132195735100960F4F /* callPhoneNotiofication */ = {
+			isa = PBXGroup;
+			children = (
+				811DD3142195738F00960F4F /* CallPhoneNotificationViewController.h */,
+				811DD3152195738F00960F4F /* CallPhoneNotificationViewController.m */,
+			);
+			path = callPhoneNotiofication;
+			sourceTree = "<group>";
+		};
 		81227C402132796A002B2E57 /* 获取权限 */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +674,7 @@
 		81227C4E21327B5D002B2E57 /* 工具栏 */ = {
 			isa = PBXGroup;
 			children = (
+				8142C1C621BA52060080C63A /* 图片压缩 */,
 				8145A5662132A07800431B9D /* avplayer */,
 				8145A56221329A5900431B9D /* 系统转场动画 */,
 				8145A55C2132992800431B9D /* 动画 */,
@@ -1016,6 +1046,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				811DD3132195735100960F4F /* callPhoneNotiofication */,
 				81B19582216B86AA0041E0EA /* codeViewController */,
 				8145A5672135027400431B9D /* 文件路径 */,
 				81227C4E21327B5D002B2E57 /* 工具栏 */,
@@ -1067,6 +1098,24 @@
 				81BF2A5620F3998600144EB4 /* PrefixHeader.pch */,
 			);
 			path = iOSTheRoadToTheAdvanced;
+			sourceTree = "<group>";
+		};
+		8142C1C621BA52060080C63A /* 图片压缩 */ = {
+			isa = PBXGroup;
+			children = (
+				8142C1D521BA5F370080C63A /* UIImage+Alpha.h */,
+				8142C1D221BA5F360080C63A /* UIImage+Alpha.m */,
+				8142C1D421BA5F370080C63A /* UIImage+RoundedCorner.h */,
+				8142C1D321BA5F360080C63A /* UIImage+RoundedCorner.m */,
+				8142C1C721BA52220080C63A /* UIImage+Resize.h */,
+				8142C1C821BA52220080C63A /* UIImage+Resize.m */,
+				8142C1CD21BA5B730080C63A /* HBXImagePressViewController.h */,
+				8142C1CE21BA5B730080C63A /* HBXImagePressViewController.m */,
+				8157668E21BA9FE400E2BB56 /* HBXPressImageShowViewController.h */,
+				8157668F21BA9FE400E2BB56 /* HBXPressImageShowViewController.m */,
+				8142C1CF21BA5B730080C63A /* HBXImagePressViewController.xib */,
+			);
+			path = "图片压缩";
 			sourceTree = "<group>";
 		};
 		8142D84A20DAAFD200C2E1A5 /* 图片合成 */ = {
@@ -1914,6 +1963,7 @@
 				81227C75213282F4002B2E57 /* guide_02@2x.png in Resources */,
 				812B48B4212AF91E00E3E2E3 /* 1532946340216.png in Resources */,
 				8159434321327313002026BA /* avatar@2x.png in Resources */,
+				8142C1D121BA5B730080C63A /* HBXImagePressViewController.xib in Resources */,
 				8145A5612132998800431B9D /* apple.png in Resources */,
 				81E020DB1FEB98E9009709AA /* controllerConfig.json in Resources */,
 				8159434921327313002026BA /* redpacket_open_btn@2x.png in Resources */,
@@ -1994,6 +2044,7 @@
 				8144D58E20E62DA800263DF9 /* CustomDefineCameraViewController.m in Sources */,
 				8142D8EC20DAB1AB00C2E1A5 /* SDWebImageCompat.m in Sources */,
 				8144D5A920E632B200263DF9 /* UIImage+Resize.m in Sources */,
+				811DD3162195738F00960F4F /* CallPhoneNotificationViewController.m in Sources */,
 				81FD9DDE206D3D2200DC3DC0 /* ShowImageCell.m in Sources */,
 				81FD9E28206D3D8E00DC3DC0 /* CollectTranFromViewController.m in Sources */,
 				812B4885212ABC4300E3E2E3 /* DeviceOrientation.m in Sources */,
@@ -2017,6 +2068,7 @@
 				8144D5A720E632B200263DF9 /* ViewUtils.m in Sources */,
 				81227CC821328C56002B2E57 /* RectManager.m in Sources */,
 				81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */,
+				8142C1D621BA5F370080C63A /* UIImage+Alpha.m in Sources */,
 				8122E1AE209AFAE70087BF8A /* UIImageFilterViewController.m in Sources */,
 				812B48B2212AF84200E3E2E3 /* RemoveImageRedPointViewController.m in Sources */,
 				81227C5121327B67002B2E57 /* HBXUtilViewController.m in Sources */,
@@ -2028,10 +2080,12 @@
 				81FD9E41206D40C500DC3DC0 /* textView.m in Sources */,
 				812B48A9212AEBF100E3E2E3 /* LBXScanVideoZoomView.m in Sources */,
 				81227CC721328C56002B2E57 /* JDIDCardModel.m in Sources */,
+				8157669021BA9FE400E2BB56 /* HBXPressImageShowViewController.m in Sources */,
 				8122E1B1209AFB280087BF8A /* ImageFilterUtil.m in Sources */,
 				815943802132752D002026BA /* EasyAlertTypes.m in Sources */,
 				816885A020511B4C00932943 /* ConcreatBuild.m in Sources */,
 				8144D59A20E6307F00263DF9 /* SimpleCamera.m in Sources */,
+				8142C1D721BA5F370080C63A /* UIImage+RoundedCorner.m in Sources */,
 				81227CE221329061002B2E57 /* JDBankScanViewController.m in Sources */,
 				81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */,
 				81DB9CB520EDB09C00B9F860 /* TOCropViewControllerTransitioning.m in Sources */,
@@ -2049,6 +2103,7 @@
 				8145A56521329A6D00431B9D /* HBXSystemTranViewController.m in Sources */,
 				812B48A7212AEBF100E3E2E3 /* LBXScanViewController.m in Sources */,
 				815943912132752D002026BA /* EasyEmptyGlobalConfig.m in Sources */,
+				8142C1C921BA52220080C63A /* UIImage+Resize.m in Sources */,
 				8142D8F620DAB1AB00C2E1A5 /* NSImage+WebCache.m in Sources */,
 				81227CCA21328C56002B2E57 /* JDIDCardScanViewController.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
@@ -2095,6 +2150,7 @@
 				815943932132752D002026BA /* EasyEmptyTypes.m in Sources */,
 				813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */,
 				812B48AA212AEBF100E3E2E3 /* LBXScanLineAnimation.m in Sources */,
+				8142C1D021BA5B730080C63A /* HBXImagePressViewController.m in Sources */,
 				815943872132752D002026BA /* EasyAlertItem.m in Sources */,
 				815943812132752D002026BA /* EasyTextView.m in Sources */,
 				812B4892212AEBAA00E3E2E3 /* ZJScanViewController.m in Sources */,
