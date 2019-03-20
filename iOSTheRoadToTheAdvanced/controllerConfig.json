@@ -135,6 +135,11 @@
                                 "image": "image",
                                 "target": "HBXImagePressViewController"
                             },
+                            {
+                                "name": "http框架测试",
+                                "image": "image",
+                                "target": "HBXHttpTestViewController"
+                            },
                             ]
                 }
                 ,

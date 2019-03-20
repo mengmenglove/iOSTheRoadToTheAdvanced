@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.tableView];
+        [self.view addSubview:self.tableView];
     
      [self.dataArray addObject:@{@"title":@"avplayer"}];//AVPlayer
      [self.dataArray addObject:@{@"title":@"MPMoviePlayerController"}];//9.0 弃用
