@@ -176,6 +176,9 @@
 		8181D6C821241ED600F9866C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8181D6C721241ED600F9866C /* AVKit.framework */; };
 		8181D6CA21241F9F00F9866C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8181D6C921241F9F00F9866C /* MediaPlayer.framework */; };
 		818C968A2265CADA00EF4B59 /* HBXFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 818C96892265CADA00EF4B59 /* HBXFoundationViewController.m */; };
+		818C968D2265CBFE00EF4B59 /* HBXLearnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 818C968C2265CBFE00EF4B59 /* HBXLearnModel.m */; };
+		818C96902265CC8900EF4B59 /* HBXLearnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 818C968F2265CC8900EF4B59 /* HBXLearnCell.m */; };
+		818C96922265D03700EF4B59 /* learndata.json in Resources */ = {isa = PBXBuildFile; fileRef = 818C96912265D03700EF4B59 /* learndata.json */; };
 		81AD6301206A93A8002A465C /* CollectSilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6300206A93A8002A465C /* CollectSilderViewController.m */; };
 		81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6303206A940E002A465C /* LineCollectionViewCell.m */; };
 		81AD6307206A940F002A465C /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6305206A940E002A465C /* LineLayout.m */; };
@@ -559,6 +562,11 @@
 		8181D6C921241F9F00F9866C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		818C96882265CADA00EF4B59 /* HBXFoundationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXFoundationViewController.h; sourceTree = "<group>"; };
 		818C96892265CADA00EF4B59 /* HBXFoundationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXFoundationViewController.m; sourceTree = "<group>"; };
+		818C968B2265CBFE00EF4B59 /* HBXLearnModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXLearnModel.h; sourceTree = "<group>"; };
+		818C968C2265CBFE00EF4B59 /* HBXLearnModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXLearnModel.m; sourceTree = "<group>"; };
+		818C968E2265CC8900EF4B59 /* HBXLearnCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXLearnCell.h; sourceTree = "<group>"; };
+		818C968F2265CC8900EF4B59 /* HBXLearnCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXLearnCell.m; sourceTree = "<group>"; };
+		818C96912265D03700EF4B59 /* learndata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = learndata.json; path = iOSTheRoadToTheAdvanced/learndata.json; sourceTree = SOURCE_ROOT; };
 		81AD62FF206A93A8002A465C /* CollectSilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectSilderViewController.h; sourceTree = "<group>"; };
 		81AD6300206A93A8002A465C /* CollectSilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectSilderViewController.m; sourceTree = "<group>"; };
 		81AD6302206A940E002A465C /* LineCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1702,6 +1710,7 @@
 		818C96852265CAB200EF4B59 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				818C96912265D03700EF4B59 /* learndata.json */,
 				818C96882265CADA00EF4B59 /* HBXFoundationViewController.h */,
 				818C96892265CADA00EF4B59 /* HBXFoundationViewController.m */,
 			);
@@ -1711,6 +1720,8 @@
 		818C96862265CAB200EF4B59 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				818C968B2265CBFE00EF4B59 /* HBXLearnModel.h */,
+				818C968C2265CBFE00EF4B59 /* HBXLearnModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1718,6 +1729,8 @@
 		818C96872265CAB200EF4B59 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				818C968E2265CC8900EF4B59 /* HBXLearnCell.h */,
+				818C968F2265CC8900EF4B59 /* HBXLearnCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -2170,6 +2183,7 @@
 				8159434921327313002026BA /* redpacket_open_btn@2x.png in Resources */,
 				81688589204FEB1B00932943 /* 堆栈关系.json in Resources */,
 				81227CC621328C56002B2E57 /* zocr0.lib in Resources */,
+				818C96922265D03700EF4B59 /* learndata.json in Resources */,
 				8159434421327313002026BA /* red_packet@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2192,6 +2206,7 @@
 				81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */,
 				81FD9E4A206D413D00DC3DC0 /* WLScrollView.m in Sources */,
 				81D688FB21BB95F100E512AF /* YTKRequest.m in Sources */,
+				818C968D2265CBFE00EF4B59 /* HBXLearnModel.m in Sources */,
 				81BF2A5920F39C1E00144EB4 /* BXMessageView.m in Sources */,
 				81FD9E35206D3E9700DC3DC0 /* TrScrollViewController.m in Sources */,
 				8159437E2132752D002026BA /* EasyLoadingTypes.m in Sources */,
@@ -2257,6 +2272,7 @@
 				8144D5AC20E6360500263DF9 /* ImageChangeViewController.mm in Sources */,
 				8144D59D20E630F900263DF9 /* SimpleCamera+Helper.m in Sources */,
 				81FD9E32206D3E6B00DC3DC0 /* UIView+Banner.m in Sources */,
+				818C96902265CC8900EF4B59 /* HBXLearnCell.m in Sources */,
 				81688573204EAB3500932943 /* DesignClassViewController.m in Sources */,
 				8142D8FC20DAB1AB00C2E1A5 /* UIButton+WebCache.m in Sources */,
 				8142D8EF20DAB1AB00C2E1A5 /* NSButton+WebCache.m in Sources */,

@@ -1,0 +1,23 @@
+ [
+    {
+    "name": "NSAutoReleasePool",
+    "text": "NSAutoreleasePool可以同时有多个，它的组织是个栈，总是存在一个栈顶pool，也就是当前pool，每创建一个pool，就往栈里压一个，改变当前pool为新建的pool，然后，每次给pool发送drain消息，就弹出栈顶的pool，改当前pool为栈里的下一个 pool，当栈顶的pool被销毁时，就会向当前pool里面的所有对象执行一次release操作。\n\n\n对于每一个Runloop， 系统会隐式创建一个Autorelease pool，这样所有的release pool会构成一个象CallStack一样的一个栈式结构，在每一个Runloop结束时，当前栈顶的Autorelease pool会被销毁，这样这个pool里的每个Object会被release。 \n\n\n一个进程（程序）至少包含一个线程即主线程，一般来讲，一个线程一次只能执行一个任务，执行完成后线程就会退出。如果我们需要一个机制，让线程能随时处理事件但并不退出，这个时候这个线程就拥有了“等待->接收消息->处理”然后循环的能力，这种模型通常被称作 Event Loop \n\n\n一个线程的创建，即是runloop的创建，同时隐式创建一个Autorelease pool，储存着对象的引用，计数+1。 一个线程被销毁，对应的runloop被销毁，对应的pool也被销毁（执行drain），所管理的所有对象执行release操作，引用销毁，计数-1。一个UI事件，Timer call，delegate call等，其实也是系统隐性的创建出一个线程来等待->接收->执行消息。",
+    },
+    
+    {
+        "name": "NSByteCountFormatter",
+        "text": "用于格式化大小的字符串\n NSString * str =  [NSByteCountFormatter stringFromByteCount:10929292 countStyle:NSByteCountFormatterCountStyleFile];\nNSLog(@\"str: %@\", str);\n str: 10.9 MB",
+    },
+    
+    
+    {
+        "name": "NSHostByteOrder  字节序",
+        "text": "UInt16  Byte = 0x1234;\nHTONS(Byte);\nNSLog(@\"Byte == %x\",Byte); \n 3412",
+    },
+    
+    {
+        "name": "NSCache",
+        "text": "NSCache是苹果官方提供的缓存类，它的用法与NSMutableDictionary的用法很相似\nNSCache在系统发出低内存通知时，会自动删减缓存\nNSCache可以设置数量限制，通过countLimit与 totalCostLimit来限制cache的数量或者限制cost\nNSCache是线程安全的，在多线程操作中，不需要对Cache加锁。NSCache的Key只是对对象的strong引用，对象不需要实现NSCopying协议，NSCache也不会像NSDictionary一样复制对象",
+    },
+]
+
