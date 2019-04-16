@@ -64,6 +64,7 @@
 		8136709020E4CB5D009A42A7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136708F20E4CB5D009A42A7 /* CoreImage.framework */; };
 		8136709220E4CB63009A42A7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136709120E4CB63009A42A7 /* ImageIO.framework */; };
 		8136709420E4CBBC009A42A7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136709320E4CBBC009A42A7 /* CoreFoundation.framework */; };
+		813709E92241D9F3009B0C9F /* ZJAvplayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813709E82241D9F3009B0C9F /* ZJAvplayerViewController.m */; };
 		813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743CE1FEB5AC200857CFD /* AppDelegate.m */; };
 		813743D21FEB5AC200857CFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743D11FEB5AC200857CFD /* ViewController.m */; };
 		813743D71FEB5AC200857CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813743D61FEB5AC200857CFD /* Assets.xcassets */; };
@@ -174,6 +175,7 @@
 		8181D6C621241B0900F9866C /* HBXShowSystemPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8181D6C521241B0900F9866C /* HBXShowSystemPlayViewController.m */; };
 		8181D6C821241ED600F9866C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8181D6C721241ED600F9866C /* AVKit.framework */; };
 		8181D6CA21241F9F00F9866C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8181D6C921241F9F00F9866C /* MediaPlayer.framework */; };
+		818C968A2265CADA00EF4B59 /* HBXFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 818C96892265CADA00EF4B59 /* HBXFoundationViewController.m */; };
 		81AD6301206A93A8002A465C /* CollectSilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6300206A93A8002A465C /* CollectSilderViewController.m */; };
 		81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6303206A940E002A465C /* LineCollectionViewCell.m */; };
 		81AD6307206A940F002A465C /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6305206A940E002A465C /* LineLayout.m */; };
@@ -346,6 +348,8 @@
 		8136708F20E4CB5D009A42A7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		8136709120E4CB63009A42A7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		8136709320E4CBBC009A42A7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		813709E72241D9F3009B0C9F /* ZJAvplayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJAvplayerViewController.h; sourceTree = "<group>"; };
+		813709E82241D9F3009B0C9F /* ZJAvplayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJAvplayerViewController.m; sourceTree = "<group>"; };
 		813743CA1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTheRoadToTheAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813743CD1FEB5AC200857CFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		813743CE1FEB5AC200857CFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -553,6 +557,8 @@
 		8181D6C521241B0900F9866C /* HBXShowSystemPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXShowSystemPlayViewController.m; sourceTree = "<group>"; };
 		8181D6C721241ED600F9866C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		8181D6C921241F9F00F9866C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		818C96882265CADA00EF4B59 /* HBXFoundationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXFoundationViewController.h; sourceTree = "<group>"; };
+		818C96892265CADA00EF4B59 /* HBXFoundationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXFoundationViewController.m; sourceTree = "<group>"; };
 		81AD62FF206A93A8002A465C /* CollectSilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectSilderViewController.h; sourceTree = "<group>"; };
 		81AD6300206A93A8002A465C /* CollectSilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectSilderViewController.m; sourceTree = "<group>"; };
 		81AD6302206A940E002A465C /* LineCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineCollectionViewCell.h; sourceTree = "<group>"; };
@@ -730,6 +736,7 @@
 		81227C4E21327B5D002B2E57 /* 工具栏 */ = {
 			isa = PBXGroup;
 			children = (
+				813709E32241D9DF009B0C9F /* avplayerVC */,
 				81D688DE21BB95D600E512AF /* httpUtil */,
 				8142C1C621BA52060080C63A /* 图片压缩 */,
 				8145A5662132A07800431B9D /* avplayer */,
@@ -1083,6 +1090,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		813709E32241D9DF009B0C9F /* avplayerVC */ = {
+			isa = PBXGroup;
+			children = (
+				813709E42241D9DF009B0C9F /* controller */,
+				813709E52241D9DF009B0C9F /* model */,
+				813709E62241D9DF009B0C9F /* view */,
+			);
+			path = avplayerVC;
+			sourceTree = "<group>";
+		};
+		813709E42241D9DF009B0C9F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				813709E72241D9F3009B0C9F /* ZJAvplayerViewController.h */,
+				813709E82241D9F3009B0C9F /* ZJAvplayerViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		813709E52241D9DF009B0C9F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		813709E62241D9DF009B0C9F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		813743C11FEB5AC100857CFD = {
 			isa = PBXGroup;
 			children = (
@@ -1103,6 +1143,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				818C96842265CAB200EF4B59 /* 理论学习 */,
 				811DD3132195735100960F4F /* callPhoneNotiofication */,
 				81B19582216B86AA0041E0EA /* codeViewController */,
 				8145A5672135027400431B9D /* 文件路径 */,
@@ -1648,6 +1689,39 @@
 			path = playerviewController;
 			sourceTree = "<group>";
 		};
+		818C96842265CAB200EF4B59 /* 理论学习 */ = {
+			isa = PBXGroup;
+			children = (
+				818C96852265CAB200EF4B59 /* controller */,
+				818C96862265CAB200EF4B59 /* model */,
+				818C96872265CAB200EF4B59 /* view */,
+			);
+			path = "理论学习";
+			sourceTree = "<group>";
+		};
+		818C96852265CAB200EF4B59 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				818C96882265CADA00EF4B59 /* HBXFoundationViewController.h */,
+				818C96892265CADA00EF4B59 /* HBXFoundationViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		818C96862265CAB200EF4B59 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		818C96872265CAB200EF4B59 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		81AD62FB206A9396002A465C /* collection滑动视图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2187,6 +2261,7 @@
 				8142D8FC20DAB1AB00C2E1A5 /* UIButton+WebCache.m in Sources */,
 				8142D8EF20DAB1AB00C2E1A5 /* NSButton+WebCache.m in Sources */,
 				815943942132752D002026BA /* EasyAlertPart.m in Sources */,
+				818C968A2265CADA00EF4B59 /* HBXFoundationViewController.m in Sources */,
 				8142D8E220DAB1AB00C2E1A5 /* SDWebImageManager.m in Sources */,
 				815943832132752D002026BA /* EasyEmptyView.m in Sources */,
 				81DB9CB620EDB09C00B9F860 /* TOCroppedImageAttributes.m in Sources */,
@@ -2241,6 +2316,7 @@
 				8159437F2132752D002026BA /* EasyTextConfig.m in Sources */,
 				8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */,
 				8142D8E820DAB1AB00C2E1A5 /* SDWebImageDownloader.m in Sources */,
+				813709E92241D9F3009B0C9F /* ZJAvplayerViewController.m in Sources */,
 				8145A56521329A6D00431B9D /* HBXSystemTranViewController.m in Sources */,
 				812B48A7212AEBF100E3E2E3 /* LBXScanViewController.m in Sources */,
 				81D688F721BB95F100E512AF /* YTKBatchRequest.m in Sources */,

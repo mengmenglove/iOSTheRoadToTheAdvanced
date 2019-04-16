@@ -91,6 +91,11 @@
                             "image": "image",
                             "target": "HBXShowSystemPlayViewController"
                             },
+                            {
+                                "name": "avplayer测试",
+                                "image": "image",
+                                "target": "ZJAvplayerViewController"
+                            },
                             ]
                 },
                 {   "title" : "工具栏",
@@ -163,8 +168,17 @@
                         }
                         
                     ]
+                },
+                {   "title" : "框架理论学习",
+                    "data":[
+                        {
+                            "name": "foundation",
+                            "image": "image",
+                            "target": "HBXFoundationViewController"
+                        }
+                        
+                    ]
                 }
-            
             
             
             ]
