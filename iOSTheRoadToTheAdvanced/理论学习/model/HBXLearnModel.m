@@ -10,4 +10,12 @@
 
 @implementation HBXLearnModel
 
+- (instancetype)initWith:(NSString *)name age:(int)age {
+    if (self = [super init]) {
+        self.name = name;
+        self.age = age;
+    }
+    return self;
+}
+
 @end

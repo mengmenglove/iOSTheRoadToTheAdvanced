@@ -19,5 +19,63 @@
         "name": "NSCache",
         "text": "NSCache是苹果官方提供的缓存类，它的用法与NSMutableDictionary的用法很相似\nNSCache在系统发出低内存通知时，会自动删减缓存\nNSCache可以设置数量限制，通过countLimit与 totalCostLimit来限制cache的数量或者限制cost\nNSCache是线程安全的，在多线程操作中，不需要对Cache加锁。NSCache的Key只是对对象的strong引用，对象不需要实现NSCopying协议，NSCache也不会像NSDictionary一样复制对象",
     },
+    
+    {
+        "name": "NSCharacterSet 字符集",
+        "text": "NSString *str = @\"今天我们来学习NSCharacterSet我们快乐\";\nNSString *str1 = @\"我s今\";NSMutableString *resultStr = [[NSMutableString alloc]init];\nfor (int i = 0; i < str.length; i++) \n{NSString *indexStr = [str substringWithRange:NSMakeRange(i, 1)];\nif (![str1 containsString:indexStr]) {\n[resultStr\nappendString:indexStr];}}\nNSLog(@\"%@\",resultStr);\n天们来学习NSCharacterSet们快乐\n  [NSCharacterSet controlCharacterSet]; //控制符的字符集\n[NSCharacterSet whitespaceCharacterSet]; //空格的字符集\n[NSCharacterSet whitespaceAndNewlineCharacterSet]; //空格和换行符的字符集\n[NSCharacterSet decimalDigitCharacterSet]; //十进制数字的字符集\n[NSCharacterSet letterCharacterSet]; //字母的字符集\n[NSCharacterSet lowercaseLetterCharacterSet]; //小写字母的字符集\n[NSCharacterSet uppercaseLetterCharacterSet]; //大写字母的字符集\n[NSCharacterSet nonBaseCharacterSet]; //非基础的字符集\n[NSCharacterSet alphanumericCharacterSet]; //字母和数字的字符集\n[NSCharacterSet decomposableCharacterSet]; //可分解\n[NSCharacterSet illegalCharacterSet]; //非法的字符集\n[NSCharacterSet punctuationCharacterSet]; //标点的字符集\n[NSCharacterSet capitalizedLetterCharacterSet]; //首字母大写的字符集\n[NSCharacterSet symbolCharacterSet]; //符号的字符集\n[NSCharacterSet newlineCharacterSet]; //换行符的字符集",
+    },
+    
+    
+    {
+        "name": "NSCoder 与 NSdecode ",
+        "text": "数据规定时候使用",
+    },
+    
+    {
+        "name": "NSComparisonPredicate  ",
+        "text": "使用搜索功能， 可以在官网搜搜对应demo，集合 联合 UISearchController 使用",
+    },
+    
+    {
+        "name":"NSCompoundPredicate",
+        "text": "NSMutableArray *array=[NSMutableArray array];//\n[array addObject:[[HBXLearnModel alloc] initWith:@\"lww\" age:20]];//\n[array addObject:[[HBXLearnModel alloc] initWith:@\"wy\" age:20]];//\n[array addObject:[[HBXLearnModel alloc] initWith:@\"LWW\" age:21]];//\n[array addObject:[[HBXLearnModel alloc] initWith:@\"sunshinelww\" age:22]];//\n\n\n//    NSPredicate *basicPredicate=[NSPredicate predicateWithFormat:@\"name = 'lww'\"];//\n\n\n//    //基础过滤//\n//    [array filterUsingPredicate: basicPredicate]; //通过条件表达式筛选数组元素//\nNSMutableArray *predicateArray=[NSMutableArray array];//\nNSPredicate *basicPredicate1=[NSPredicate predicateWithFormat:@\"name = 'lww'\"];//\nNSPredicate *basicPredicate2=[NSPredicate predicateWithFormat:@\"age = 20\"];[predicateArray addObject: basicPredicate1];//\n[predicateArray addObject: basicPredicate2];//\n\n//    NSCompoundPredicate *orMatchPredicate=[NSCompoundPredicate orPredicateWithSubpredicates:predicateArray]; ///对//\n数组中的谓词表达式取或//    [array filterUsingPredicate:orMatchPredicate];//\n\n//    NSLog(@\"array after: %@\", array);//\n//    NSCompoundPredicate *andMatchPredicate=[NSCompoundPredicate andPredicateWithSubpredicates:predicateArray];///对数组中的谓词表达式取与//\n//    [array filterUsingPredicate:andMatchPredicate];//\n//    NSLog(@\"array after: %@\", array);//\n\n//    NSCompoundPredicate *noMatchPredicate = [NSCompoundPredicate notPredicateWithSubpredicate://\n basicPredicate1]; ///对basicPredicate1取反//\n//    [array filterUsingPredicate:noMatchPredicate];//\n//    NSLog(@\"array after: %@\", array);//\n",
+    },
+    {
+        "name": "NSDate  ",
+        "text": "// 直接初始化的时间, 也是当前时间\n//NSDate *date = [[NSDate alloc]init];\nNSTimeZone *zone = [NSTimeZone systemTimeZone];\nNSTimeInterval interval = [zone secondsFromGMTForDate:date];\nNSDate *current = [date dateByAddingTimeInterval:interval];",
+    },
+    {
+        "name": "NSDateComponentsFormatter  ",
+        "text": "日历格式组件",
+    },
+    
+    {
+        "name": "NSDateFormatter  ",
+        "text": "日期格式",
+    },
+
+    {
+        "name": "NSDateInterval  ",
+        "text": "日期区间 开始给结束区间",
+    },
+    {
+        "name": "NSDecimal NSDecimalNumber ",
+        "text": "科学计数法 加减乘服 乘方",
+    },
+    
+    {
+        "name": "NSFormatter   ",
+        "text": "// 新类 主要都是在HealthKit当中使用\n//NSEnergyFormatter使用焦作为能量的原始单位，当处理健康信息时，则使用卡.\n[NSEnergyFormatter class];\n虽然质量是物质存在的基本单位, 在HealthKit中，它主要指的是身体重量.\n[NSMassFormatter class];\nNSFormatter的最后一个新子类是NSLengthFormatter. 我们可以把它想象为MKDistanceFormatter的加强版。\n[NSLengthFormatter class];",
+    },
+    
+    {
+        "name": "NSEnumerator   ",
+        "text": "计数器 NSArray NSDictionary NSSet 都可以获取到\n  NSArray *newArray = @[@"1", @"2", @"3"];\nNSEnumerator *enumtrator = [newArray objectEnumerator];\nNSString *obj = nil;\nwhile (obj  = [enumtrator nextObject]) {\nNSLog(@\"obj: %@\", obj);\n} ",
+    },
+    
+    {
+        "name": "NSException   ",
+        "text": "控制程序的异常情况, 可以通过try catch获取异常， 可以用runtime + ",
+    },
 ]
 

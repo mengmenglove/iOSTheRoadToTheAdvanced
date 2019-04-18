@@ -9,6 +9,7 @@
 #import "HBXFoundationViewController.h"
 #import "HBXLearnCell.h"
 #import "HBXLearnModel.h"
+#import "HBXLearnModel.h"
 
 @interface HBXFoundationViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -37,6 +38,8 @@
     NSLog(@"Byte == %x",Byte);
     3412
     */
+    
+    /*
     NSString *str = @"今天我们来学习NSCharacterSet我们快乐";
     NSString *str1 = @"我s今";
     NSMutableString *resultStr = [[NSMutableString alloc]init];
@@ -46,8 +49,64 @@
             [resultStr appendString:indexStr];
         }
     }
-
     NSLog(@"%@",resultStr);
+    天们来学习NSCharacterSet们快乐
+     */
+    
+    //基础过滤
+    NSMutableArray *array=[NSMutableArray array];//\n
+    [array addObject:[[HBXLearnModel alloc] initWith:@"lww" age:20]];//\n
+    [array addObject:[[HBXLearnModel alloc] initWith:@"wy" age:20]];//\n
+    [array addObject:[[HBXLearnModel alloc] initWith:@"LWW" age:21]];//\n
+    [array addObject:[[HBXLearnModel alloc] initWith:@"sunshinelww" age:22]];//\n
+  
+//    NSPredicate *basicPredicate=[NSPredicate predicateWithFormat:@"name = 'lww'"];//\n
+//    //基础过滤//\n
+//    [array filterUsingPredicate: basicPredicate]; //通过条件表达式筛选数组元素//\n
+    
+    NSMutableArray *predicateArray=[NSMutableArray array];//\n
+    NSPredicate *basicPredicate1=[NSPredicate predicateWithFormat:@"name = 'lww'"];//\n
+    NSPredicate *basicPredicate2=[NSPredicate predicateWithFormat:@"age = 20"];[predicateArray addObject: basicPredicate1];//\n
+    [predicateArray addObject: basicPredicate2];//\n
+    
+//    NSCompoundPredicate *orMatchPredicate=[NSCompoundPredicate orPredicateWithSubpredicates:predicateArray]; ///对//\n数组中的谓词表达式取或
+//    [array filterUsingPredicate:orMatchPredicate];//\n
+//    NSLog(@"array after: %@", array);//\n
+    
+    
+//    NSCompoundPredicate *andMatchPredicate=[NSCompoundPredicate andPredicateWithSubpredicates:predicateArray];///对数组中的谓词表达式取与//\n
+//    [array filterUsingPredicate:andMatchPredicate];//\n
+//    NSLog(@"array after: %@", array);//\n
+    
+    
+//    NSCompoundPredicate *noMatchPredicate = [NSCompoundPredicate notPredicateWithSubpredicate://\n basicPredicate1]; ///对basicPredicate1取反//\n
+//    [array filterUsingPredicate:noMatchPredicate];//\n
+//    NSLog(@"array after: %@", array);//\n
+    
+    /*
+    NSArray *newArray = @[@"1", @"2", @"3"];
+    NSEnumerator *enumtrator = [newArray objectEnumerator];
+    NSString *obj = nil;
+    while (obj  = [enumtrator nextObject]) {
+        NSLog(@"obj: %@", obj);
+    }
+     */
+    //异常的名称
+    NSString *exceptionName = @"自定义异常";
+    //异常的原因
+    NSString *exceptionReason = @"我长得太帅了，所以程序崩溃了";
+    //异常的信息
+    NSDictionary *exceptionUserInfo = nil;
+    
+    NSException *exception = [NSException exceptionWithName:exceptionName reason:exceptionReason userInfo:exceptionUserInfo];
+    
+    NSString *aboutMe = @"太帅了";
+    
+    if ([aboutMe isEqualToString:@"太帅了"]) {
+        //抛异常
+        @throw exception;
+    }
+    
     
     // Do any additional setup after loading the view.
 }

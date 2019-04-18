@@ -13,8 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HBXLearnModel : NSObject
 
 @property (nonatomic, assign)  CGFloat cellHeight;
-
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, assign) int age;
 @property (nonatomic, strong) NSString *text;
+
+- (instancetype)initWith:(NSString *)name age:(int)age;
 
 @end
 
