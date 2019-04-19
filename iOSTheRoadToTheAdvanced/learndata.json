@@ -70,12 +70,22 @@
     
     {
         "name": "NSEnumerator   ",
-        "text": "计数器 NSArray NSDictionary NSSet 都可以获取到\n  NSArray *newArray = @[@"1", @"2", @"3"];\nNSEnumerator *enumtrator = [newArray objectEnumerator];\nNSString *obj = nil;\nwhile (obj  = [enumtrator nextObject]) {\nNSLog(@\"obj: %@\", obj);\n} ",
+        "text": "计数器 NSArray NSDictionary NSSet 都可以获取到\n  NSArray *newArray = @[@\"1\", @\"2\", @\"3\"];\nNSEnumerator *enumtrator = [newArray objectEnumerator];\nNSString *obj = nil;\nwhile (obj  =[enumtrator nextObject]) {\nNSLog(@\"obj: %@\", obj);\n} ",
     },
     
     {
         "name": "NSException   ",
         "text": "控制程序的异常情况, 可以通过try catch获取异常， 可以用runtime + ",
     },
+    
+    {
+        "name": "NSExpression   ",
+        "text": "表达式运算， 属性，函数 ",
+    },
+    {
+        "name": "NSFileCoordinator   ",
+        "text": "文件系统是全局公用的, NSFileCoordinator 文件协调器 \nNSFilePresenter文件提出\nNSFileHandle文件处理类,主要是对文件读取和写入\n文件通用管理,对文件的操作管理，信息获取",
+    },
+  
 ]
 
