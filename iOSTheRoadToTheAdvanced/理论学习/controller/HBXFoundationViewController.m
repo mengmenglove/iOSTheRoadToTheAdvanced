@@ -20,6 +20,10 @@
 @property (nonatomic, strong) NSOperationQueue *operationQueue;
 @property (nonatomic, strong) HBXOperation *operation;
 
+
+/** 进度 */
+@property (nonatomic, strong) NSProgress *progress;
+
 @end
 
 @implementation HBXFoundationViewController
@@ -34,9 +38,27 @@
     // Do any additional setup after loading the view.
    
     
-    [self showOperationAction];
+   
  
+    
 }
+
+- (void)showProgress {
+    
+    // 初始化进度对象, 并设置进度总量
+    self.progress = [NSProgress progressWithTotalUnitCount:10];
+    
+    // 分出5个任务量给任务一
+    [self.progress becomeCurrentWithPendingUnitCount:5];
+//    [self subTask:@"任务一"];
+    [self.progress resignCurrent];
+    
+    // 分出5个任务量给任务二
+    [self.progress becomeCurrentWithPendingUnitCount:5];
+//    [self subTask: @"任务二"];
+    [self.progress resignCurrent];
+}
+
 
 - (void)showOperationAction {
     

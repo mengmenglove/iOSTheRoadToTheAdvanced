@@ -143,5 +143,34 @@
       "name": "NSOperation ",
       "text": "NSOperation、NSOperationQueue？\n1可添加完成的代码块，在操作完成后执行。\n2添加操作之间的依赖关系，方便的控制执行顺序。/n3设定操作执行的优先级。\n4可以很方便的取消一个操作的执行。\n5使用 KVO 观察对操作执行状态的更改：isExecuteing、isFinished、isCancelled。\n实现方式为NSOperation 子类 NSInvocationOperation、NSBlockOperation，或者自定义子类来封装操作\n操作队列这里的队列指操作队列，即用来存放操作的队列。不同于 GCD 中的调度队列 FIFO（先进先出）的原则。NSOperationQueue 对于添加到队列中的操作，首先进入准备就绪的状态（就绪状态取决于操作之间的依赖关系），然后进入就绪状态的操作的开始执行顺序（非结束执行顺序）由操作之间相对的优先级决定（优先级是操作对象自身的属性）。操作队列通过设置 最大并发操作数（maxConcurrentOperationCount） 来控制并发、串行。NSOperationQueue 为我们提供了两种不同类型的队列：主队列和自定义队列。主队列运行在主线程之上，而自定义队列在后台执行",
   },
+  {
+      "name": "NSStringPathExtensions ",
+      "text": "对string 路径的处理",
+  },
+  {
+      "name": "NSPointerArray ",
+      "text": "实现数据的弱引用",
+  },
+  
+  {
+      "name": "NSPointerArray ",
+      "text": "实现数据的弱引用",
+  },
+  {
+      "name": "NSProcessInfo ",
+      "text": "获取进程信息",
+  },
+  {
+      "name": "NSProgress ",
+      "text": "进度信息，详情查看代码",
+  },
+  {
+      "name": "NSPropertyListSerialization",
+      "text": "将常规数据结构变成nsdata 或者反之",
+  },
+  {
+      "name": "NSRegularExpression",
+      "text": "正则表达式",
+  },
 ]
 
