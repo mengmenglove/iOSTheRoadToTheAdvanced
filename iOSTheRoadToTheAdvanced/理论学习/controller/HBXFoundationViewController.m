@@ -10,11 +10,15 @@
 #import "HBXLearnCell.h"
 #import "HBXLearnModel.h"
 #import "HBXLearnModel.h"
+#import "HBXOperation.h"
 
 @interface HBXFoundationViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
+
+@property (nonatomic, strong) NSOperationQueue *operationQueue;
+@property (nonatomic, strong) HBXOperation *operation;
 
 @end
 
@@ -28,9 +32,43 @@
     [self initData];
     [self showHasTableAndMapTable];
     // Do any additional setup after loading the view.
-    [self unitChange];
+   
+    
+    [self showOperationAction];
  
 }
+
+- (void)showOperationAction {
+    
+//    NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(task1) object:nil];
+//    [operation start];
+
+//    NSBlockOperation *operationBlock = [NSBlockOperation blockOperationWithBlock:^{
+//
+//    }];
+//    [operationBlock start];
+    
+    self.operation = [[HBXOperation alloc] init];
+    //功能点1 添加依赖
+//    [operation addDependency:]
+    //功能点2 添加优先级
+    self.operation.queuePriority = NSOperationQueuePriorityVeryHigh;
+    
+//    NSOperationQueue *queue = [NSOperationQueue mainQueue];
+//    //获取的队列为主线程队列
+//    [queue addOperation:operation];
+    self.operationQueue = [[NSOperationQueue alloc] init];
+    [self.operationQueue addOperation:self.operation];
+    
+}
+
+- (void)task1 {
+    for (int i =0 ; i < 100; i++) {
+        NSLog(@"%d %@", i , [NSThread currentThread]);
+    }
+    
+}
+
 
 - (void)unitChange {
     // 初始化一个秒数的基数

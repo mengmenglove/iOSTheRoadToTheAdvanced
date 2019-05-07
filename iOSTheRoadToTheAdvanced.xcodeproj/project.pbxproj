@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810B0580228162940092385D /* HBXOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B057F228162940092385D /* HBXOperation.m */; };
 		811DD3162195738F00960F4F /* CallPhoneNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811DD3152195738F00960F4F /* CallPhoneNotificationViewController.m */; };
 		81227C4321327985002B2E57 /* HBXAuthorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227C4221327985002B2E57 /* HBXAuthorityViewController.m */; };
 		81227C4621327998002B2E57 /* JDAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227C4421327997002B2E57 /* JDAuthorityManager.m */; };
@@ -244,6 +245,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		810B057E228162940092385D /* HBXOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXOperation.h; sourceTree = "<group>"; };
+		810B057F228162940092385D /* HBXOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXOperation.m; sourceTree = "<group>"; };
 		811DD3142195738F00960F4F /* CallPhoneNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallPhoneNotificationViewController.h; sourceTree = "<group>"; };
 		811DD3152195738F00960F4F /* CallPhoneNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallPhoneNotificationViewController.m; sourceTree = "<group>"; };
 		81227C4121327985002B2E57 /* HBXAuthorityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXAuthorityViewController.h; sourceTree = "<group>"; };
@@ -1726,6 +1729,8 @@
 			children = (
 				818C968B2265CBFE00EF4B59 /* HBXLearnModel.h */,
 				818C968C2265CBFE00EF4B59 /* HBXLearnModel.m */,
+				810B057E228162940092385D /* HBXOperation.h */,
+				810B057F228162940092385D /* HBXOperation.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -2260,6 +2265,7 @@
 				815943822132752D002026BA /* EasyEmptyConfig.m in Sources */,
 				81DB9C8020EB2CE200B9F860 /* ZJDrawTool.m in Sources */,
 				81227C4621327998002B2E57 /* JDAuthorityManager.m in Sources */,
+				810B0580228162940092385D /* HBXOperation.m in Sources */,
 				81227CCC21328C56002B2E57 /* UIImage+Extend.m in Sources */,
 				81BF2A5220F3956400144EB4 /* EffectSelectorViewController.m in Sources */,
 				8136708B20E4C2DD009A42A7 /* HBXImageHandleViewController.m in Sources */,
