@@ -87,5 +87,50 @@
         "text": "文件系统是全局公用的, NSFileCoordinator 文件协调器 \nNSFilePresenter文件提出\nNSFileHandle文件处理类,主要是对文件读取和写入\n文件通用管理,对文件的操作管理，信息获取",
     },
   
+  {
+      "name": "NSHashTable   ",
+      "text": "NSHashTable是根据一个option参数来进行初始化的，\nNSHashTableStrongMemory: 等同于NSPointerFunctionsStrongMemory. 对成员变量进行强引用。这是一个默认值。如果采用这个默认值,NSHashTable和NSSet就没什么区别了。\nNSHashTableWeakMemory: 等同于NSPointerFunctionsWeakMemory.对成员变量进行弱引用. 使用 NSPointerFunctionsWeakMemory, object 引用在最后释放的时候会被指向 NULL。\nNSHashTableZeroingWeakMemory: 已被抛弃.使用NSHashTableWeakMemory 代替。\nNSHashTableCopyIn: 在对象被加入集合之前进行复制 (NSPointerFunction -acquireFunction). 等同于NSPointerFunctionsCopyIn\nNSHashTableObjectPointerPersonality: 用指针来等同代替实际的值，当打印这个指针的时候相当于调用description方法。和NSPointerFunctionsObjectPointerPersonality等同。",
+  },
+  
+  {
+      "name": "NSMapTable   ",
+      "text": "NSMapTable是对更广泛意义的NSDictionary。和NSDictionary / NSMutableDictionary相比具有如下特性：NSDictionary / NSMutableDictionary会复制keys并且通过强引用values来实现存储。NSMapTable是可变的。NSMapTable可以通过弱引用来持有keys和values，所以当key或者value被deallocated的时候，所存储的实体也会被移除。NSMapTable可以在添加value的时候对value进行复制和NSHashTable类似，NSMapTable可以随意的存储指针，并且利用指针的唯一性来进行对比和重复检查。",
+  },
+  {
+      "name": "Cookie   ",
+      "text": "Cookie是由服务器端生成，发送给User-Agent（一般是浏览器或者客户端）,浏览器会将Cookie的key/value保存到某个目录下的文本文件内，下次请求同一网站地址时就发送该Cookie给服务器。Cookie必然会通过HTTP的Respone传过来，并且Cookie在Respone中的HTTP header中。\n\n       为什么需要Cookie？?HTTP是一种无状态的协议，客户端与服务器建立连接并传输数据，数据传输完成后，连接就会关闭。再次交互数据需要建立新的连接，因此，服务器无法从连接上跟踪会话，也无法知道用户上一次做了什么。这严重阻碍了基于Web应用程序的交互，也影响用户的交互体验。如：在网络有时候需要用户登录才进一步操作，用户输入用户名密码登录后，浏览了几个页面，由于HTTP的无状态性，服务器并不知道用户有没有登录。\n\nCookie是解决HTTP无状态性的有效手段，服务器可以设置或读取Cookie中所包含的信息\n\n Cookie的类型 \n\nCookie总时由用户客户端进行保存的（一般是浏览器），按其存储位置可分为：内存式Cookie（cookie是指在不设定它的生命周期expires时的状态）和硬盘式Cookie。内存式Cookie存储在内存中，浏览器关闭后就会消失，由于其存储时间较短，因此也被称为非持久Cookie或会话Cookie。硬盘式Cookie保存在硬盘中，其不会随浏览器的关闭而消失，除非用户手工清理或到了过期时间。由于硬盘式Cookie存储时间是长期的，因此也被称为持久Cookie \n\n如果不设置过期时间，则表示这个cookie生命周期为浏览器会话期间，只要关闭浏览器窗口，cookie就消失了。这种生命期为浏览会话期的cookie被称为会话cookie。会话cookie一般不保存在硬盘上而是保存在内存里。　　如果设置了过期时间，浏览器就会把cookie保存到硬盘上，关闭后再次打开浏览器，这些cookie依然有效直到超过设定的过期时间。　　存储在硬盘上的cookie可以在不同的浏览器进程间共享，比如两个IE窗口。而对于保存在内存的cookie，不同的浏览器有不同的处理方式。\n\ncookie的内容主要包括：名字，值，过期时间，路径和域。\n\nNSHTTPCookieStorage  NSHTTPCookieStorage提供了管理所有NSHTTPCookie对象的接口,在OS X里cookie是在所有程序中共享的，而在iOS中,cookie只当当前应用中有效。NSHTTPCookieStorage类采用单例的设计模式，其中管理着所有HTTP请求的Cookie信息,更改cookie的接受政策将会影响当前所有正在使用cookie的app。  设置cookie(手动创建的cookie不会储存到本地)  \n\nNSArray * cookArray = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:[NSURL URLWithString:@\"指定URL\"]];for (NSHTTPCookie*cookie in cookArray) {if ([cookie.name isEqualToString:@\"cookiename\"]) {[[NSHTTPCookieStorage sharedHTTPCookieStorage]deleteCookie:cookie];}}  \n\n[[NSURLCache sharedURLCache] removeCachedResponseForRequest:[NSURLRequest requestWithURL:url]];  ",
+  },
+  {
+      "name": "NSHTTPCookieStorage   ",
+      "text": "cookie存储机制",
+  },
+  
+  {
+      "name": "NSInvocation   ",
+      "text": "可以获取方法对象，类型，可以单独执行方法",
+  },
+  {
+      "name": "NSKeyedArchiver  NSKeyedUnarchiver ",
+      "text": "用于对象归档 详情查看nscoding协议  HBXLearnModel  查看方法showKeyArchiveFunction",
+  },
+  
+  {
+      "name": "NSKeyValueObserving ",
+      "text": "KVC 设置对象的值   KVO 给对象添加监听事件",
+  },
+  {
+      "name": "NSLinguisticTagger ",
+      "text": "自然语言筛选",
+  },
+  
+  {
+      "name": "锁 ",
+      "text": "实现方式NSLock   synchronized dispatch_semaphore_t （pthread_mutex_init   pthread_mutex_lock  pthread_mutex_unlock）  OSSpinLock（自旋锁，死循环） \n\nNSLock为互斥锁对象锁 实现原理为在线上上封装属性pthread_mutex,值为PTHREAD_MUTEX_ERRORCHECK  \n\nsynchronized对象锁，基本对象的属性封装完成 \n\n dispatch_semaphore_t性能较优越 为线程枷锁，保持线程同步 \n\nOSSpinLock的性能值最好的",
+  },
+  {
+      "name": "Measurement ",
+      "text": "iOS 10新特性  单位转换  秒可以转换为分钟，小时等",
+  },
+  
 ]
 

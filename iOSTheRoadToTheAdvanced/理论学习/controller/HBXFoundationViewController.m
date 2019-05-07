@@ -26,8 +26,178 @@
     [self.view addSubview:self.tableView];
     
     [self initData];
-    [self showExpress];
+    [self showHasTableAndMapTable];
     // Do any additional setup after loading the view.
+    [self unitChange];
+ 
+}
+
+- (void)unitChange {
+    // 初始化一个秒数的基数
+    NSMeasurement *seconds = [[NSMeasurement alloc] initWithDoubleValue:666
+                                                                   unit:NSUnitDuration.seconds];
+    
+    // 转换为分钟
+    NSMeasurement *minutes = [seconds measurementByConvertingToUnit:NSUnitDuration.minutes];
+    
+    // 转换为小时
+    NSMeasurement *hours   = [seconds measurementByConvertingToUnit:NSUnitDuration.hours];
+    
+    NSString *secondsString = [NSString stringWithFormat:@"%.2f 秒", seconds.doubleValue];
+    NSString *minutesString = [NSString stringWithFormat:@"%.2f 分钟", minutes.doubleValue];
+    NSString *hoursString   = [NSString stringWithFormat:@"%.2f 小时", hours.doubleValue];
+
+}
+
+
+- (void)showlock {
+    /*
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
+    __block int j = 0;
+    dispatch_async(queue, ^{
+        j = 100;
+        dispatch_semaphore_signal(semaphore);
+    });
+    
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    NSLog(@"finish j = %zd", j);
+     */
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+    
+    for (int i = 0; i < 100; i++) {
+        dispatch_async(queue, ^{
+            // 相当于加锁
+            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            NSLog(@"i = %zd semaphore = %@  %@", i, semaphore, [NSThread currentThread]);
+            // 相当于解锁
+            dispatch_semaphore_signal(semaphore);
+        });
+    }
+     
+}
+
+
+
+
+- (void)useLinguisticTagger {
+    //1.创建语句
+    NSString * question = @"What is the weather in San Francisco?";
+    //2.创建筛选条件
+    NSLinguisticTaggerOptions options = NSLinguisticTaggerOmitWhitespace | NSLinguisticTaggerJoinNames |NSLinguisticTaggerOmitPunctuation;
+    //3.创建自然语言标签
+    NSLinguisticTagger * tagger = [[NSLinguisticTagger alloc]initWithTagSchemes:[NSLinguisticTagger availableTagSchemesForLanguage:@"en"] options:options];
+    //4.给标签附字符串
+    tagger.string = question;
+    //5.执行筛选
+    [tagger enumerateTagsInRange:NSMakeRange(0, question.length) scheme:NSLinguisticTagSchemeNameTypeOrLexicalClass  options:options usingBlock:^(NSString * _Nonnull tag, NSRange tokenRange, NSRange sentenceRange, BOOL * _Nonnull stop) {
+        
+        //6.获取结果
+        NSString*token = [question substringWithRange:tokenRange];
+        
+        //7.打印结果
+        NSLog(@"%@:%@",token,tag);
+    }];
+    
+}
+
+
+- (void)showKeyArchiveFunction {
+    if (![self decodingDelegate]) {
+        [self codingDelegate];
+    }
+}
+
+- (void)codingDelegate {
+    NSMutableArray *writeArray = [NSMutableArray array];
+    HBXLearnModel *model = [[HBXLearnModel alloc] init];
+    model.name = @"zhangq";
+    model.age = 30;
+    [writeArray addObject:model];
+    
+    
+    HBXLearnModel *model1 = [[HBXLearnModel alloc] init];
+    model1.name = @"huangbx";
+    model1.age = 28;
+    [writeArray addObject:model1];
+    
+    
+    NSString *arrayPath = [NSString stringWithFormat:@"%@%@", [self getDocumentPath], @"array.plist"];
+    [NSKeyedArchiver archiveRootObject:writeArray toFile:arrayPath];
+    
+}
+
+- (BOOL)decodingDelegate {
+    NSString *arrayPath = [NSString stringWithFormat:@"%@%@", [self getDocumentPath], @"array.plist"];
+
+    NSArray *array = [NSKeyedUnarchiver unarchiveObjectWithFile:arrayPath];
+    if (array.count > 0) {
+        NSLog(@"获取文件成功");
+        return YES;
+    }
+    NSLog(@"获取文件失败");
+    return NO;
+}
+
+- (NSString *)getDocumentPath {
+    NSArray *documents = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    if (documents.count > 0) {
+        return documents[0];
+    }
+    NSLog(@"路径为空");
+    return nil;
+}
+
+
+- (void)useNSInvocation {
+    
+    //获取方法签名
+    NSMethodSignature *signature = [[self class] instanceMethodSignatureForSelector:@selector(sendMessageWithNumber:WithContent:)];
+    
+    //方法执行
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+    invocation.target = self;
+    invocation.selector = @selector(sendMessageWithNumber:WithContent:);
+    NSString *number = @"1111";
+    NSString *content = @"打印日志";
+    //注意：设置参数的索引时不能从0开始，因为0已经被self占用，1已经被_cmd占用
+    [invocation setArgument:&number atIndex:2];
+    [invocation setArgument:&content atIndex:3];
+    // 调用invocation的执行方法
+    [invocation invoke];
+    
+    
+    
+    
+}
+- (void)sendMessageWithNumber:(NSString*)number WithContent:(NSString*)content{
+    NSLog(@"电话号%@,内容%@",number,content);
+}
+
+- (void)showHasTableAndMapTable {
+    NSHashTable *hashTable = [NSHashTable hashTableWithOptions:NSPointerFunctionsCopyIn];
+    [hashTable addObject:@"foo"];
+    [hashTable addObject:@"bar"];
+    [hashTable addObject:@42];
+    [hashTable removeObject:@"bar"];
+    NSLog(@"Members: %@", [hashTable allObjects]);
+    
+    
+    id delegate = @32;
+    NSMapTable *mapTable = [NSMapTable mapTableWithKeyOptions:NSMapTableStrongMemory
+                                                 valueOptions:NSMapTableWeakMemory];
+    [mapTable setObject:delegate forKey:@"foo"];
+    NSLog(@"Keys: %@", [[mapTable keyEnumerator] allObjects]);
+//    NSMapTableStrongMemory
+//    NSMapTableWeakMemory
+//    NSHashTableZeroingWeakMemory
+//    NSMapTableCopyIn
+//    NSMapTableObjectPointerPersonality
+//    Subscripting
+    
 }
 
 - (void)fileWrite {
@@ -39,6 +209,9 @@
 //    NSString *str = @"追加的数据";
 //    NSData* stringData  = [str dataUsingEncoding:NSUTF8StringEncoding];
 //    [fileHandle writeData:stringData]; 追加写入数据[fileHandle closeFile];
+    //详情见 ZJDownloadCenterManagaer
+    
+    
     
   
 }

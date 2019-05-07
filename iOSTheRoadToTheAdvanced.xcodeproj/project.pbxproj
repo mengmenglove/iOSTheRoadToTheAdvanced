@@ -227,6 +227,7 @@
 		81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E020E11FEC9FAE009709AA /* ThreadViewController.m */; };
 		81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E66DD41FF51E360077CCCB /* RunViewController.m */; };
 		81E66DD81FF51E530077CCCB /* KVCPersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E66DD71FF51E530077CCCB /* KVCPersion.m */; };
+		81E98A8C226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E98A8B226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m */; };
 		81FD9DDC206D3D2200DC3DC0 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FD9DD7206D3D2200DC3DC0 /* CircleLayout.m */; };
 		81FD9DDD206D3D2200DC3DC0 /* HomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FD9DD9206D3D2200DC3DC0 /* HomeHeaderView.m */; };
 		81FD9DDE206D3D2200DC3DC0 /* ShowImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FD9DDB206D3D2200DC3DC0 /* ShowImageCell.m */; };
@@ -664,6 +665,8 @@
 		81E66DD41FF51E360077CCCB /* RunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunViewController.m; sourceTree = "<group>"; };
 		81E66DD61FF51E530077CCCB /* KVCPersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCPersion.h; sourceTree = "<group>"; };
 		81E66DD71FF51E530077CCCB /* KVCPersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCPersion.m; sourceTree = "<group>"; };
+		81E98A8A226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDownloadCenterManagaer.h; sourceTree = "<group>"; };
+		81E98A8B226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJDownloadCenterManagaer.m; sourceTree = "<group>"; };
 		81FD9DD6206D3D2200DC3DC0 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
 		81FD9DD7206D3D2200DC3DC0 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
 		81FD9DD8206D3D2200DC3DC0 /* HomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderView.h; sourceTree = "<group>"; };
@@ -1151,6 +1154,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81E98A89226AB6C100F0AFD3 /* download */,
 				818C96842265CAB200EF4B59 /* 理论学习 */,
 				811DD3132195735100960F4F /* callPhoneNotiofication */,
 				81B19582216B86AA0041E0EA /* codeViewController */,
@@ -1974,6 +1978,15 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		81E98A89226AB6C100F0AFD3 /* download */ = {
+			isa = PBXGroup;
+			children = (
+				81E98A8A226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.h */,
+				81E98A8B226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m */,
+			);
+			path = download;
+			sourceTree = "<group>";
+		};
 		81FD9DD1206D3C2900DC3DC0 /* collectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2338,6 +2351,7 @@
 				81D688F721BB95F100E512AF /* YTKBatchRequest.m in Sources */,
 				815943912132752D002026BA /* EasyEmptyGlobalConfig.m in Sources */,
 				8142C1C921BA52220080C63A /* UIImage+Resize.m in Sources */,
+				81E98A8C226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m in Sources */,
 				8142D8F620DAB1AB00C2E1A5 /* NSImage+WebCache.m in Sources */,
 				81227CCA21328C56002B2E57 /* JDIDCardScanViewController.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HBXLearnModel : NSObject
+@interface HBXLearnModel : NSObject <NSCoding>
 
 @property (nonatomic, assign)  CGFloat cellHeight;
 @property (nonatomic, strong) NSString *name;
