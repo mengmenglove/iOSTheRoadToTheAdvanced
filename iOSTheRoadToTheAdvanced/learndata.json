@@ -172,5 +172,9 @@
       "name": "NSRegularExpression",
       "text": "正则表达式",
   },
+  {
+      "name": "NSScanner",
+      "text": "字符串扫描",
+  },
 ]
 

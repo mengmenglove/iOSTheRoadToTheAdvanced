@@ -40,7 +40,14 @@
     
    
  
-    
+    [self showScaner];
+}
+
+- (void)showScaner {
+    NSString *text = @"1816ajshdjkahd三点后";
+    NSScanner *scaner = [[NSScanner alloc] initWithString:text];
+    int t = 2;
+    NSLog(@"scanInt: %d", [scaner scanInt:&t]);
 }
 
 - (void)showProgress {
