@@ -38,9 +38,17 @@
     // Do any additional setup after loading the view.
    
     
-   
+    [self showUUid];
  
-    [self showScaner];
+    
+}
+
+- (void)showUUid {
+    
+    NSUUID *uuid = [UIDevice currentDevice].identifierForVendor;
+    
+    NSLog(@"uuid: %@", [uuid UUIDString]);
+    
 }
 
 - (void)showScaner {

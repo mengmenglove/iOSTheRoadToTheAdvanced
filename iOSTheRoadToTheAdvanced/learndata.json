@@ -176,5 +176,26 @@
       "name": "NSScanner",
       "text": "字符串扫描",
   },
+  {
+      "name": "NSUbiquitousKeyValueStore",
+      "text": "icloud的key-value操作，需要监听事件同步通知",
+  },
+  {
+      "name": "NSUndoManager",
+      "text": "添加取消记录，重做记录功能",
+  },
+  {
+      "name": "NSUserActivity",
+      "text": "iOS8新增用户快捷搜索",
+  },
+  
+  {
+      "name": "NSUUID",
+      "text": "系统唯一标识符  另一个唯一标识符是在广告框架中",
+  },
+  {
+      "name": "NSXMLParser",
+      "text": "xmpp解析器",
+  },
 ]
 
