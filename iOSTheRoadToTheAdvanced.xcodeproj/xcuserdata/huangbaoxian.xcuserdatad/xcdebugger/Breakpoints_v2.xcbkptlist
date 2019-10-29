@@ -137,13 +137,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSTheRoadToTheAdvanced/&#x5de5;&#x5177;&#x680f;/avplayerVC/controller/ZJAvplayerViewController.m"
-            timestampString = "574756048.375924"
+            filePath = "iOSTheRoadToTheAdvanced/avplayer/controller/ShowVideoViewController.m"
+            timestampString = "592583077.754277"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-onControlView:progressSliderTouchBegan:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/avplayer/controller/ShowVideoViewController.m"
+            timestampString = "592583077.754342"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "-onControlView:progressSliderTouchEnded:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/avplayer/view/LiveController.m"
+            timestampString = "592583077.7543941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "-progressSliderValueChanged:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

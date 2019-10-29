@@ -180,6 +180,13 @@
 		818C968D2265CBFE00EF4B59 /* HBXLearnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 818C968C2265CBFE00EF4B59 /* HBXLearnModel.m */; };
 		818C96902265CC8900EF4B59 /* HBXLearnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 818C968F2265CC8900EF4B59 /* HBXLearnCell.m */; };
 		818C96922265D03700EF4B59 /* learndata.json in Resources */ = {isa = PBXBuildFile; fileRef = 818C96912265D03700EF4B59 /* learndata.json */; };
+		819DCE49235200A600D6C270 /* LiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE48235200A600D6C270 /* LiveController.m */; };
+		819DCE4C2352029900D6C270 /* UIImage+Addtional.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE4A2352029900D6C270 /* UIImage+Addtional.m */; };
+		819DCE4F235202EF00D6C270 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE4E235202EF00D6C270 /* UIView+Additions.m */; };
+		81A52CC7235B0EBB00E8635B /* HBXVIResourceLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A52CC6235B0EBB00E8635B /* HBXVIResourceLoaderManager.m */; };
+		81A52CCA235B12F300E8635B /* HBXVIResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A52CC9235B12F300E8635B /* HBXVIResourceLoader.m */; };
+		81A52CCD235B182300E8635B /* HBXVIMediaCacheWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A52CCC235B182300E8635B /* HBXVIMediaCacheWorker.m */; };
+		81A52CD0235B18AD00E8635B /* HBXVIMediaDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A52CCF235B18AD00E8635B /* HBXVIMediaDownloader.m */; };
 		81AD6301206A93A8002A465C /* CollectSilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6300206A93A8002A465C /* CollectSilderViewController.m */; };
 		81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6303206A940E002A465C /* LineCollectionViewCell.m */; };
 		81AD6307206A940F002A465C /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6305206A940E002A465C /* LineLayout.m */; };
@@ -193,6 +200,23 @@
 		81BF2A5220F3956400144EB4 /* EffectSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A5120F3956400144EB4 /* EffectSelectorViewController.m */; };
 		81BF2A5520F3963D00144EB4 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A5420F3963D00144EB4 /* BaseTableViewController.m */; };
 		81BF2A5920F39C1E00144EB4 /* BXMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A5820F39C1E00144EB4 /* BXMessageView.m */; };
+		81C4ADA62351D6FE00797718 /* HBXVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADA52351D6FE00797718 /* HBXVideoListViewController.m */; };
+		81C4ADA92351D71600797718 /* HBXVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADA82351D71600797718 /* HBXVideoModel.m */; };
+		81C4ADAC2351D89C00797718 /* HBXVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADAB2351D89C00797718 /* HBXVideoTableViewCell.m */; };
+		81C4ADAF2351DBCE00797718 /* ZJLiveFileCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADAD2351DBCE00797718 /* ZJLiveFileCacheManager.m */; };
+		81C4ADB32351DCFE00797718 /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADB12351DCFE00797718 /* NSString+Ext.m */; };
+		81C4ADB62351DD4700797718 /* ZJAvPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADB52351DD4700797718 /* ZJAvPlayerView.m */; };
+		81C4ADD12351DDD000797718 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADB92351DDD000797718 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		81C4ADD22351DDD000797718 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADC22351DDD000797718 /* ViewController+MASAdditions.m */; };
+		81C4ADD32351DDD000797718 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADC62351DDD000797718 /* MASCompositeConstraint.m */; };
+		81C4ADD42351DDD000797718 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADC72351DDD000797718 /* MASConstraintMaker.m */; };
+		81C4ADD52351DDD000797718 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADC82351DDD000797718 /* MASLayoutConstraint.m */; };
+		81C4ADD62351DDD000797718 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADC92351DDD000797718 /* NSArray+MASAdditions.m */; };
+		81C4ADD72351DDD000797718 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADCA2351DDD000797718 /* View+MASAdditions.m */; };
+		81C4ADD82351DDD000797718 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADCD2351DDD000797718 /* MASConstraint.m */; };
+		81C4ADD92351DDD000797718 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADCF2351DDD000797718 /* MASViewConstraint.m */; };
+		81C4ADDA2351DDD000797718 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADD02351DDD000797718 /* MASViewAttribute.m */; };
+		81C4ADDD2351E2FC00797718 /* ShowVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADDC2351E2FC00797718 /* ShowVideoViewController.m */; };
 		81D688F321BB95F100E512AF /* YTKNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D688E021BB95F100E512AF /* YTKNetworkConfig.m */; };
 		81D688F421BB95F100E512AF /* YTKChainRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D688E221BB95F100E512AF /* YTKChainRequest.m */; };
 		81D688F521BB95F100E512AF /* YTKNetworkPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D688E621BB95F100E512AF /* YTKNetworkPrivate.m */; };
@@ -571,6 +595,20 @@
 		818C968E2265CC8900EF4B59 /* HBXLearnCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXLearnCell.h; sourceTree = "<group>"; };
 		818C968F2265CC8900EF4B59 /* HBXLearnCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXLearnCell.m; sourceTree = "<group>"; };
 		818C96912265D03700EF4B59 /* learndata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = learndata.json; path = iOSTheRoadToTheAdvanced/learndata.json; sourceTree = SOURCE_ROOT; };
+		819DCE47235200A600D6C270 /* LiveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveController.h; sourceTree = "<group>"; };
+		819DCE48235200A600D6C270 /* LiveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveController.m; sourceTree = "<group>"; };
+		819DCE4A2352029900D6C270 /* UIImage+Addtional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addtional.m"; sourceTree = "<group>"; };
+		819DCE4B2352029900D6C270 /* UIImage+Addtional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addtional.h"; sourceTree = "<group>"; };
+		819DCE4D235202EF00D6C270 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		819DCE4E235202EF00D6C270 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		81A52CC5235B0EBB00E8635B /* HBXVIResourceLoaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVIResourceLoaderManager.h; sourceTree = "<group>"; };
+		81A52CC6235B0EBB00E8635B /* HBXVIResourceLoaderManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVIResourceLoaderManager.m; sourceTree = "<group>"; };
+		81A52CC8235B12F300E8635B /* HBXVIResourceLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVIResourceLoader.h; sourceTree = "<group>"; };
+		81A52CC9235B12F300E8635B /* HBXVIResourceLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVIResourceLoader.m; sourceTree = "<group>"; };
+		81A52CCB235B182300E8635B /* HBXVIMediaCacheWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVIMediaCacheWorker.h; sourceTree = "<group>"; };
+		81A52CCC235B182300E8635B /* HBXVIMediaCacheWorker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVIMediaCacheWorker.m; sourceTree = "<group>"; };
+		81A52CCE235B18AD00E8635B /* HBXVIMediaDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVIMediaDownloader.h; sourceTree = "<group>"; };
+		81A52CCF235B18AD00E8635B /* HBXVIMediaDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVIMediaDownloader.m; sourceTree = "<group>"; };
 		81AD62FF206A93A8002A465C /* CollectSilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectSilderViewController.h; sourceTree = "<group>"; };
 		81AD6300206A93A8002A465C /* CollectSilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectSilderViewController.m; sourceTree = "<group>"; };
 		81AD6302206A940E002A465C /* LineCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineCollectionViewCell.h; sourceTree = "<group>"; };
@@ -598,6 +636,45 @@
 		81BF2A5620F3998600144EB4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		81BF2A5720F39C1E00144EB4 /* BXMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXMessageView.h; sourceTree = "<group>"; };
 		81BF2A5820F39C1E00144EB4 /* BXMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BXMessageView.m; sourceTree = "<group>"; };
+		81C4ADA42351D6FE00797718 /* HBXVideoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVideoListViewController.h; sourceTree = "<group>"; };
+		81C4ADA52351D6FE00797718 /* HBXVideoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVideoListViewController.m; sourceTree = "<group>"; };
+		81C4ADA72351D71600797718 /* HBXVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVideoModel.h; sourceTree = "<group>"; };
+		81C4ADA82351D71600797718 /* HBXVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVideoModel.m; sourceTree = "<group>"; };
+		81C4ADAA2351D89C00797718 /* HBXVideoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVideoTableViewCell.h; sourceTree = "<group>"; };
+		81C4ADAB2351D89C00797718 /* HBXVideoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVideoTableViewCell.m; sourceTree = "<group>"; };
+		81C4ADAD2351DBCE00797718 /* ZJLiveFileCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLiveFileCacheManager.m; sourceTree = "<group>"; };
+		81C4ADAE2351DBCE00797718 /* ZJLiveFileCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLiveFileCacheManager.h; sourceTree = "<group>"; };
+		81C4ADB12351DCFE00797718 /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
+		81C4ADB22351DCFE00797718 /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
+		81C4ADB42351DD4700797718 /* ZJAvPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAvPlayerView.h; sourceTree = "<group>"; };
+		81C4ADB52351DD4700797718 /* ZJAvPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAvPlayerView.m; sourceTree = "<group>"; };
+		81C4ADB82351DDD000797718 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		81C4ADB92351DDD000797718 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		81C4ADBA2351DDD000797718 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		81C4ADBB2351DDD000797718 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		81C4ADBC2351DDD000797718 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		81C4ADBD2351DDD000797718 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		81C4ADBE2351DDD000797718 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		81C4ADBF2351DDD000797718 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		81C4ADC02351DDD000797718 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		81C4ADC12351DDD000797718 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		81C4ADC22351DDD000797718 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		81C4ADC32351DDD000797718 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		81C4ADC42351DDD000797718 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		81C4ADC52351DDD000797718 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		81C4ADC62351DDD000797718 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		81C4ADC72351DDD000797718 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		81C4ADC82351DDD000797718 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		81C4ADC92351DDD000797718 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		81C4ADCA2351DDD000797718 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		81C4ADCB2351DDD000797718 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		81C4ADCC2351DDD000797718 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		81C4ADCD2351DDD000797718 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		81C4ADCE2351DDD000797718 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		81C4ADCF2351DDD000797718 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		81C4ADD02351DDD000797718 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		81C4ADDB2351E2FC00797718 /* ShowVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowVideoViewController.h; sourceTree = "<group>"; };
+		81C4ADDC2351E2FC00797718 /* ShowVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowVideoViewController.m; sourceTree = "<group>"; };
 		81D688E021BB95F100E512AF /* YTKNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKNetworkConfig.m; sourceTree = "<group>"; };
 		81D688E121BB95F100E512AF /* YTKBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKBaseRequest.h; sourceTree = "<group>"; };
 		81D688E221BB95F100E512AF /* YTKChainRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKChainRequest.m; sourceTree = "<group>"; };
@@ -1157,6 +1234,9 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81C4ADB72351DDD000797718 /* Masonry */,
+				81C4ADB02351DCED00797718 /* category */,
+				81C4ADA02351D6E700797718 /* avplayer */,
 				81E98A89226AB6C100F0AFD3 /* download */,
 				818C96842265CAB200EF4B59 /* 理论学习 */,
 				811DD3132195735100960F4F /* callPhoneNotiofication */,
@@ -1744,6 +1824,21 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		81A52CC4235AED4200E8635B /* HBXAvAssetResourceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				81A52CC5235B0EBB00E8635B /* HBXVIResourceLoaderManager.h */,
+				81A52CC6235B0EBB00E8635B /* HBXVIResourceLoaderManager.m */,
+				81A52CC8235B12F300E8635B /* HBXVIResourceLoader.h */,
+				81A52CC9235B12F300E8635B /* HBXVIResourceLoader.m */,
+				81A52CCB235B182300E8635B /* HBXVIMediaCacheWorker.h */,
+				81A52CCC235B182300E8635B /* HBXVIMediaCacheWorker.m */,
+				81A52CCE235B18AD00E8635B /* HBXVIMediaDownloader.h */,
+				81A52CCF235B18AD00E8635B /* HBXVIMediaDownloader.m */,
+			);
+			path = HBXAvAssetResourceLoader;
+			sourceTree = "<group>";
+		};
 		81AD62FB206A9396002A465C /* collection滑动视图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1847,6 +1942,97 @@
 				81BF2A5820F39C1E00144EB4 /* BXMessageView.m */,
 			);
 			path = EffectController;
+			sourceTree = "<group>";
+		};
+		81C4ADA02351D6E700797718 /* avplayer */ = {
+			isa = PBXGroup;
+			children = (
+				81A52CC4235AED4200E8635B /* HBXAvAssetResourceLoader */,
+				81C4ADA12351D6E700797718 /* controller */,
+				81C4ADA22351D6E700797718 /* model */,
+				81C4ADA32351D6E700797718 /* view */,
+			);
+			path = avplayer;
+			sourceTree = "<group>";
+		};
+		81C4ADA12351D6E700797718 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				81C4ADA42351D6FE00797718 /* HBXVideoListViewController.h */,
+				81C4ADA52351D6FE00797718 /* HBXVideoListViewController.m */,
+				81C4ADDB2351E2FC00797718 /* ShowVideoViewController.h */,
+				81C4ADDC2351E2FC00797718 /* ShowVideoViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		81C4ADA22351D6E700797718 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				81C4ADAE2351DBCE00797718 /* ZJLiveFileCacheManager.h */,
+				81C4ADAD2351DBCE00797718 /* ZJLiveFileCacheManager.m */,
+				81C4ADA72351D71600797718 /* HBXVideoModel.h */,
+				81C4ADA82351D71600797718 /* HBXVideoModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		81C4ADA32351D6E700797718 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				81C4ADB42351DD4700797718 /* ZJAvPlayerView.h */,
+				81C4ADB52351DD4700797718 /* ZJAvPlayerView.m */,
+				81C4ADAA2351D89C00797718 /* HBXVideoTableViewCell.h */,
+				81C4ADAB2351D89C00797718 /* HBXVideoTableViewCell.m */,
+				819DCE47235200A600D6C270 /* LiveController.h */,
+				819DCE48235200A600D6C270 /* LiveController.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		81C4ADB02351DCED00797718 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				819DCE4D235202EF00D6C270 /* UIView+Additions.h */,
+				819DCE4E235202EF00D6C270 /* UIView+Additions.m */,
+				819DCE4B2352029900D6C270 /* UIImage+Addtional.h */,
+				819DCE4A2352029900D6C270 /* UIImage+Addtional.m */,
+				81C4ADB22351DCFE00797718 /* NSString+Ext.h */,
+				81C4ADB12351DCFE00797718 /* NSString+Ext.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		81C4ADB72351DDD000797718 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				81C4ADB82351DDD000797718 /* MASCompositeConstraint.h */,
+				81C4ADB92351DDD000797718 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				81C4ADBA2351DDD000797718 /* MASConstraint+Private.h */,
+				81C4ADBB2351DDD000797718 /* MASLayoutConstraint.h */,
+				81C4ADBC2351DDD000797718 /* NSArray+MASShorthandAdditions.h */,
+				81C4ADBD2351DDD000797718 /* MASConstraintMaker.h */,
+				81C4ADBE2351DDD000797718 /* View+MASAdditions.h */,
+				81C4ADBF2351DDD000797718 /* NSArray+MASAdditions.h */,
+				81C4ADC02351DDD000797718 /* MASUtilities.h */,
+				81C4ADC12351DDD000797718 /* MASViewAttribute.h */,
+				81C4ADC22351DDD000797718 /* ViewController+MASAdditions.m */,
+				81C4ADC32351DDD000797718 /* MASViewConstraint.h */,
+				81C4ADC42351DDD000797718 /* MASConstraint.h */,
+				81C4ADC52351DDD000797718 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				81C4ADC62351DDD000797718 /* MASCompositeConstraint.m */,
+				81C4ADC72351DDD000797718 /* MASConstraintMaker.m */,
+				81C4ADC82351DDD000797718 /* MASLayoutConstraint.m */,
+				81C4ADC92351DDD000797718 /* NSArray+MASAdditions.m */,
+				81C4ADCA2351DDD000797718 /* View+MASAdditions.m */,
+				81C4ADCB2351DDD000797718 /* View+MASShorthandAdditions.h */,
+				81C4ADCC2351DDD000797718 /* Masonry.h */,
+				81C4ADCD2351DDD000797718 /* MASConstraint.m */,
+				81C4ADCE2351DDD000797718 /* ViewController+MASAdditions.h */,
+				81C4ADCF2351DDD000797718 /* MASViewConstraint.m */,
+				81C4ADD02351DDD000797718 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		81D688DE21BB95D600E512AF /* httpUtil */ = {
@@ -2218,6 +2404,7 @@
 				8168859B2051160F00932943 /* ContentProxy.m in Sources */,
 				8159438E2132752D002026BA /* EasyTextBgView.m in Sources */,
 				8142D8ED20DAB1AB00C2E1A5 /* SDWebImagePrefetcher.m in Sources */,
+				81C4ADD32351DDD000797718 /* MASCompositeConstraint.m in Sources */,
 				8142D8EB20DAB1AB00C2E1A5 /* SDWebImageCoderHelper.m in Sources */,
 				81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */,
 				813743D21FEB5AC200857CFD /* ViewController.m in Sources */,
@@ -2235,6 +2422,7 @@
 				812B48AB212AEBF100E3E2E3 /* LBXScanView.m in Sources */,
 				81227C6121328030002B2E57 /* UIView+JDView.m in Sources */,
 				81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */,
+				81C4ADAF2351DBCE00797718 /* ZJLiveFileCacheManager.m in Sources */,
 				8142D8FA20DAB1AB00C2E1A5 /* UIView+WebCache.m in Sources */,
 				8159434821327313002026BA /* WSRedPacketView.m in Sources */,
 				816885A320511BD300932943 /* Dorector.m in Sources */,
@@ -2246,6 +2434,7 @@
 				8144D58220E5D00F00263DF9 /* UserDefinePickerViewController.m in Sources */,
 				8142D8F120DAB1AB00C2E1A5 /* SDImageCache.m in Sources */,
 				8145A55F2132994300431B9D /* HBXBaseAnimalViewController.m in Sources */,
+				81C4ADD22351DDD000797718 /* ViewController+MASAdditions.m in Sources */,
 				81DB9CB320EDB09C00B9F860 /* TOActivityCroppedImageProvider.m in Sources */,
 				81DB9CB920EDB09C00B9F860 /* TOCropOverlayView.m in Sources */,
 				812B48AD212AEBF100E3E2E3 /* LBXScanTypes.m in Sources */,
@@ -2270,14 +2459,19 @@
 				81BF2A5220F3956400144EB4 /* EffectSelectorViewController.m in Sources */,
 				8136708B20E4C2DD009A42A7 /* HBXImageHandleViewController.m in Sources */,
 				8159438F2132752D002026BA /* EasyTextTypes.m in Sources */,
+				81C4ADD62351DDD000797718 /* NSArray+MASAdditions.m in Sources */,
+				81C4ADB62351DD4700797718 /* ZJAvPlayerView.m in Sources */,
 				812B48AE212AEBF100E3E2E3 /* LBXScanNative.m in Sources */,
 				815943892132752D002026BA /* EasyTextGlobalConfig.m in Sources */,
+				81A52CC7235B0EBB00E8635B /* HBXVIResourceLoaderManager.m in Sources */,
+				81A52CD0235B18AD00E8635B /* HBXVIMediaDownloader.m in Sources */,
 				81B19585216B86CA0041E0EA /* HandleLaunchOptionsViewController.m in Sources */,
 				81D688F821BB95F100E512AF /* YTKNetworkAgent.m in Sources */,
 				815943842132752D002026BA /* EasyShowUtils.m in Sources */,
 				81DB9CB420EDB09C00B9F860 /* UIImage+CropRotate.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
 				8142D8E920DAB1AB00C2E1A5 /* UIImage+GIF.m in Sources */,
+				81C4ADD82351DDD000797718 /* MASConstraint.m in Sources */,
 				816885A62051256400932943 /* BuilderViewController.m in Sources */,
 				8159438C2132752D002026BA /* UIView+EasyShowExt.m in Sources */,
 				8144D58E20E62DA800263DF9 /* CustomDefineCameraViewController.m in Sources */,
@@ -2286,6 +2480,7 @@
 				811DD3162195738F00960F4F /* CallPhoneNotificationViewController.m in Sources */,
 				81FD9DDE206D3D2200DC3DC0 /* ShowImageCell.m in Sources */,
 				81FD9E28206D3D8E00DC3DC0 /* CollectTranFromViewController.m in Sources */,
+				819DCE49235200A600D6C270 /* LiveController.m in Sources */,
 				812B4885212ABC4300E3E2E3 /* DeviceOrientation.m in Sources */,
 				8122E1B8209B113B0087BF8A /* ImageBlurring.m in Sources */,
 				8144D5AC20E6360500263DF9 /* ImageChangeViewController.mm in Sources */,
@@ -2301,6 +2496,7 @@
 				815943832132752D002026BA /* EasyEmptyView.m in Sources */,
 				81DB9CB620EDB09C00B9F860 /* TOCroppedImageAttributes.m in Sources */,
 				81227CE521329061002B2E57 /* OverlayView.m in Sources */,
+				81C4ADAC2351D89C00797718 /* HBXVideoTableViewCell.m in Sources */,
 				812B48A8212AEBF100E3E2E3 /* LBXScanViewStyle.m in Sources */,
 				813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */,
 				81227C4A21327AC0002B2E57 /* JDFileManager.m in Sources */,
@@ -2327,6 +2523,7 @@
 				8122E1B1209AFB280087BF8A /* ImageFilterUtil.m in Sources */,
 				81D6890E21BBA0CC00E512AF /* AFURLRequestSerialization.m in Sources */,
 				81D6891A21BBA42900E512AF /* HBXBaseRequest.m in Sources */,
+				81C4ADD52351DDD000797718 /* MASLayoutConstraint.m in Sources */,
 				815943802132752D002026BA /* EasyAlertTypes.m in Sources */,
 				816885A020511B4C00932943 /* ConcreatBuild.m in Sources */,
 				8144D59A20E6307F00263DF9 /* SimpleCamera.m in Sources */,
@@ -2337,6 +2534,7 @@
 				81DB9CB520EDB09C00B9F860 /* TOCropViewControllerTransitioning.m in Sources */,
 				81D6890B21BBA0CC00E512AF /* AFURLResponseSerialization.m in Sources */,
 				8142D8F820DAB1AB00C2E1A5 /* SDImageCacheConfig.m in Sources */,
+				81C4ADA92351D71600797718 /* HBXVideoModel.m in Sources */,
 				8142D8F920DAB1AB00C2E1A5 /* UIView+WebCacheOperation.m in Sources */,
 				81227CE421329061002B2E57 /* JDBandCardScanResultModel.m in Sources */,
 				8142D8E520DAB1AB00C2E1A5 /* SDWebImageFrame.m in Sources */,
@@ -2348,33 +2546,42 @@
 				81D6890C21BBA0CC00E512AF /* AFHTTPSessionManager.m in Sources */,
 				8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */,
 				81227C4321327985002B2E57 /* HBXAuthorityViewController.m in Sources */,
+				81A52CCA235B12F300E8635B /* HBXVIResourceLoader.m in Sources */,
 				8159437F2132752D002026BA /* EasyTextConfig.m in Sources */,
 				8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */,
 				8142D8E820DAB1AB00C2E1A5 /* SDWebImageDownloader.m in Sources */,
 				813709E92241D9F3009B0C9F /* ZJAvplayerViewController.m in Sources */,
 				8145A56521329A6D00431B9D /* HBXSystemTranViewController.m in Sources */,
+				81C4ADDA2351DDD000797718 /* MASViewAttribute.m in Sources */,
+				81C4ADA62351D6FE00797718 /* HBXVideoListViewController.m in Sources */,
 				812B48A7212AEBF100E3E2E3 /* LBXScanViewController.m in Sources */,
 				81D688F721BB95F100E512AF /* YTKBatchRequest.m in Sources */,
 				815943912132752D002026BA /* EasyEmptyGlobalConfig.m in Sources */,
 				8142C1C921BA52220080C63A /* UIImage+Resize.m in Sources */,
 				81E98A8C226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m in Sources */,
+				81C4ADD92351DDD000797718 /* MASViewConstraint.m in Sources */,
 				8142D8F620DAB1AB00C2E1A5 /* NSImage+WebCache.m in Sources */,
 				81227CCA21328C56002B2E57 /* JDIDCardScanViewController.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
+				819DCE4C2352029900D6C270 /* UIImage+Addtional.m in Sources */,
+				81C4ADB32351DCFE00797718 /* NSString+Ext.m in Sources */,
 				8159438A2132752D002026BA /* EasyLoadingView.m in Sources */,
 				81594338213272B5002026BA /* HBXGetRedPackageViewController.m in Sources */,
 				815943902132752D002026BA /* EasyAlertConfig.m in Sources */,
 				8122E1BE209B13110087BF8A /* ImageResizing.m in Sources */,
 				81227CED213295B8002B2E57 /* HBXTouchIDViewController.m in Sources */,
+				81C4ADD42351DDD000797718 /* MASConstraintMaker.m in Sources */,
 				815943862132752D002026BA /* EasyLoadingConfig.m in Sources */,
 				81FD9E42206D40C500DC3DC0 /* SubView.m in Sources */,
 				8122E1A7209AEB920087BF8A /* ToolViewController.m in Sources */,
+				81C4ADD72351DDD000797718 /* View+MASAdditions.m in Sources */,
 				8144D5A020E6312800263DF9 /* UIImage+fixOrientation.m in Sources */,
 				8145A56A2135028900431B9D /* HBXFilePathViewController.m in Sources */,
 				81D688F521BB95F100E512AF /* YTKNetworkPrivate.m in Sources */,
 				8142D8F420DAB1AB00C2E1A5 /* NSData+ImageContentType.m in Sources */,
 				815943882132752D002026BA /* EasyAlertView.m in Sources */,
 				8142D8F020DAB1AB00C2E1A5 /* SDAnimatedImageRep.m in Sources */,
+				81A52CCD235B182300E8635B /* HBXVIMediaCacheWorker.m in Sources */,
 				8142D8FB20DAB1AB00C2E1A5 /* SDWebImageImageIOCoder.m in Sources */,
 				812B4888212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.m in Sources */,
 				81FD9DDD206D3D2200DC3DC0 /* HomeHeaderView.m in Sources */,
@@ -2398,10 +2605,13 @@
 				81FD9E45206D40F700DC3DC0 /* ScrollViewOneViewController.m in Sources */,
 				8144D5A820E632B200263DF9 /* UIImage+Crop.m in Sources */,
 				8142D8F720DAB1AB00C2E1A5 /* SDWebImageGIFCoder.m in Sources */,
+				81C4ADD12351DDD000797718 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				8142D84D20DAB00A00C2E1A5 /* UIImageSynthesisViewController.m in Sources */,
 				81227CE9213292D7002B2E57 /* HBXChangeIconViewController.m in Sources */,
+				81C4ADDD2351E2FC00797718 /* ShowVideoViewController.m in Sources */,
 				8168859220510F2C00932943 /* HBXNSProxy.m in Sources */,
 				81DB9CB720EDB09C00B9F860 /* TOCropScrollView.m in Sources */,
+				819DCE4F235202EF00D6C270 /* UIView+Additions.m in Sources */,
 				815943932132752D002026BA /* EasyEmptyTypes.m in Sources */,
 				813743CF1FEB5AC200857CFD /* AppDelegate.m in Sources */,
 				81D6892121BBA6A000E512AF /* HBXHttpTestViewController.m in Sources */,

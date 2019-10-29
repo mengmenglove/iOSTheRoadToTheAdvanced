@@ -96,7 +96,12 @@
                                 "image": "image",
                                 "target": "ZJAvplayerViewController"
                             },
-                            ]
+                            {
+                                "name": "avplayer播放器",
+                                "image": "image",
+                                "target": "HBXVideoListViewController"
+                            },
+                        ]
                 },
                 {   "title" : "工具栏",
                     "data":[

@@ -27,6 +27,7 @@
 
 @property (nonatomic, strong) UIButton *rateButton;
 @property (nonatomic, strong) UIButton *seekButton;
+@property (nonatomic, assign) NSInteger totleTiem;
 
 
 
