@@ -59,4 +59,35 @@
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
+
+
+
++ (NSArray *)getVideoKeyList:(NSString *)key {
+    NSArray *list = [[NSUserDefaults standardUserDefaults] arrayForKey:[HBXVideoModel getSystemKey:key]];
+    if (list) {
+        return list;
+    }
+    return [NSArray array];
+    
+}
++ (void)addNewDownLoadWithUrl:(NSString *)url key:(NSString *)key {
+    if (url && url.length > 0) {
+        NSArray *list = [[NSUserDefaults standardUserDefaults] arrayForKey:[HBXVideoModel getSystemKey:key]];
+        NSMutableArray *newList = [NSMutableArray array];
+        if (list) {
+            [newList addObjectsFromArray:list];
+        }
+        NSDictionary *dict = @{@"url":url};
+        [newList addObject:dict];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:newList forKey:[HBXVideoModel getSystemKey:key]];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+}
+
+
++ (NSString *)getSystemKey:(NSString *)key {
+    return [NSString stringWithFormat:@"%@%@",KVIDEOLIST,key];
+}
+
 @end

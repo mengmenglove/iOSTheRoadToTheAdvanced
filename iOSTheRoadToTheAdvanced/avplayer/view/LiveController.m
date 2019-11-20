@@ -215,14 +215,7 @@
 
 
 - (void)playerDraggedEnd {
-//    self.enableSeekProgress = NO;
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        self.fastTimeLabel.hidden = YES;
-//        self.fastLightImgView.hidden = YES;
-//        self.fastVolumeImgView.hidden = YES;
-//        self.fastView.hidden = YES;
-//    });
-//    self.dragged = NO;
+;
     // 结束滑动时候把开始播放按钮改为播放状态
     self.startBtn.selected = NO;
     // 滑动结束延时隐藏controlView

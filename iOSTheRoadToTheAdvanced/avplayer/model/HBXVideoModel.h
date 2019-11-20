@@ -19,6 +19,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSArray *)getVideoList;
 + (void)addNewDownLoadWithUrl:(NSString *)url;
+
+
++ (NSArray *)getVideoKeyList:(NSString *)key;
++ (void)addNewDownLoadWithUrl:(NSString *)url key:(NSString *)key;
+
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

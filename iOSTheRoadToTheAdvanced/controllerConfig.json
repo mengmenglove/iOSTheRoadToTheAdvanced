@@ -101,6 +101,11 @@
                                 "image": "image",
                                 "target": "HBXVideoListViewController"
                             },
+                            {
+                                "name": "缓存avplayer播放器",
+                                "image": "image",
+                                "target": "HBXCacheVideoListViewController"
+                            },
                         ]
                 },
                 {   "title" : "工具栏",

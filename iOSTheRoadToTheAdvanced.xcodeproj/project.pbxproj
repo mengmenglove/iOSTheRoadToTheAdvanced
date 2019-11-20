@@ -183,10 +183,17 @@
 		819DCE49235200A600D6C270 /* LiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE48235200A600D6C270 /* LiveController.m */; };
 		819DCE4C2352029900D6C270 /* UIImage+Addtional.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE4A2352029900D6C270 /* UIImage+Addtional.m */; };
 		819DCE4F235202EF00D6C270 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE4E235202EF00D6C270 /* UIView+Additions.m */; };
-		81A52CC7235B0EBB00E8635B /* HBXVIResourceLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A52CC6235B0EBB00E8635B /* HBXVIResourceLoaderManager.m */; };
-		81A52CCA235B12F300E8635B /* HBXVIResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A52CC9235B12F300E8635B /* HBXVIResourceLoader.m */; };
-		81A52CCD235B182300E8635B /* HBXVIMediaCacheWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A52CCC235B182300E8635B /* HBXVIMediaCacheWorker.m */; };
-		81A52CD0235B18AD00E8635B /* HBXVIMediaDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A52CCF235B18AD00E8635B /* HBXVIMediaDownloader.m */; };
+		81A9D02A2380125500350D67 /* VIMediaCacheWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D0142380125500350D67 /* VIMediaCacheWorker.m */; };
+		81A9D02B2380125500350D67 /* VICacheConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D0192380125500350D67 /* VICacheConfiguration.m */; };
+		81A9D02C2380125500350D67 /* VICacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D01A2380125500350D67 /* VICacheManager.m */; };
+		81A9D02D2380125500350D67 /* VICacheAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D01B2380125500350D67 /* VICacheAction.m */; };
+		81A9D02E2380125500350D67 /* VICacheSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D01D2380125500350D67 /* VICacheSessionManager.m */; };
+		81A9D02F2380125500350D67 /* NSString+VIMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D01E2380125500350D67 /* NSString+VIMD5.m */; };
+		81A9D0302380125500350D67 /* VIContentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D0202380125500350D67 /* VIContentInfo.m */; };
+		81A9D0312380125500350D67 /* VIResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D0212380125500350D67 /* VIResourceLoader.m */; };
+		81A9D0322380125500350D67 /* VIMediaDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D0222380125500350D67 /* VIMediaDownloader.m */; };
+		81A9D0332380125500350D67 /* VIResourceLoadingRequestWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D0272380125500350D67 /* VIResourceLoadingRequestWorker.m */; };
+		81A9D0342380125500350D67 /* VIResourceLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D0282380125500350D67 /* VIResourceLoaderManager.m */; };
 		81AD6301206A93A8002A465C /* CollectSilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6300206A93A8002A465C /* CollectSilderViewController.m */; };
 		81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6303206A940E002A465C /* LineCollectionViewCell.m */; };
 		81AD6307206A940F002A465C /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6305206A940E002A465C /* LineLayout.m */; };
@@ -252,6 +259,10 @@
 		81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E020E11FEC9FAE009709AA /* ThreadViewController.m */; };
 		81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E66DD41FF51E360077CCCB /* RunViewController.m */; };
 		81E66DD81FF51E530077CCCB /* KVCPersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E66DD71FF51E530077CCCB /* KVCPersion.m */; };
+		81E97DF2238546B6007C3CE3 /* HBXCacheVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E97DF1238546B6007C3CE3 /* HBXCacheVideoListViewController.m */; };
+		81E97DF523854748007C3CE3 /* HBXCacheVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E97DF423854748007C3CE3 /* HBXCacheVideoController.m */; };
+		81E97DFB238547EB007C3CE3 /* APLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E97DF9238547EB007C3CE3 /* APLPlayerView.m */; };
+		81E97DFE23854833007C3CE3 /* APLCustomAVARLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E97DFD23854833007C3CE3 /* APLCustomAVARLDelegate.m */; };
 		81E98A8C226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E98A8B226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m */; };
 		81FD9DDC206D3D2200DC3DC0 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FD9DD7206D3D2200DC3DC0 /* CircleLayout.m */; };
 		81FD9DDD206D3D2200DC3DC0 /* HomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FD9DD9206D3D2200DC3DC0 /* HomeHeaderView.m */; };
@@ -601,14 +612,29 @@
 		819DCE4B2352029900D6C270 /* UIImage+Addtional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addtional.h"; sourceTree = "<group>"; };
 		819DCE4D235202EF00D6C270 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		819DCE4E235202EF00D6C270 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
-		81A52CC5235B0EBB00E8635B /* HBXVIResourceLoaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVIResourceLoaderManager.h; sourceTree = "<group>"; };
-		81A52CC6235B0EBB00E8635B /* HBXVIResourceLoaderManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVIResourceLoaderManager.m; sourceTree = "<group>"; };
-		81A52CC8235B12F300E8635B /* HBXVIResourceLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVIResourceLoader.h; sourceTree = "<group>"; };
-		81A52CC9235B12F300E8635B /* HBXVIResourceLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVIResourceLoader.m; sourceTree = "<group>"; };
-		81A52CCB235B182300E8635B /* HBXVIMediaCacheWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVIMediaCacheWorker.h; sourceTree = "<group>"; };
-		81A52CCC235B182300E8635B /* HBXVIMediaCacheWorker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVIMediaCacheWorker.m; sourceTree = "<group>"; };
-		81A52CCE235B18AD00E8635B /* HBXVIMediaDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXVIMediaDownloader.h; sourceTree = "<group>"; };
-		81A52CCF235B18AD00E8635B /* HBXVIMediaDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXVIMediaDownloader.m; sourceTree = "<group>"; };
+		81A9D0112380125500350D67 /* VIMediaCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIMediaCache.h; sourceTree = "<group>"; };
+		81A9D0132380125500350D67 /* VICacheAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VICacheAction.h; sourceTree = "<group>"; };
+		81A9D0142380125500350D67 /* VIMediaCacheWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIMediaCacheWorker.m; sourceTree = "<group>"; };
+		81A9D0152380125500350D67 /* VICacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VICacheManager.h; sourceTree = "<group>"; };
+		81A9D0162380125500350D67 /* VICacheConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VICacheConfiguration.h; sourceTree = "<group>"; };
+		81A9D0172380125500350D67 /* NSString+VIMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VIMD5.h"; sourceTree = "<group>"; };
+		81A9D0182380125500350D67 /* VICacheSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VICacheSessionManager.h; sourceTree = "<group>"; };
+		81A9D0192380125500350D67 /* VICacheConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VICacheConfiguration.m; sourceTree = "<group>"; };
+		81A9D01A2380125500350D67 /* VICacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VICacheManager.m; sourceTree = "<group>"; };
+		81A9D01B2380125500350D67 /* VICacheAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VICacheAction.m; sourceTree = "<group>"; };
+		81A9D01C2380125500350D67 /* VIMediaCacheWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIMediaCacheWorker.h; sourceTree = "<group>"; };
+		81A9D01D2380125500350D67 /* VICacheSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VICacheSessionManager.m; sourceTree = "<group>"; };
+		81A9D01E2380125500350D67 /* NSString+VIMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VIMD5.m"; sourceTree = "<group>"; };
+		81A9D0202380125500350D67 /* VIContentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIContentInfo.m; sourceTree = "<group>"; };
+		81A9D0212380125500350D67 /* VIResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIResourceLoader.m; sourceTree = "<group>"; };
+		81A9D0222380125500350D67 /* VIMediaDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIMediaDownloader.m; sourceTree = "<group>"; };
+		81A9D0232380125500350D67 /* VIResourceLoaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIResourceLoaderManager.h; sourceTree = "<group>"; };
+		81A9D0242380125500350D67 /* VIResourceLoadingRequestWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIResourceLoadingRequestWorker.h; sourceTree = "<group>"; };
+		81A9D0252380125500350D67 /* VIResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIResourceLoader.h; sourceTree = "<group>"; };
+		81A9D0262380125500350D67 /* VIContentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIContentInfo.h; sourceTree = "<group>"; };
+		81A9D0272380125500350D67 /* VIResourceLoadingRequestWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIResourceLoadingRequestWorker.m; sourceTree = "<group>"; };
+		81A9D0282380125500350D67 /* VIResourceLoaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIResourceLoaderManager.m; sourceTree = "<group>"; };
+		81A9D0292380125500350D67 /* VIMediaDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIMediaDownloader.h; sourceTree = "<group>"; };
 		81AD62FF206A93A8002A465C /* CollectSilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectSilderViewController.h; sourceTree = "<group>"; };
 		81AD6300206A93A8002A465C /* CollectSilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectSilderViewController.m; sourceTree = "<group>"; };
 		81AD6302206A940E002A465C /* LineCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineCollectionViewCell.h; sourceTree = "<group>"; };
@@ -745,6 +771,14 @@
 		81E66DD41FF51E360077CCCB /* RunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunViewController.m; sourceTree = "<group>"; };
 		81E66DD61FF51E530077CCCB /* KVCPersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCPersion.h; sourceTree = "<group>"; };
 		81E66DD71FF51E530077CCCB /* KVCPersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCPersion.m; sourceTree = "<group>"; };
+		81E97DF0238546B6007C3CE3 /* HBXCacheVideoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXCacheVideoListViewController.h; sourceTree = "<group>"; };
+		81E97DF1238546B6007C3CE3 /* HBXCacheVideoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXCacheVideoListViewController.m; sourceTree = "<group>"; };
+		81E97DF323854748007C3CE3 /* HBXCacheVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXCacheVideoController.h; sourceTree = "<group>"; };
+		81E97DF423854748007C3CE3 /* HBXCacheVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXCacheVideoController.m; sourceTree = "<group>"; };
+		81E97DF9238547EB007C3CE3 /* APLPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLPlayerView.m; sourceTree = "<group>"; };
+		81E97DFA238547EB007C3CE3 /* APLPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLPlayerView.h; sourceTree = "<group>"; };
+		81E97DFC23854833007C3CE3 /* APLCustomAVARLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLCustomAVARLDelegate.h; sourceTree = "<group>"; };
+		81E97DFD23854833007C3CE3 /* APLCustomAVARLDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLCustomAVARLDelegate.m; sourceTree = "<group>"; };
 		81E98A8A226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDownloadCenterManagaer.h; sourceTree = "<group>"; };
 		81E98A8B226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJDownloadCenterManagaer.m; sourceTree = "<group>"; };
 		81FD9DD6206D3D2200DC3DC0 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
@@ -1234,6 +1268,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81E97DEC23854659007C3CE3 /* AvplyerWithCache */,
 				81C4ADB72351DDD000797718 /* Masonry */,
 				81C4ADB02351DCED00797718 /* category */,
 				81C4ADA02351D6E700797718 /* avplayer */,
@@ -1827,16 +1862,54 @@
 		81A52CC4235AED4200E8635B /* HBXAvAssetResourceLoader */ = {
 			isa = PBXGroup;
 			children = (
-				81A52CC5235B0EBB00E8635B /* HBXVIResourceLoaderManager.h */,
-				81A52CC6235B0EBB00E8635B /* HBXVIResourceLoaderManager.m */,
-				81A52CC8235B12F300E8635B /* HBXVIResourceLoader.h */,
-				81A52CC9235B12F300E8635B /* HBXVIResourceLoader.m */,
-				81A52CCB235B182300E8635B /* HBXVIMediaCacheWorker.h */,
-				81A52CCC235B182300E8635B /* HBXVIMediaCacheWorker.m */,
-				81A52CCE235B18AD00E8635B /* HBXVIMediaDownloader.h */,
-				81A52CCF235B18AD00E8635B /* HBXVIMediaDownloader.m */,
 			);
 			path = HBXAvAssetResourceLoader;
+			sourceTree = "<group>";
+		};
+		81A9D0102380125500350D67 /* VIMediaCache */ = {
+			isa = PBXGroup;
+			children = (
+				81A9D0112380125500350D67 /* VIMediaCache.h */,
+				81A9D0122380125500350D67 /* Cache */,
+				81A9D01F2380125500350D67 /* ResourceLoader */,
+			);
+			path = VIMediaCache;
+			sourceTree = "<group>";
+		};
+		81A9D0122380125500350D67 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				81A9D0132380125500350D67 /* VICacheAction.h */,
+				81A9D0142380125500350D67 /* VIMediaCacheWorker.m */,
+				81A9D0152380125500350D67 /* VICacheManager.h */,
+				81A9D0162380125500350D67 /* VICacheConfiguration.h */,
+				81A9D0172380125500350D67 /* NSString+VIMD5.h */,
+				81A9D0182380125500350D67 /* VICacheSessionManager.h */,
+				81A9D0192380125500350D67 /* VICacheConfiguration.m */,
+				81A9D01A2380125500350D67 /* VICacheManager.m */,
+				81A9D01B2380125500350D67 /* VICacheAction.m */,
+				81A9D01C2380125500350D67 /* VIMediaCacheWorker.h */,
+				81A9D01D2380125500350D67 /* VICacheSessionManager.m */,
+				81A9D01E2380125500350D67 /* NSString+VIMD5.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		81A9D01F2380125500350D67 /* ResourceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				81A9D0202380125500350D67 /* VIContentInfo.m */,
+				81A9D0212380125500350D67 /* VIResourceLoader.m */,
+				81A9D0222380125500350D67 /* VIMediaDownloader.m */,
+				81A9D0232380125500350D67 /* VIResourceLoaderManager.h */,
+				81A9D0242380125500350D67 /* VIResourceLoadingRequestWorker.h */,
+				81A9D0252380125500350D67 /* VIResourceLoader.h */,
+				81A9D0262380125500350D67 /* VIContentInfo.h */,
+				81A9D0272380125500350D67 /* VIResourceLoadingRequestWorker.m */,
+				81A9D0282380125500350D67 /* VIResourceLoaderManager.m */,
+				81A9D0292380125500350D67 /* VIMediaDownloader.h */,
+			);
+			path = ResourceLoader;
 			sourceTree = "<group>";
 		};
 		81AD62FB206A9396002A465C /* collection滑动视图 */ = {
@@ -1947,6 +2020,7 @@
 		81C4ADA02351D6E700797718 /* avplayer */ = {
 			isa = PBXGroup;
 			children = (
+				81A9D0102380125500350D67 /* VIMediaCache */,
 				81A52CC4235AED4200E8635B /* HBXAvAssetResourceLoader */,
 				81C4ADA12351D6E700797718 /* controller */,
 				81C4ADA22351D6E700797718 /* model */,
@@ -2167,6 +2241,45 @@
 			children = (
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		81E97DEC23854659007C3CE3 /* AvplyerWithCache */ = {
+			isa = PBXGroup;
+			children = (
+				81E97DEF2385468C007C3CE3 /* model */,
+				81E97DEE23854687007C3CE3 /* view */,
+				81E97DED2385467F007C3CE3 /* controller */,
+			);
+			path = AvplyerWithCache;
+			sourceTree = "<group>";
+		};
+		81E97DED2385467F007C3CE3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				81E97DFC23854833007C3CE3 /* APLCustomAVARLDelegate.h */,
+				81E97DFD23854833007C3CE3 /* APLCustomAVARLDelegate.m */,
+				81E97DF0238546B6007C3CE3 /* HBXCacheVideoListViewController.h */,
+				81E97DF1238546B6007C3CE3 /* HBXCacheVideoListViewController.m */,
+				81E97DF323854748007C3CE3 /* HBXCacheVideoController.h */,
+				81E97DF423854748007C3CE3 /* HBXCacheVideoController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		81E97DEE23854687007C3CE3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				81E97DFA238547EB007C3CE3 /* APLPlayerView.h */,
+				81E97DF9238547EB007C3CE3 /* APLPlayerView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		81E97DEF2385468C007C3CE3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		81E98A89226AB6C100F0AFD3 /* download */ = {
@@ -2435,6 +2548,7 @@
 				8142D8F120DAB1AB00C2E1A5 /* SDImageCache.m in Sources */,
 				8145A55F2132994300431B9D /* HBXBaseAnimalViewController.m in Sources */,
 				81C4ADD22351DDD000797718 /* ViewController+MASAdditions.m in Sources */,
+				81E97DF2238546B6007C3CE3 /* HBXCacheVideoListViewController.m in Sources */,
 				81DB9CB320EDB09C00B9F860 /* TOActivityCroppedImageProvider.m in Sources */,
 				81DB9CB920EDB09C00B9F860 /* TOCropOverlayView.m in Sources */,
 				812B48AD212AEBF100E3E2E3 /* LBXScanTypes.m in Sources */,
@@ -2463,8 +2577,6 @@
 				81C4ADB62351DD4700797718 /* ZJAvPlayerView.m in Sources */,
 				812B48AE212AEBF100E3E2E3 /* LBXScanNative.m in Sources */,
 				815943892132752D002026BA /* EasyTextGlobalConfig.m in Sources */,
-				81A52CC7235B0EBB00E8635B /* HBXVIResourceLoaderManager.m in Sources */,
-				81A52CD0235B18AD00E8635B /* HBXVIMediaDownloader.m in Sources */,
 				81B19585216B86CA0041E0EA /* HandleLaunchOptionsViewController.m in Sources */,
 				81D688F821BB95F100E512AF /* YTKNetworkAgent.m in Sources */,
 				815943842132752D002026BA /* EasyShowUtils.m in Sources */,
@@ -2473,16 +2585,21 @@
 				8142D8E920DAB1AB00C2E1A5 /* UIImage+GIF.m in Sources */,
 				81C4ADD82351DDD000797718 /* MASConstraint.m in Sources */,
 				816885A62051256400932943 /* BuilderViewController.m in Sources */,
+				81A9D02E2380125500350D67 /* VICacheSessionManager.m in Sources */,
 				8159438C2132752D002026BA /* UIView+EasyShowExt.m in Sources */,
 				8144D58E20E62DA800263DF9 /* CustomDefineCameraViewController.m in Sources */,
+				81E97DF523854748007C3CE3 /* HBXCacheVideoController.m in Sources */,
 				8142D8EC20DAB1AB00C2E1A5 /* SDWebImageCompat.m in Sources */,
+				81A9D0302380125500350D67 /* VIContentInfo.m in Sources */,
 				8144D5A920E632B200263DF9 /* UIImage+Resize.m in Sources */,
 				811DD3162195738F00960F4F /* CallPhoneNotificationViewController.m in Sources */,
+				81E97DFE23854833007C3CE3 /* APLCustomAVARLDelegate.m in Sources */,
 				81FD9DDE206D3D2200DC3DC0 /* ShowImageCell.m in Sources */,
 				81FD9E28206D3D8E00DC3DC0 /* CollectTranFromViewController.m in Sources */,
 				819DCE49235200A600D6C270 /* LiveController.m in Sources */,
 				812B4885212ABC4300E3E2E3 /* DeviceOrientation.m in Sources */,
 				8122E1B8209B113B0087BF8A /* ImageBlurring.m in Sources */,
+				81A9D0332380125500350D67 /* VIResourceLoadingRequestWorker.m in Sources */,
 				8144D5AC20E6360500263DF9 /* ImageChangeViewController.mm in Sources */,
 				8144D59D20E630F900263DF9 /* SimpleCamera+Helper.m in Sources */,
 				81FD9E32206D3E6B00DC3DC0 /* UIView+Banner.m in Sources */,
@@ -2494,6 +2611,7 @@
 				818C968A2265CADA00EF4B59 /* HBXFoundationViewController.m in Sources */,
 				8142D8E220DAB1AB00C2E1A5 /* SDWebImageManager.m in Sources */,
 				815943832132752D002026BA /* EasyEmptyView.m in Sources */,
+				81A9D0342380125500350D67 /* VIResourceLoaderManager.m in Sources */,
 				81DB9CB620EDB09C00B9F860 /* TOCroppedImageAttributes.m in Sources */,
 				81227CE521329061002B2E57 /* OverlayView.m in Sources */,
 				81C4ADAC2351D89C00797718 /* HBXVideoTableViewCell.m in Sources */,
@@ -2509,6 +2627,7 @@
 				81AD6306206A940E002A465C /* LineCollectionViewCell.m in Sources */,
 				8142C1D621BA5F370080C63A /* UIImage+Alpha.m in Sources */,
 				8122E1AE209AFAE70087BF8A /* UIImageFilterViewController.m in Sources */,
+				81A9D02F2380125500350D67 /* NSString+VIMD5.m in Sources */,
 				812B48B2212AF84200E3E2E3 /* RemoveImageRedPointViewController.m in Sources */,
 				81227C5121327B67002B2E57 /* HBXUtilViewController.m in Sources */,
 				8159434D213274D2002026BA /* HBXAlertViewController.m in Sources */,
@@ -2525,15 +2644,18 @@
 				81D6891A21BBA42900E512AF /* HBXBaseRequest.m in Sources */,
 				81C4ADD52351DDD000797718 /* MASLayoutConstraint.m in Sources */,
 				815943802132752D002026BA /* EasyAlertTypes.m in Sources */,
+				81A9D0312380125500350D67 /* VIResourceLoader.m in Sources */,
 				816885A020511B4C00932943 /* ConcreatBuild.m in Sources */,
 				8144D59A20E6307F00263DF9 /* SimpleCamera.m in Sources */,
 				8142C1D721BA5F370080C63A /* UIImage+RoundedCorner.m in Sources */,
 				81D688F421BB95F100E512AF /* YTKChainRequest.m in Sources */,
 				81227CE221329061002B2E57 /* JDBankScanViewController.m in Sources */,
 				81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */,
+				81A9D02B2380125500350D67 /* VICacheConfiguration.m in Sources */,
 				81DB9CB520EDB09C00B9F860 /* TOCropViewControllerTransitioning.m in Sources */,
 				81D6890B21BBA0CC00E512AF /* AFURLResponseSerialization.m in Sources */,
 				8142D8F820DAB1AB00C2E1A5 /* SDImageCacheConfig.m in Sources */,
+				81A9D0322380125500350D67 /* VIMediaDownloader.m in Sources */,
 				81C4ADA92351D71600797718 /* HBXVideoModel.m in Sources */,
 				8142D8F920DAB1AB00C2E1A5 /* UIView+WebCacheOperation.m in Sources */,
 				81227CE421329061002B2E57 /* JDBandCardScanResultModel.m in Sources */,
@@ -2546,7 +2668,6 @@
 				81D6890C21BBA0CC00E512AF /* AFHTTPSessionManager.m in Sources */,
 				8162A5461FECFDAC007E5AAC /* BaoXianOperation.m in Sources */,
 				81227C4321327985002B2E57 /* HBXAuthorityViewController.m in Sources */,
-				81A52CCA235B12F300E8635B /* HBXVIResourceLoader.m in Sources */,
 				8159437F2132752D002026BA /* EasyTextConfig.m in Sources */,
 				8168857D204FE05000932943 /* HBXDelegateViewController.m in Sources */,
 				8142D8E820DAB1AB00C2E1A5 /* SDWebImageDownloader.m in Sources */,
@@ -2560,6 +2681,7 @@
 				8142C1C921BA52220080C63A /* UIImage+Resize.m in Sources */,
 				81E98A8C226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m in Sources */,
 				81C4ADD92351DDD000797718 /* MASViewConstraint.m in Sources */,
+				81A9D02C2380125500350D67 /* VICacheManager.m in Sources */,
 				8142D8F620DAB1AB00C2E1A5 /* NSImage+WebCache.m in Sources */,
 				81227CCA21328C56002B2E57 /* JDIDCardScanViewController.m in Sources */,
 				813743DD1FEB5AC200857CFD /* main.m in Sources */,
@@ -2569,6 +2691,8 @@
 				81594338213272B5002026BA /* HBXGetRedPackageViewController.m in Sources */,
 				815943902132752D002026BA /* EasyAlertConfig.m in Sources */,
 				8122E1BE209B13110087BF8A /* ImageResizing.m in Sources */,
+				81E97DFB238547EB007C3CE3 /* APLPlayerView.m in Sources */,
+				81A9D02A2380125500350D67 /* VIMediaCacheWorker.m in Sources */,
 				81227CED213295B8002B2E57 /* HBXTouchIDViewController.m in Sources */,
 				81C4ADD42351DDD000797718 /* MASConstraintMaker.m in Sources */,
 				815943862132752D002026BA /* EasyLoadingConfig.m in Sources */,
@@ -2581,7 +2705,6 @@
 				8142D8F420DAB1AB00C2E1A5 /* NSData+ImageContentType.m in Sources */,
 				815943882132752D002026BA /* EasyAlertView.m in Sources */,
 				8142D8F020DAB1AB00C2E1A5 /* SDAnimatedImageRep.m in Sources */,
-				81A52CCD235B182300E8635B /* HBXVIMediaCacheWorker.m in Sources */,
 				8142D8FB20DAB1AB00C2E1A5 /* SDWebImageImageIOCoder.m in Sources */,
 				812B4888212ABCB400E3E2E3 /* HBXDeviceOrientationViewController.m in Sources */,
 				81FD9DDD206D3D2200DC3DC0 /* HomeHeaderView.m in Sources */,
@@ -2619,6 +2742,7 @@
 				8142C1D021BA5B730080C63A /* HBXImagePressViewController.m in Sources */,
 				815943872132752D002026BA /* EasyAlertItem.m in Sources */,
 				815943812132752D002026BA /* EasyTextView.m in Sources */,
+				81A9D02D2380125500350D67 /* VICacheAction.m in Sources */,
 				812B4892212AEBAA00E3E2E3 /* ZJScanViewController.m in Sources */,
 				81E66DD81FF51E530077CCCB /* KVCPersion.m in Sources */,
 				81227C5521327B9B002B2E57 /* JDDeviceUtils.m in Sources */,

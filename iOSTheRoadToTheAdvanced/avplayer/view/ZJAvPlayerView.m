@@ -7,6 +7,7 @@
 //
 
 #import "ZJAvPlayerView.h"
+#import "VIMediaCache.h"
 
 @interface ZJAvPlayerView ()
 <AVAssetResourceLoaderDelegate>
@@ -20,13 +21,24 @@
 @property (nonatomic, assign) CGRect fatherRect;
 @property (nonatomic, strong) AVURLAsset *avAsset;
 @property (nonatomic, strong) NSMutableArray *requestList;
+@property (nonatomic, strong) VIResourceLoaderManager *resourceLoaderManager;
+@property (nonatomic, strong) VIMediaDownloader *downloader;
+
+
+;
 @end
 
 
 @implementation ZJAvPlayerView
 
+- (void)dealloc {
+    
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
+        
+//         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mediaCacheDidChanged:) name:VICacheManagerDidUpdateCacheNotification object:nil];
     }
     return self;
 }
@@ -49,12 +61,22 @@
 
 - (void)startPlayWithUrl:(NSString *)urlStr {
     totlePlayTime = 1.0;
+    NSLog(@"urlStr: %@", urlStr);
     NSURL *url;
     if ([urlStr containsString:@"fileCache"]) {
         url = [NSURL fileURLWithPath:urlStr];        
     }else {
         url = [NSURL URLWithString:urlStr];
     }
+    
+//    VIResourceLoaderManager *resourceLoaderManager = [VIResourceLoaderManager new];
+//    self.resourceLoaderManager = resourceLoaderManager;
+//
+//
+//    VICacheConfiguration *configuration = [VICacheManager cacheConfigurationForURL:url];
+//    if (configuration.progress >= 1.0) {
+//        NSLog(@"cache completed");
+//    }
     
     
     self.avAsset = [AVURLAsset URLAssetWithURL:url options:nil];
