@@ -183,6 +183,7 @@
 		819DCE49235200A600D6C270 /* LiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE48235200A600D6C270 /* LiveController.m */; };
 		819DCE4C2352029900D6C270 /* UIImage+Addtional.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE4A2352029900D6C270 /* UIImage+Addtional.m */; };
 		819DCE4F235202EF00D6C270 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE4E235202EF00D6C270 /* UIView+Additions.m */; };
+		81A298F6238D387000901C4D /* RuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A298F5238D387000901C4D /* RuntimeController.m */; };
 		81A9D02A2380125500350D67 /* VIMediaCacheWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D0142380125500350D67 /* VIMediaCacheWorker.m */; };
 		81A9D02B2380125500350D67 /* VICacheConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D0192380125500350D67 /* VICacheConfiguration.m */; };
 		81A9D02C2380125500350D67 /* VICacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A9D01A2380125500350D67 /* VICacheManager.m */; };
@@ -612,6 +613,8 @@
 		819DCE4B2352029900D6C270 /* UIImage+Addtional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addtional.h"; sourceTree = "<group>"; };
 		819DCE4D235202EF00D6C270 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		819DCE4E235202EF00D6C270 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		81A298F4238D387000901C4D /* RuntimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeController.h; sourceTree = "<group>"; };
+		81A298F5238D387000901C4D /* RuntimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeController.m; sourceTree = "<group>"; };
 		81A9D0112380125500350D67 /* VIMediaCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIMediaCache.h; sourceTree = "<group>"; };
 		81A9D0132380125500350D67 /* VICacheAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VICacheAction.h; sourceTree = "<group>"; };
 		81A9D0142380125500350D67 /* VIMediaCacheWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIMediaCacheWorker.m; sourceTree = "<group>"; };
@@ -1268,6 +1271,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81A298F2238D383600901C4D /* runtime */,
 				81E97DEC23854659007C3CE3 /* AvplyerWithCache */,
 				81C4ADB72351DDD000797718 /* Masonry */,
 				81C4ADB02351DCED00797718 /* category */,
@@ -1857,6 +1861,23 @@
 				818C968F2265CC8900EF4B59 /* HBXLearnCell.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		81A298F2238D383600901C4D /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				81A298F3238D383900901C4D /* controller */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		81A298F3238D383900901C4D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				81A298F4238D387000901C4D /* RuntimeController.h */,
+				81A298F5238D387000901C4D /* RuntimeController.m */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		81A52CC4235AED4200E8635B /* HBXAvAssetResourceLoader */ = {
@@ -2590,6 +2611,7 @@
 				8144D58E20E62DA800263DF9 /* CustomDefineCameraViewController.m in Sources */,
 				81E97DF523854748007C3CE3 /* HBXCacheVideoController.m in Sources */,
 				8142D8EC20DAB1AB00C2E1A5 /* SDWebImageCompat.m in Sources */,
+				81A298F6238D387000901C4D /* RuntimeController.m in Sources */,
 				81A9D0302380125500350D67 /* VIContentInfo.m in Sources */,
 				8144D5A920E632B200263DF9 /* UIImage+Resize.m in Sources */,
 				811DD3162195738F00960F4F /* CallPhoneNotificationViewController.m in Sources */,
