@@ -12,13 +12,11 @@
 
 @interface mPersion: NSObject
 
-- (void)fooToo;
-
 @end
 
 @implementation mPersion
 
-- (void)fooToo {
+- (void)foo {
     NSLog(@"mPersion  fooToo");
 }
 
@@ -33,8 +31,8 @@
 
 
 
-
-//resolveInstanceMethod 实现
+//第一步截获方法实现
+//resolveInstanceMethod 获取新的实现方法
 /*
 
 - (void)viewDidLoad {
@@ -62,23 +60,68 @@ void fooMethod(id obj, SEL _cmd) {
 */
 
 
+/*
+ //第二步，修改实现方法的对象
+ forwardingTargetForSelector的实现，重新获取新对象执行方法
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self performSelector:@selector(foo)];
+}
++ (BOOL)resolveInstanceMethod:(SEL)sel {
+    return YES;
+    return [super resolveInstanceMethod:sel];
+}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    if (aSelector == @selector(foo)) {
+        return [mPersion new];
+    }
+    return [super forwardingTargetForSelector:aSelector];
+}
+*/
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self performSelector:@selector(foo)];
     
 }
-
 
 + (BOOL)resolveInstanceMethod:(SEL)sel {
     return [super resolveInstanceMethod:sel];
 }
 
+
 - (id)forwardingTargetForSelector:(SEL)aSelector {
-    if (aSelector == @selector(foo:)) {
-        return [mPersion new];
-    }
     return [super forwardingTargetForSelector:aSelector];
 }
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    if ([NSStringFromSelector(aSelector) isEqualToString:@"foo"]) {
+        return [NSMethodSignature signatureWithObjCTypes:"v@:"];
+        //具体参数文档定义      //https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100-SW1
+    }
+    return [super methodSignatureForSelector:aSelector];
+}
+
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    SEL sel = anInvocation.selector;
+
+    mPersion  *p = [mPersion new];
+    if ([p respondsToSelector:sel]) {
+        NSLog(@"ready forwardInvocation");
+        [anInvocation invokeWithTarget:p];
+    }else {
+        [self doesNotRecognizeSelector:sel];
+    }
+    
+}
+
+
+
 
 
 

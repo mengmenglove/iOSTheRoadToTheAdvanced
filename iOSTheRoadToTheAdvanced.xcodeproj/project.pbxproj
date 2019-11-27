@@ -173,6 +173,7 @@
 		816885A320511BD300932943 /* Dorector.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A220511BD300932943 /* Dorector.m */; };
 		816885A62051256400932943 /* BuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A52051256400932943 /* BuilderViewController.m */; };
 		816885A920513B2200932943 /* ShowDelegatePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A820513B2200932943 /* ShowDelegatePerson.m */; };
+		817DF9B0238E211F00F7EDA2 /* MethosSwizzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817DF9AF238E211F00F7EDA2 /* MethosSwizzViewController.m */; };
 		8181D6C621241B0900F9866C /* HBXShowSystemPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8181D6C521241B0900F9866C /* HBXShowSystemPlayViewController.m */; };
 		8181D6C821241ED600F9866C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8181D6C721241ED600F9866C /* AVKit.framework */; };
 		8181D6CA21241F9F00F9866C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8181D6C921241F9F00F9866C /* MediaPlayer.framework */; };
@@ -596,6 +597,8 @@
 		816885A52051256400932943 /* BuilderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderViewController.m; sourceTree = "<group>"; };
 		816885A720513B2200932943 /* ShowDelegatePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowDelegatePerson.h; sourceTree = "<group>"; };
 		816885A820513B2200932943 /* ShowDelegatePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowDelegatePerson.m; sourceTree = "<group>"; };
+		817DF9AE238E211F00F7EDA2 /* MethosSwizzViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethosSwizzViewController.h; sourceTree = "<group>"; };
+		817DF9AF238E211F00F7EDA2 /* MethosSwizzViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethosSwizzViewController.m; sourceTree = "<group>"; };
 		8181D6C421241B0900F9866C /* HBXShowSystemPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXShowSystemPlayViewController.h; sourceTree = "<group>"; };
 		8181D6C521241B0900F9866C /* HBXShowSystemPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXShowSystemPlayViewController.m; sourceTree = "<group>"; };
 		8181D6C721241ED600F9866C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -1876,6 +1879,8 @@
 			children = (
 				81A298F4238D387000901C4D /* RuntimeController.h */,
 				81A298F5238D387000901C4D /* RuntimeController.m */,
+				817DF9AE238E211F00F7EDA2 /* MethosSwizzViewController.h */,
+				817DF9AF238E211F00F7EDA2 /* MethosSwizzViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -2533,6 +2538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817DF9B0238E211F00F7EDA2 /* MethosSwizzViewController.m in Sources */,
 				8142D8E420DAB1AB00C2E1A5 /* UIImageView+HighlightedWebCache.m in Sources */,
 				81227C7B2132842A002B2E57 /* NSObject+JDPropertyCode.m in Sources */,
 				8168859B2051160F00932943 /* ContentProxy.m in Sources */,

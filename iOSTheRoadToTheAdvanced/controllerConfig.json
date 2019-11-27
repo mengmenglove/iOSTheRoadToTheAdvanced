@@ -195,7 +195,12 @@
                             "name": "run-time-消息转发",
                             "image": "image",
                             "target": "RuntimeController"
-                        }
+                        },
+                        {
+                            "name": "method swizz",
+                            "image": "image",
+                            "target": "MethosSwizzViewController"
+                        },
                     ]
                 }
             
