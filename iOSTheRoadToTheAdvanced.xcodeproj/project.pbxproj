@@ -230,6 +230,10 @@
 		81C4ADD92351DDD000797718 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADCF2351DDD000797718 /* MASViewConstraint.m */; };
 		81C4ADDA2351DDD000797718 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADD02351DDD000797718 /* MASViewAttribute.m */; };
 		81C4ADDD2351E2FC00797718 /* ShowVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4ADDC2351E2FC00797718 /* ShowVideoViewController.m */; };
+		81C9E98723C87B0A003FF4F5 /* MasonryTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9E98623C87B0A003FF4F5 /* MasonryTableVC.m */; };
+		81C9E98A23C87C37003FF4F5 /* MasonryTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9E98923C87C37003FF4F5 /* MasonryTableCell.m */; };
+		81C9E98D23C87C71003FF4F5 /* MasonryActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9E98C23C87C71003FF4F5 /* MasonryActionItem.m */; };
+		81C9E99123C8A435003FF4F5 /* MasonrySameSpaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9E99023C8A435003FF4F5 /* MasonrySameSpaceVC.m */; };
 		81D688F321BB95F100E512AF /* YTKNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D688E021BB95F100E512AF /* YTKNetworkConfig.m */; };
 		81D688F421BB95F100E512AF /* YTKChainRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D688E221BB95F100E512AF /* YTKChainRequest.m */; };
 		81D688F521BB95F100E512AF /* YTKNetworkPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D688E621BB95F100E512AF /* YTKNetworkPrivate.m */; };
@@ -720,6 +724,14 @@
 		81C4ADD02351DDD000797718 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		81C4ADDB2351E2FC00797718 /* ShowVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowVideoViewController.h; sourceTree = "<group>"; };
 		81C4ADDC2351E2FC00797718 /* ShowVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowVideoViewController.m; sourceTree = "<group>"; };
+		81C9E98523C87B0A003FF4F5 /* MasonryTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryTableVC.h; sourceTree = "<group>"; };
+		81C9E98623C87B0A003FF4F5 /* MasonryTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryTableVC.m; sourceTree = "<group>"; };
+		81C9E98823C87C37003FF4F5 /* MasonryTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryTableCell.h; sourceTree = "<group>"; };
+		81C9E98923C87C37003FF4F5 /* MasonryTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryTableCell.m; sourceTree = "<group>"; };
+		81C9E98B23C87C71003FF4F5 /* MasonryActionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryActionItem.h; sourceTree = "<group>"; };
+		81C9E98C23C87C71003FF4F5 /* MasonryActionItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryActionItem.m; sourceTree = "<group>"; };
+		81C9E98F23C8A435003FF4F5 /* MasonrySameSpaceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonrySameSpaceVC.h; sourceTree = "<group>"; };
+		81C9E99023C8A435003FF4F5 /* MasonrySameSpaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonrySameSpaceVC.m; sourceTree = "<group>"; };
 		81D688E021BB95F100E512AF /* YTKNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKNetworkConfig.m; sourceTree = "<group>"; };
 		81D688E121BB95F100E512AF /* YTKBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKBaseRequest.h; sourceTree = "<group>"; };
 		81D688E221BB95F100E512AF /* YTKChainRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKChainRequest.m; sourceTree = "<group>"; };
@@ -1289,6 +1301,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81C9E98323C87ABB003FF4F5 /* masonryCollection */,
 				81B9195F23C57CE2005F2BE6 /* hook */,
 				81F310EF23B4C0800009983E /* algorithm */,
 				81A298F2238D383600901C4D /* runtime */,
@@ -2175,6 +2188,37 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		81C9E98323C87ABB003FF4F5 /* masonryCollection */ = {
+			isa = PBXGroup;
+			children = (
+				81C9E98E23C8A3F6003FF4F5 /* spaceViewVC */,
+				81C9E98423C87AD8003FF4F5 /* masonryTable */,
+			);
+			path = masonryCollection;
+			sourceTree = "<group>";
+		};
+		81C9E98423C87AD8003FF4F5 /* masonryTable */ = {
+			isa = PBXGroup;
+			children = (
+				81C9E98523C87B0A003FF4F5 /* MasonryTableVC.h */,
+				81C9E98623C87B0A003FF4F5 /* MasonryTableVC.m */,
+				81C9E98823C87C37003FF4F5 /* MasonryTableCell.h */,
+				81C9E98923C87C37003FF4F5 /* MasonryTableCell.m */,
+				81C9E98B23C87C71003FF4F5 /* MasonryActionItem.h */,
+				81C9E98C23C87C71003FF4F5 /* MasonryActionItem.m */,
+			);
+			path = masonryTable;
+			sourceTree = "<group>";
+		};
+		81C9E98E23C8A3F6003FF4F5 /* spaceViewVC */ = {
+			isa = PBXGroup;
+			children = (
+				81C9E98F23C8A435003FF4F5 /* MasonrySameSpaceVC.h */,
+				81C9E99023C8A435003FF4F5 /* MasonrySameSpaceVC.m */,
+			);
+			path = spaceViewVC;
+			sourceTree = "<group>";
+		};
 		81D688DE21BB95D600E512AF /* httpUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -2595,6 +2639,7 @@
 				8142D8ED20DAB1AB00C2E1A5 /* SDWebImagePrefetcher.m in Sources */,
 				81C4ADD32351DDD000797718 /* MASCompositeConstraint.m in Sources */,
 				8142D8EB20DAB1AB00C2E1A5 /* SDWebImageCoderHelper.m in Sources */,
+				81C9E98D23C87C71003FF4F5 /* MasonryActionItem.m in Sources */,
 				81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */,
 				813743D21FEB5AC200857CFD /* ViewController.m in Sources */,
 				81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */,
@@ -2633,6 +2678,7 @@
 				8142D8F520DAB1AB00C2E1A5 /* UIImageView+WebCache.m in Sources */,
 				81DB9C7D20EB17E700B9F860 /* TKImageView.m in Sources */,
 				8159438B2132752D002026BA /* EasyEmptyPart.m in Sources */,
+				81C9E98A23C87C37003FF4F5 /* MasonryTableCell.m in Sources */,
 				81227C5921327F85002B2E57 /* JDLoadingView.m in Sources */,
 				8142D8EA20DAB1AB00C2E1A5 /* UIImage+MultiFormat.m in Sources */,
 				81FD9E31206D3E6B00DC3DC0 /* HW3DBannerView.m in Sources */,
@@ -2710,6 +2756,7 @@
 				812B48B2212AF84200E3E2E3 /* RemoveImageRedPointViewController.m in Sources */,
 				81227C5121327B67002B2E57 /* HBXUtilViewController.m in Sources */,
 				8159434D213274D2002026BA /* HBXAlertViewController.m in Sources */,
+				81C9E98723C87B0A003FF4F5 /* MasonryTableVC.m in Sources */,
 				81BF2A4E20F391CB00144EB4 /* MainSubViewViewController.m in Sources */,
 				8122E1A3209AE8F10087BF8A /* ImageUtil.m in Sources */,
 				81FD9DDC206D3D2200DC3DC0 /* CircleLayout.m in Sources */,
@@ -2829,6 +2876,7 @@
 				81E66DD81FF51E530077CCCB /* KVCPersion.m in Sources */,
 				81227C5521327B9B002B2E57 /* JDDeviceUtils.m in Sources */,
 				813743E51FEB5D4600857CFD /* MainViewController.m in Sources */,
+				81C9E99123C8A435003FF4F5 /* MasonrySameSpaceVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

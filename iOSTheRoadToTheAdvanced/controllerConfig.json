@@ -217,7 +217,22 @@
                         },
                         
                     ]
-                }
+                },
+                {   "title" : "masonry-collection",
+                    "data":[
+                        {
+                            "name": "MasonryTableVC",
+                            "image": "image",
+                            "target": "MasonryTableVC"
+                        },
+                        {
+                           "name": "MasonrySameSpaceVC",
+                           "image": "image",
+                           "target": "MasonrySameSpaceVC"
+                        },
+                        
+                    ]
+                }                 
             ]
     
 }
