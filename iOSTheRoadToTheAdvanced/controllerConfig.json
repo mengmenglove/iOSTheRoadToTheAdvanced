@@ -201,10 +201,23 @@
                             "image": "image",
                             "target": "MethosSwizzViewController"
                         },
+                        {
+                            "name": "method swizz",
+                            "image": "image",
+                            "target": "RuntimeKvoViewController"
+                        },
+                    ]
+                },
+                {   "title" : "Algorithm",
+                    "data":[
+                        {
+                            "name": "HBXAlgorithmViewController",
+                            "image": "image",
+                            "target": "HBXAlgorithmViewController"
+                        },
+                        
                     ]
                 }
-            
-            
             ]
     
 }

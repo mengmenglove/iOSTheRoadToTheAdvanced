@@ -8,7 +8,7 @@
 
 #import "RuntimeController.h"
 #import <objc/runtime.h>
-
+#import "ZJExtensionActionModel.h"
 
 @interface mPersion: NSObject
 
@@ -87,6 +87,10 @@ void fooMethod(id obj, SEL _cmd) {
     [super viewDidLoad];
     [self performSelector:@selector(foo)];
     
+    
+    NSDictionary *param = @{@"name":@"huang", @"version":@"1.0.0"};
+    ZJExtensionActionModel *model = [[ZJExtensionActionModel alloc] initWithParam:param];
+    NSLog(@"model.name: %@ model.version: %@",model.name,model.version);
 }
 
 + (BOOL)resolveInstanceMethod:(SEL)sel {

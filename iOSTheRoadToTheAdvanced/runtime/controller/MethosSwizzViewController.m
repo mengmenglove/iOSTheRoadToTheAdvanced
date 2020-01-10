@@ -8,6 +8,8 @@
 
 #import "MethosSwizzViewController.h"
 #import <objc/runtime.h>
+#import <objc/message.h>
+
 @interface MethosSwizzViewController ()
 
 @end

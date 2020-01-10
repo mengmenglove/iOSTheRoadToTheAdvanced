@@ -174,6 +174,8 @@
 		816885A62051256400932943 /* BuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A52051256400932943 /* BuilderViewController.m */; };
 		816885A920513B2200932943 /* ShowDelegatePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 816885A820513B2200932943 /* ShowDelegatePerson.m */; };
 		817DF9B0238E211F00F7EDA2 /* MethosSwizzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817DF9AF238E211F00F7EDA2 /* MethosSwizzViewController.m */; };
+		817DF9B3238F6CC500F7EDA2 /* RuntimeKvoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817DF9B2238F6CC500F7EDA2 /* RuntimeKvoViewController.m */; };
+		817DF9B62390B5F600F7EDA2 /* ZJExtensionActionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 817DF9B52390B5F600F7EDA2 /* ZJExtensionActionModel.m */; };
 		8181D6C621241B0900F9866C /* HBXShowSystemPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8181D6C521241B0900F9866C /* HBXShowSystemPlayViewController.m */; };
 		8181D6C821241ED600F9866C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8181D6C721241ED600F9866C /* AVKit.framework */; };
 		8181D6CA21241F9F00F9866C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8181D6C921241F9F00F9866C /* MediaPlayer.framework */; };
@@ -205,6 +207,8 @@
 		81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F51FEE8B5C0048D4B3 /* Person.m */; };
 		81B5A2F91FEE8DE40048D4B3 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2F81FEE8DE40048D4B3 /* Dog.m */; };
 		81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */; };
+		81B9196223C57CF7005F2BE6 /* HBXHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B9196123C57CF7005F2BE6 /* HBXHook.m */; };
+		81B9196623C582A1005F2BE6 /* UIViewController+logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B9196523C582A1005F2BE6 /* UIViewController+logger.m */; };
 		81BF2A4E20F391CB00144EB4 /* MainSubViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A4D20F391CB00144EB4 /* MainSubViewViewController.m */; };
 		81BF2A5220F3956400144EB4 /* EffectSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A5120F3956400144EB4 /* EffectSelectorViewController.m */; };
 		81BF2A5520F3963D00144EB4 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BF2A5420F3963D00144EB4 /* BaseTableViewController.m */; };
@@ -266,6 +270,7 @@
 		81E97DFB238547EB007C3CE3 /* APLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E97DF9238547EB007C3CE3 /* APLPlayerView.m */; };
 		81E97DFE23854833007C3CE3 /* APLCustomAVARLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E97DFD23854833007C3CE3 /* APLCustomAVARLDelegate.m */; };
 		81E98A8C226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E98A8B226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m */; };
+		81F310F223B4C0C20009983E /* HBXAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F310F123B4C0C20009983E /* HBXAlgorithmViewController.m */; };
 		81FD9DDC206D3D2200DC3DC0 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FD9DD7206D3D2200DC3DC0 /* CircleLayout.m */; };
 		81FD9DDD206D3D2200DC3DC0 /* HomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FD9DD9206D3D2200DC3DC0 /* HomeHeaderView.m */; };
 		81FD9DDE206D3D2200DC3DC0 /* ShowImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FD9DDB206D3D2200DC3DC0 /* ShowImageCell.m */; };
@@ -599,6 +604,10 @@
 		816885A820513B2200932943 /* ShowDelegatePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowDelegatePerson.m; sourceTree = "<group>"; };
 		817DF9AE238E211F00F7EDA2 /* MethosSwizzViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethosSwizzViewController.h; sourceTree = "<group>"; };
 		817DF9AF238E211F00F7EDA2 /* MethosSwizzViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethosSwizzViewController.m; sourceTree = "<group>"; };
+		817DF9B1238F6CC500F7EDA2 /* RuntimeKvoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeKvoViewController.h; sourceTree = "<group>"; };
+		817DF9B2238F6CC500F7EDA2 /* RuntimeKvoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeKvoViewController.m; sourceTree = "<group>"; };
+		817DF9B42390B5F600F7EDA2 /* ZJExtensionActionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJExtensionActionModel.h; sourceTree = "<group>"; };
+		817DF9B52390B5F600F7EDA2 /* ZJExtensionActionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJExtensionActionModel.m; sourceTree = "<group>"; };
 		8181D6C421241B0900F9866C /* HBXShowSystemPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXShowSystemPlayViewController.h; sourceTree = "<group>"; };
 		8181D6C521241B0900F9866C /* HBXShowSystemPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXShowSystemPlayViewController.m; sourceTree = "<group>"; };
 		8181D6C721241ED600F9866C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -659,6 +668,10 @@
 		81B5A2F81FEE8DE40048D4B3 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		81B5A2FA1FEE918B0048D4B3 /* NSObject+BaoXianKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BaoXianKVC.h"; sourceTree = "<group>"; };
 		81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BaoXianKVC.m"; sourceTree = "<group>"; };
+		81B9196023C57CF7005F2BE6 /* HBXHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXHook.h; sourceTree = "<group>"; };
+		81B9196123C57CF7005F2BE6 /* HBXHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXHook.m; sourceTree = "<group>"; };
+		81B9196423C582A1005F2BE6 /* UIViewController+logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+logger.h"; sourceTree = "<group>"; };
+		81B9196523C582A1005F2BE6 /* UIViewController+logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+logger.m"; sourceTree = "<group>"; };
 		81BF2A4C20F391CB00144EB4 /* MainSubViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSubViewViewController.h; sourceTree = "<group>"; };
 		81BF2A4D20F391CB00144EB4 /* MainSubViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSubViewViewController.m; sourceTree = "<group>"; };
 		81BF2A5020F3956400144EB4 /* EffectSelectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectSelectorViewController.h; sourceTree = "<group>"; };
@@ -787,6 +800,8 @@
 		81E97DFD23854833007C3CE3 /* APLCustomAVARLDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLCustomAVARLDelegate.m; sourceTree = "<group>"; };
 		81E98A8A226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDownloadCenterManagaer.h; sourceTree = "<group>"; };
 		81E98A8B226AB6C100F0AFD3 /* ZJDownloadCenterManagaer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJDownloadCenterManagaer.m; sourceTree = "<group>"; };
+		81F310F023B4C0C20009983E /* HBXAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXAlgorithmViewController.h; sourceTree = "<group>"; };
+		81F310F123B4C0C20009983E /* HBXAlgorithmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXAlgorithmViewController.m; sourceTree = "<group>"; };
 		81FD9DD6206D3D2200DC3DC0 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
 		81FD9DD7206D3D2200DC3DC0 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
 		81FD9DD8206D3D2200DC3DC0 /* HomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderView.h; sourceTree = "<group>"; };
@@ -1274,6 +1289,8 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				81B9195F23C57CE2005F2BE6 /* hook */,
+				81F310EF23B4C0800009983E /* algorithm */,
 				81A298F2238D383600901C4D /* runtime */,
 				81E97DEC23854659007C3CE3 /* AvplyerWithCache */,
 				81C4ADB72351DDD000797718 /* Masonry */,
@@ -1881,6 +1898,10 @@
 				81A298F5238D387000901C4D /* RuntimeController.m */,
 				817DF9AE238E211F00F7EDA2 /* MethosSwizzViewController.h */,
 				817DF9AF238E211F00F7EDA2 /* MethosSwizzViewController.m */,
+				817DF9B1238F6CC500F7EDA2 /* RuntimeKvoViewController.h */,
+				817DF9B2238F6CC500F7EDA2 /* RuntimeKvoViewController.m */,
+				817DF9B42390B5F600F7EDA2 /* ZJExtensionActionModel.h */,
+				817DF9B52390B5F600F7EDA2 /* ZJExtensionActionModel.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -2030,6 +2051,25 @@
 				81B5A2FB1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m */,
 			);
 			path = KVCAndKVO;
+			sourceTree = "<group>";
+		};
+		81B9195F23C57CE2005F2BE6 /* hook */ = {
+			isa = PBXGroup;
+			children = (
+				81B9196323C5827A005F2BE6 /* action */,
+				81B9196023C57CF7005F2BE6 /* HBXHook.h */,
+				81B9196123C57CF7005F2BE6 /* HBXHook.m */,
+			);
+			path = hook;
+			sourceTree = "<group>";
+		};
+		81B9196323C5827A005F2BE6 /* action */ = {
+			isa = PBXGroup;
+			children = (
+				81B9196423C582A1005F2BE6 /* UIViewController+logger.h */,
+				81B9196523C582A1005F2BE6 /* UIViewController+logger.m */,
+			);
+			path = action;
 			sourceTree = "<group>";
 		};
 		81BF2A4F20F3954800144EB4 /* EffectController */ = {
@@ -2317,6 +2357,15 @@
 			path = download;
 			sourceTree = "<group>";
 		};
+		81F310EF23B4C0800009983E /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				81F310F023B4C0C20009983E /* HBXAlgorithmViewController.h */,
+				81F310F123B4C0C20009983E /* HBXAlgorithmViewController.m */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
 		81FD9DD1206D3C2900DC3DC0 /* collectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2574,6 +2623,7 @@
 				8144D58220E5D00F00263DF9 /* UserDefinePickerViewController.m in Sources */,
 				8142D8F120DAB1AB00C2E1A5 /* SDImageCache.m in Sources */,
 				8145A55F2132994300431B9D /* HBXBaseAnimalViewController.m in Sources */,
+				81B9196223C57CF7005F2BE6 /* HBXHook.m in Sources */,
 				81C4ADD22351DDD000797718 /* ViewController+MASAdditions.m in Sources */,
 				81E97DF2238546B6007C3CE3 /* HBXCacheVideoListViewController.m in Sources */,
 				81DB9CB320EDB09C00B9F860 /* TOActivityCroppedImageProvider.m in Sources */,
@@ -2617,6 +2667,7 @@
 				8144D58E20E62DA800263DF9 /* CustomDefineCameraViewController.m in Sources */,
 				81E97DF523854748007C3CE3 /* HBXCacheVideoController.m in Sources */,
 				8142D8EC20DAB1AB00C2E1A5 /* SDWebImageCompat.m in Sources */,
+				81B9196623C582A1005F2BE6 /* UIViewController+logger.m in Sources */,
 				81A298F6238D387000901C4D /* RuntimeController.m in Sources */,
 				81A9D0302380125500350D67 /* VIContentInfo.m in Sources */,
 				8144D5A920E632B200263DF9 /* UIImage+Resize.m in Sources */,
@@ -2681,6 +2732,8 @@
 				81B5A2FC1FEE918B0048D4B3 /* NSObject+BaoXianKVC.m in Sources */,
 				81A9D02B2380125500350D67 /* VICacheConfiguration.m in Sources */,
 				81DB9CB520EDB09C00B9F860 /* TOCropViewControllerTransitioning.m in Sources */,
+				81F310F223B4C0C20009983E /* HBXAlgorithmViewController.m in Sources */,
+				817DF9B62390B5F600F7EDA2 /* ZJExtensionActionModel.m in Sources */,
 				81D6890B21BBA0CC00E512AF /* AFURLResponseSerialization.m in Sources */,
 				8142D8F820DAB1AB00C2E1A5 /* SDImageCacheConfig.m in Sources */,
 				81A9D0322380125500350D67 /* VIMediaDownloader.m in Sources */,
@@ -2752,6 +2805,7 @@
 				81B5A2F61FEE8B5C0048D4B3 /* Person.m in Sources */,
 				81BF2A5520F3963D00144EB4 /* BaseTableViewController.m in Sources */,
 				8122E1BB209B121A0087BF8A /* UIImageBurringViewController.m in Sources */,
+				817DF9B3238F6CC500F7EDA2 /* RuntimeKvoViewController.m in Sources */,
 				815943852132752D002026BA /* EasyShowLabel.m in Sources */,
 				81FD9E45206D40F700DC3DC0 /* ScrollViewOneViewController.m in Sources */,
 				8144D5A820E632B200263DF9 /* UIImage+Crop.m in Sources */,
