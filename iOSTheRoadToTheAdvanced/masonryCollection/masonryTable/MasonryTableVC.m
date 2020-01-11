@@ -46,9 +46,9 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return UITableViewAutomaticDimension;
+    return UITableViewAutomaticDimension;
+  
     //方式2
-    
     MasonryTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MasonryTableCellName"];
 
     MasonryActionItem *item = self.dataArray[indexPath.row];

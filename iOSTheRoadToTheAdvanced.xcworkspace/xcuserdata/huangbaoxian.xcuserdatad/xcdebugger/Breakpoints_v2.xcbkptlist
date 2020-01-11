@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "325E2E84-5244-497C-B152-FF76D75CFCB9"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65912290-DC91-428D-AD83-39E4DCB41AB2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/reactivecocoa/controller/ReactiveCocoaViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "65912290-DC91-428D-AD83-39E4DCB41AB2 - b51563741d813f3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ReactiveCocoaViewController viewDidLoad]"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/reactivecocoa/controller/ReactiveCocoaViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  uuid = "65912290-DC91-428D-AD83-39E4DCB41AB2 - b51563741d813f3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ReactiveCocoaViewController viewDidLoad]"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/reactivecocoa/controller/ReactiveCocoaViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "234">
+               </Location>
+               <Location
+                  uuid = "65912290-DC91-428D-AD83-39E4DCB41AB2 - b5905c7060e77db1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[ReactiveCocoaViewController viewDidLoad]_block_invoke"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/reactivecocoa/controller/ReactiveCocoaViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "51">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

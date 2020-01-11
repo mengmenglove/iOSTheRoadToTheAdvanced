@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34ABE60105037486DF801780 /* Pods_iOSTheRoadToTheAdvanced.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70BDA56D39ABA8EEDD8AD3 /* Pods_iOSTheRoadToTheAdvanced.framework */; };
 		810B0580228162940092385D /* HBXOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B057F228162940092385D /* HBXOperation.m */; };
 		811DD3162195738F00960F4F /* CallPhoneNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811DD3152195738F00960F4F /* CallPhoneNotificationViewController.m */; };
+		81205B1823CA13A600BA1975 /* ReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81205B1623CA13A600BA1975 /* ReactiveCocoaViewController.m */; };
+		81205B1923CA13A600BA1975 /* ReactiveCocoaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81205B1723CA13A600BA1975 /* ReactiveCocoaViewController.xib */; };
 		81227C4321327985002B2E57 /* HBXAuthorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227C4221327985002B2E57 /* HBXAuthorityViewController.m */; };
 		81227C4621327998002B2E57 /* JDAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227C4421327997002B2E57 /* JDAuthorityManager.m */; };
 		81227C4A21327AC0002B2E57 /* JDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81227C4921327AC0002B2E57 /* JDFileManager.m */; };
@@ -295,6 +298,9 @@
 		810B057F228162940092385D /* HBXOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXOperation.m; sourceTree = "<group>"; };
 		811DD3142195738F00960F4F /* CallPhoneNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallPhoneNotificationViewController.h; sourceTree = "<group>"; };
 		811DD3152195738F00960F4F /* CallPhoneNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallPhoneNotificationViewController.m; sourceTree = "<group>"; };
+		81205B1523CA13A600BA1975 /* ReactiveCocoaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveCocoaViewController.h; sourceTree = "<group>"; };
+		81205B1623CA13A600BA1975 /* ReactiveCocoaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaViewController.m; sourceTree = "<group>"; };
+		81205B1723CA13A600BA1975 /* ReactiveCocoaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReactiveCocoaViewController.xib; sourceTree = "<group>"; };
 		81227C4121327985002B2E57 /* HBXAuthorityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXAuthorityViewController.h; sourceTree = "<group>"; };
 		81227C4221327985002B2E57 /* HBXAuthorityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXAuthorityViewController.m; sourceTree = "<group>"; };
 		81227C4421327997002B2E57 /* JDAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAuthorityManager.m; sourceTree = "<group>"; };
@@ -840,6 +846,9 @@
 		81FD9E47206D413D00DC3DC0 /* WLScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLScrollView.m; sourceTree = "<group>"; };
 		81FD9E48206D413D00DC3DC0 /* WLSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSubView.h; sourceTree = "<group>"; };
 		81FD9E49206D413D00DC3DC0 /* WLSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSubView.m; sourceTree = "<group>"; };
+		A76A245A571608D85983A14F /* Pods-iOSTheRoadToTheAdvanced.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTheRoadToTheAdvanced.debug.xcconfig"; path = "Target Support Files/Pods-iOSTheRoadToTheAdvanced/Pods-iOSTheRoadToTheAdvanced.debug.xcconfig"; sourceTree = "<group>"; };
+		BE70BDA56D39ABA8EEDD8AD3 /* Pods_iOSTheRoadToTheAdvanced.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTheRoadToTheAdvanced.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED442A1B3F15B1F1FE1D6E0A /* Pods-iOSTheRoadToTheAdvanced.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTheRoadToTheAdvanced.release.xcconfig"; path = "Target Support Files/Pods-iOSTheRoadToTheAdvanced/Pods-iOSTheRoadToTheAdvanced.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -856,12 +865,22 @@
 				8136709020E4CB5D009A42A7 /* CoreImage.framework in Frameworks */,
 				8136708E20E4CB51009A42A7 /* CoreGraphics.framework in Frameworks */,
 				81227CE321329061002B2E57 /* libbankcard.a in Frameworks */,
+				34ABE60105037486DF801780 /* Pods_iOSTheRoadToTheAdvanced.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6196E012720BCEC65AF6AC73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A76A245A571608D85983A14F /* Pods-iOSTheRoadToTheAdvanced.debug.xcconfig */,
+				ED442A1B3F15B1F1FE1D6E0A /* Pods-iOSTheRoadToTheAdvanced.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		811DD3132195735100960F4F /* callPhoneNotiofication */ = {
 			isa = PBXGroup;
 			children = (
@@ -869,6 +888,24 @@
 				811DD3152195738F00960F4F /* CallPhoneNotificationViewController.m */,
 			);
 			path = callPhoneNotiofication;
+			sourceTree = "<group>";
+		};
+		812059F523CA0B4A00BA1975 /* reactivecocoa */ = {
+			isa = PBXGroup;
+			children = (
+				81205B1123CA0B8500BA1975 /* controller */,
+			);
+			path = reactivecocoa;
+			sourceTree = "<group>";
+		};
+		81205B1123CA0B8500BA1975 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				81205B1523CA13A600BA1975 /* ReactiveCocoaViewController.h */,
+				81205B1623CA13A600BA1975 /* ReactiveCocoaViewController.m */,
+				81205B1723CA13A600BA1975 /* ReactiveCocoaViewController.xib */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		81227C402132796A002B2E57 /* 获取权限 */ = {
@@ -1244,6 +1281,7 @@
 				8136709120E4CB63009A42A7 /* ImageIO.framework */,
 				8136708F20E4CB5D009A42A7 /* CoreImage.framework */,
 				8136708D20E4CB51009A42A7 /* CoreGraphics.framework */,
+				BE70BDA56D39ABA8EEDD8AD3 /* Pods_iOSTheRoadToTheAdvanced.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1287,6 +1325,7 @@
 				813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */,
 				813743CB1FEB5AC100857CFD /* Products */,
 				8136708C20E4CB50009A42A7 /* Frameworks */,
+				6196E012720BCEC65AF6AC73 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1301,6 +1340,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				812059F523CA0B4A00BA1975 /* reactivecocoa */,
 				81C9E98323C87ABB003FF4F5 /* masonryCollection */,
 				81B9195F23C57CE2005F2BE6 /* hook */,
 				81F310EF23B4C0800009983E /* algorithm */,
@@ -2544,9 +2584,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 813743E01FEB5AC200857CFD /* Build configuration list for PBXNativeTarget "iOSTheRoadToTheAdvanced" */;
 			buildPhases = (
+				4142365E10E49F4D96B5D38D /* [CP] Check Pods Manifest.lock */,
 				813743C61FEB5AC100857CFD /* Sources */,
 				813743C71FEB5AC100857CFD /* Frameworks */,
 				813743C81FEB5AC100857CFD /* Resources */,
+				795EE58AE2FB0C79FF8F4CA3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2596,6 +2638,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81227C77213282F4002B2E57 /* guide_01@2x.png in Resources */,
+				81205B1923CA13A600BA1975 /* ReactiveCocoaViewController.xib in Resources */,
 				8159434721327313002026BA /* redpacket_bg@2x.png in Resources */,
 				81688588204FEB1B00932943 /* read4.json in Resources */,
 				813743D71FEB5AC200857CFD /* Assets.xcassets in Resources */,
@@ -2625,6 +2668,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4142365E10E49F4D96B5D38D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSTheRoadToTheAdvanced-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		795EE58AE2FB0C79FF8F4CA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSTheRoadToTheAdvanced/Pods-iOSTheRoadToTheAdvanced-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSTheRoadToTheAdvanced/Pods-iOSTheRoadToTheAdvanced-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		813743C61FEB5AC100857CFD /* Sources */ = {
@@ -2669,6 +2755,7 @@
 				8142D8F120DAB1AB00C2E1A5 /* SDImageCache.m in Sources */,
 				8145A55F2132994300431B9D /* HBXBaseAnimalViewController.m in Sources */,
 				81B9196223C57CF7005F2BE6 /* HBXHook.m in Sources */,
+				81205B1823CA13A600BA1975 /* ReactiveCocoaViewController.m in Sources */,
 				81C4ADD22351DDD000797718 /* ViewController+MASAdditions.m in Sources */,
 				81E97DF2238546B6007C3CE3 /* HBXCacheVideoListViewController.m in Sources */,
 				81DB9CB320EDB09C00B9F860 /* TOActivityCroppedImageProvider.m in Sources */,
@@ -2931,7 +3018,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2980,7 +3067,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -2989,11 +3076,14 @@
 		};
 		813743E11FEB5AC200857CFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A76A245A571608D85983A14F /* Pods-iOSTheRoadToTheAdvanced.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22GWN3W844;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -3023,12 +3113,15 @@
 		};
 		813743E21FEB5AC200857CFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED442A1B3F15B1F1FE1D6E0A /* Pods-iOSTheRoadToTheAdvanced.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22GWN3W844;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
