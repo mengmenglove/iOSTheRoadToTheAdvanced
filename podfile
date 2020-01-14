@@ -4,6 +4,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 def shared_pod
 	pod 'ReactiveObjC', '~> 3.1.1'
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'SDWebImage', '~> 5.4.2'
 end
 
 target 'iOSTheRoadToTheAdvanced' do
