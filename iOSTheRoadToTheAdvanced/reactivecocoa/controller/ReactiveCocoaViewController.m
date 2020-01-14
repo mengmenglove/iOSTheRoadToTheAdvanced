@@ -12,7 +12,8 @@
 
 @interface ReactiveCocoaViewController ()
 
-@property (nonatomic, strong) NSNumber * count;
+@property (nonatomic, assign) NSInteger  count;
+@property (weak, nonatomic) IBOutlet UITextField *textFiled;
 
 @property (weak, nonatomic) IBOutlet UILabel *numberLabel;
 
@@ -24,15 +25,18 @@
     [super viewDidLoad];
     [RACObserve(self, count) subscribeNext:^(id  _Nullable x) {
         NSLog(@"count %@", x);
-//        self.numberLabel.text = [NSString stringWithFormat:@"%@",x];
+        self.numberLabel.text = [NSString stringWithFormat:@"%@",x];
     }];
+    
+    [[self.textFiled rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
+        NSLog(@"textFiled: %@",x);
+    }];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    int getCount = [self.count intValue];
-    int newCount = getCount++;
-    self.count = [NSNumber numberWithInt:newCount];
+    self.count++;
 }
 
 /*
