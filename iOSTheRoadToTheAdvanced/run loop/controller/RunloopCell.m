@@ -7,7 +7,7 @@
 //
 
 #import "RunloopCell.h"
-
+#import <SDWebImage/SDWebImage.h>
 @interface RunloopCell ()
 
 @property(nonatomic,strong)UIView  *container;
@@ -50,7 +50,9 @@
     for (int i = 0 ; i < 3; i++) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(viewWidth * i + 10, 0, viewWidth - 20, 120)];
         [self.container addSubview:imageView];
-        imageView.image = [UIImage imageNamed:@"show_image"];
+//        imageView.image = [UIImage imageNamed:@"show_image"];
+        
+        [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://i1.sinaimg.cn/ent/d/2008-06-04/U105P28T3D2048907F326DT20080604225106.jpg"] placeholderImage:[UIImage imageNamed:@"show_image"]];
     }
     
     

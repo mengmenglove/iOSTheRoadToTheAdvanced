@@ -254,6 +254,17 @@
                                   ]
                               },
                 
+                {   "title" : "thread",
+                    "data":[
+                        {
+                            "name": "HBXThreadViewController",
+                            "image": "image",
+                            "target": "HBXThreadViewController"
+                        },                       
+                        
+                    ]
+                },
+                
                 
                 
                 

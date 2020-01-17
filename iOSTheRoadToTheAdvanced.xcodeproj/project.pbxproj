@@ -189,6 +189,8 @@
 		8190B8E423CDFB2E006928C1 /* RunloopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8190B8E223CDFB2E006928C1 /* RunloopTableViewController.m */; };
 		8190B8E523CDFB2E006928C1 /* RunloopTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8190B8E323CDFB2E006928C1 /* RunloopTableViewController.xib */; };
 		8190B8E823CDFBED006928C1 /* RunloopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8190B8E723CDFBED006928C1 /* RunloopCell.m */; };
+		8190B8EF23D213CD006928C1 /* HBXThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8190B8EE23D213CD006928C1 /* HBXThreadViewController.m */; };
+		8190B8F223D21791006928C1 /* HBXMyOpeation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8190B8F123D21791006928C1 /* HBXMyOpeation.m */; };
 		819DCE49235200A600D6C270 /* LiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE48235200A600D6C270 /* LiveController.m */; };
 		819DCE4C2352029900D6C270 /* UIImage+Addtional.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE4A2352029900D6C270 /* UIImage+Addtional.m */; };
 		819DCE4F235202EF00D6C270 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCE4E235202EF00D6C270 /* UIView+Additions.m */; };
@@ -631,6 +633,10 @@
 		8190B8E323CDFB2E006928C1 /* RunloopTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunloopTableViewController.xib; sourceTree = "<group>"; };
 		8190B8E623CDFBED006928C1 /* RunloopCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopCell.h; sourceTree = "<group>"; };
 		8190B8E723CDFBED006928C1 /* RunloopCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopCell.m; sourceTree = "<group>"; };
+		8190B8ED23D213CD006928C1 /* HBXThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXThreadViewController.h; sourceTree = "<group>"; };
+		8190B8EE23D213CD006928C1 /* HBXThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXThreadViewController.m; sourceTree = "<group>"; };
+		8190B8F023D21791006928C1 /* HBXMyOpeation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXMyOpeation.h; sourceTree = "<group>"; };
+		8190B8F123D21791006928C1 /* HBXMyOpeation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXMyOpeation.m; sourceTree = "<group>"; };
 		819DCE47235200A600D6C270 /* LiveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveController.h; sourceTree = "<group>"; };
 		819DCE48235200A600D6C270 /* LiveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveController.m; sourceTree = "<group>"; };
 		819DCE4A2352029900D6C270 /* UIImage+Addtional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addtional.m"; sourceTree = "<group>"; };
@@ -1328,6 +1334,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				8190B8E923D212EB006928C1 /* thread */,
 				8190B8DF23CDFAE5006928C1 /* run loop */,
 				812059F523CA0B4A00BA1975 /* reactivecocoa */,
 				81C9E98323C87ABB003FF4F5 /* masonryCollection */,
@@ -1943,6 +1950,17 @@
 				8190B8E723CDFBED006928C1 /* RunloopCell.m */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		8190B8E923D212EB006928C1 /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				8190B8ED23D213CD006928C1 /* HBXThreadViewController.h */,
+				8190B8EE23D213CD006928C1 /* HBXThreadViewController.m */,
+				8190B8F023D21791006928C1 /* HBXMyOpeation.h */,
+				8190B8F123D21791006928C1 /* HBXMyOpeation.m */,
+			);
+			path = thread;
 			sourceTree = "<group>";
 		};
 		81A298F2238D383600901C4D /* runtime */ = {
@@ -2782,6 +2800,7 @@
 				81D688F821BB95F100E512AF /* YTKNetworkAgent.m in Sources */,
 				815943842132752D002026BA /* EasyShowUtils.m in Sources */,
 				81DB9CB420EDB09C00B9F860 /* UIImage+CropRotate.m in Sources */,
+				8190B8EF23D213CD006928C1 /* HBXThreadViewController.m in Sources */,
 				81B5A2F31FEE8B1A0048D4B3 /* KVCAndKVOViewController.m in Sources */,
 				8142D8E920DAB1AB00C2E1A5 /* UIImage+GIF.m in Sources */,
 				81C4ADD82351DDD000797718 /* MASConstraint.m in Sources */,
@@ -2897,6 +2916,7 @@
 				81A9D02A2380125500350D67 /* VIMediaCacheWorker.m in Sources */,
 				81227CED213295B8002B2E57 /* HBXTouchIDViewController.m in Sources */,
 				81C4ADD42351DDD000797718 /* MASConstraintMaker.m in Sources */,
+				8190B8F223D21791006928C1 /* HBXMyOpeation.m in Sources */,
 				815943862132752D002026BA /* EasyLoadingConfig.m in Sources */,
 				81FD9E42206D40C500DC3DC0 /* SubView.m in Sources */,
 				8122E1A7209AEB920087BF8A /* ToolViewController.m in Sources */,

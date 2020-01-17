@@ -3,4 +3,484 @@
    uuid = "325E2E84-5244-497C-B152-FF76D75CFCB9"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "067CF75E-A890-4D29-83B8-589630CA732E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D9FF6AD-FBF9-4E93-AD29-7C6F12DCD209"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "748216FB-F0D9-4F72-94FF-7AE72E418564"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "-sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F7BF3BA-FB06-4B43-ADD2-17148E08D64A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3F7BF3BA-FB06-4B43-ADD2-17148E08D64A - 118dbf96cb101afc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:]"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "1760">
+               </Location>
+               <Location
+                  uuid = "3F7BF3BA-FB06-4B43-ADD2-17148E08D64A - cda5ca4712e9ef3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__126-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:]_block_invoke_2"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "3F7BF3BA-FB06-4B43-ADD2-17148E08D64A - adb1350fae87e3fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_e8_32s40w"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC090A55-989B-4D47-9C74-E3CD8B971E9C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EC090A55-989B-4D47-9C74-E3CD8B971E9C - 118dbf96cb101afc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:]"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "1928">
+               </Location>
+               <Location
+                  uuid = "EC090A55-989B-4D47-9C74-E3CD8B971E9C - 4f917b75e7e4e5cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__126-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:]_block_invoke.31"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "206">
+               </Location>
+               <Location
+                  uuid = "EC090A55-989B-4D47-9C74-E3CD8B971E9C - 8ccae1098af13742"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_e8_32s40s48s56s64s72w"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA822FDF-5147-4122-BA8B-0D841718FF85"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "-sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1043C7F4-B9CA-4EA1-97DB-E186EC136AD7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DBB5DEB-ACC5-49B2-95F8-518AAEBDD6F5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50511B65-FD2B-4AD3-9C2A-61BEB675B747"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/UIView+WebCache.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-sd_internalSetImageWithURL:placeholderImage:options:operationKey:setImageBlock:progress:completed:context:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A19110AC-46C7-41EB-8BE4-98989BA0FA86"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D8C075C-BA42-45D8-91DA-9482ACFC613A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "811AE993-0AA5-4E6A-A75A-EB1B150620AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B269A72F-D25F-4C4F-A1A8-DC09CDC1417C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-cacheKeyForURL:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CAEE74BC-B523-48BE-87D4-D9DD8B4454FB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CAEE74BC-B523-48BE-87D4-D9DD8B4454FB - 43d0036b7707b5de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SDWebImageManager loadImageWithURL:options:progress:completed:]"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "1694">
+               </Location>
+               <Location
+                  uuid = "CAEE74BC-B523-48BE-87D4-D9DD8B4454FB - 6481d78d819746cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__65-[SDWebImageManager loadImageWithURL:options:progress:completed:]_block_invoke"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "111">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2A5C2F1-B4DE-48D7-805E-7D4D0DE55F3E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A122F08-972B-4AC2-9818-14C76E7D2A74"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "273"
+            endingLineNumber = "273"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2A122F08-972B-4AC2-9818-14C76E7D2A74 - 6481d78d819746cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__65-[SDWebImageManager loadImageWithURL:options:progress:completed:]_block_invoke"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "1725">
+               </Location>
+               <Location
+                  uuid = "2A122F08-972B-4AC2-9818-14C76E7D2A74 - 6481d78d819746cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__65-[SDWebImageManager loadImageWithURL:options:progress:completed:]_block_invoke"
+                  moduleName = "iOSTheRoadToTheAdvanced"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huangbaoxian/Documents/iOSWorkSpace/iOSTheRoadToTheAdvanced/iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "1836">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "743CC93E-C670-4164-B6F7-99C4BC23ACF7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEA6EFA0-90DF-4971-8CAF-F1FC99F6724F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA245A41-0678-4BAE-90CF-9B5B87493D7D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FCE0E53-6BF8-49F4-9396-C10686125A82"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTheRoadToTheAdvanced/3rdparth/SDWebImage/SDWebImageManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "-loadImageWithURL:options:progress:completed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

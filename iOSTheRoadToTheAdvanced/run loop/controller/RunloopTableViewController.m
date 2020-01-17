@@ -26,6 +26,24 @@
     self.tableView.dataSource = self;
     // Do any additional setup after loading the view from its nib.
     [self addRunloopOberser];
+    
+    [self testDemo1];
+    
+}
+
+- (void)testDemo1 {
+    
+    int a = 5;
+    if (a & 5) {
+        NSLog(@"a是5");
+        a |= 6;
+        NSLog(@"a : %d",a);
+    }else {
+        NSLog(@"a 不是 5");
+        a |= 5;
+        NSLog(@"a : %d",a);
+    }
+    
 }
 
 - (void)addRunloopOberser {
@@ -47,7 +65,7 @@ CFRunLoopObserverCreate(NULL, kCFRunLoopBeforeWaiting, YES, 0, &callBack, &conte
 
 void callBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info) {
     NSMutableArray *array = (__bridge NSMutableArray *)(info);
-    NSLog(@"come here %@", info);
+//    NSLog(@"come here %@", info);
     if (array.count > 0) {
        
         void (^action)(void) = array[0];
@@ -67,7 +85,7 @@ void callBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *i
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RunloopCell"];
     self.count++;
-    NSLog(@"self.count : %ld", (long)self.count);
+//    NSLog(@"self.count : %ld", (long)self.count);
     
     [self addCellTask:^{
          [(RunloopCell *)cell updateDetailImages];
