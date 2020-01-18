@@ -29,6 +29,10 @@
     
     [self testDemo1];
     
+    
+    
+    
+    
 }
 
 - (void)testDemo1 {
@@ -91,6 +95,10 @@ void callBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *i
          [(RunloopCell *)cell updateDetailImages];
     }];
     return cell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSLog(@"scrollViewDidScroll: %@", scrollView);
 }
 
 - (void)addCellTask:(void(^)(void))cellTask {

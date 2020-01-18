@@ -27,10 +27,7 @@
     UINavigationController *naVc = [[UINavigationController alloc] initWithRootViewController:main];
     
     self.window.rootViewController = naVc;
-    
-    
-    
-    
+  
     return YES;
 }
 

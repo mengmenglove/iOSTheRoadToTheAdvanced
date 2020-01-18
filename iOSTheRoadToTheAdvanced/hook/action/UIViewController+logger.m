@@ -42,12 +42,11 @@
 }
 
 - (void)insertToViewApper {
-    
-    NSLog(@"insertToViewApper: %@",NSStringFromClass([self class]));
+//    NSLog(@"insertToViewApper: %@",NSStringFromClass([self class]));
 }
 
 - (void)insertToViewWillDisApper {
-    NSLog(@"insertToViewWillDisApper: %@",NSStringFromClass([self class]));
+//    NSLog(@"insertToViewWillDisApper: %@",NSStringFromClass([self class]));
 }
 
 
