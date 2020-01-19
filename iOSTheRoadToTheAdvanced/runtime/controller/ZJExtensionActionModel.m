@@ -37,9 +37,6 @@
             [self setValue:[param valueForKey:k] forKey:k];
         }
         
-        
-        
-        
     }
     return self;
 }

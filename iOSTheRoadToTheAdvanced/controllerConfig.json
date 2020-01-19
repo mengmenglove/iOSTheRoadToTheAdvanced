@@ -74,16 +74,7 @@
                       },
                       ]
                 },
-            
-                {   "title" : "视图集合",
-                    "data":[
-                            {
-                             "name": "视图效果",
-                             "image": "image",
-                             "target": "EffectSelectorViewController"
-                            },
-                            ]
-                },
+                          
                 {   "title" : "系统音频播放",
                     "data":[
                             {
@@ -158,19 +149,13 @@
                             ]
                 }
                 ,
-                {   "title" : "代码逻辑手机",
+                {   "title" : "来电，消息推送",
                     "data":[
                         {
                             "name": "处理启动 的推送消息",
                             "image": "image",
                             "target": "HandleLaunchOptionsViewController"
-                        }
-                        
-                    ]
-                }
-                ,
-                {   "title" : "来电提醒",
-                    "data":[
+                        },
                         {
                             "name": "来电提示",
                             "image": "image",
@@ -178,7 +163,8 @@
                         }
                         
                     ]
-                },
+                }
+                ,
                 {   "title" : "框架理论学习",
                     "data":[
                         {
@@ -206,14 +192,10 @@
                             "image": "image",
                             "target": "RuntimeKvoViewController"
                         },
-                    ]
-                },
-                {   "title" : "Algorithm",
-                    "data":[
                         {
-                            "name": "HBXAlgorithmViewController",
+                            "name": "property",
                             "image": "image",
-                            "target": "HBXAlgorithmViewController"
+                            "target": "ZJPropertyViewController"
                         },
                         
                     ]

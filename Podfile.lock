@@ -18,23 +18,33 @@ PODS:
   - SDWebImage (5.4.2):
     - SDWebImage/Core (= 5.4.2)
   - SDWebImage/Core (5.4.2)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
   - ReactiveObjC (~> 3.1.1)
   - SDWebImage (~> 5.4.2)
+  - YYCategories (~> 1.0.4)
+  - YYModel (~> 1.0.4)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - ReactiveObjC
     - SDWebImage
+    - YYCategories
+    - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 4ca2dc4eefae4224bea8f504251cda485a363745
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 108b5ce7057ebbe36af149bcf3cdc2493a0d3db4
+PODFILE CHECKSUM: cf6926e89d39b15981bcd24e4e5288c542b48643
 
 COCOAPODS: 1.8.4

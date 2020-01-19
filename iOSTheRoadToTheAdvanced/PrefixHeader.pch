@@ -19,6 +19,7 @@
 #import "Masonry.h"
 #import "UIImage+Addtional.h"
 #import "UIView+Additions.h"
+#import <YYCategories/YYCategories.h>
 
 
 

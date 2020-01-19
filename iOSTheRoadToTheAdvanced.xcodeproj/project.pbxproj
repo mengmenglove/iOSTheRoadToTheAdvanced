@@ -75,6 +75,7 @@
 		813743DD1FEB5AC200857CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743DC1FEB5AC200857CFD /* main.m */; };
 		813743E51FEB5D4600857CFD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743E41FEB5D4600857CFD /* MainViewController.m */; };
 		813743E81FEB5F0900857CFD /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813743E71FEB5F0900857CFD /* RunLoopViewController.m */; };
+		8141C51C23D3ED46008A831A /* ZJPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8141C51B23D3ED46008A831A /* ZJPropertyViewController.m */; };
 		8142C1C921BA52220080C63A /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142C1C821BA52220080C63A /* UIImage+Resize.m */; };
 		8142C1D021BA5B730080C63A /* HBXImagePressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142C1CE21BA5B730080C63A /* HBXImagePressViewController.m */; };
 		8142C1D121BA5B730080C63A /* HBXImagePressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8142C1CF21BA5B730080C63A /* HBXImagePressViewController.xib */; };
@@ -420,6 +421,8 @@
 		813743E41FEB5D4600857CFD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		813743E61FEB5F0900857CFD /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		813743E71FEB5F0900857CFD /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		8141C51A23D3ED46008A831A /* ZJPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJPropertyViewController.h; sourceTree = "<group>"; };
+		8141C51B23D3ED46008A831A /* ZJPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJPropertyViewController.m; sourceTree = "<group>"; };
 		8142C1C721BA52220080C63A /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
 		8142C1C821BA52220080C63A /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		8142C1CD21BA5B730080C63A /* HBXImagePressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXImagePressViewController.h; sourceTree = "<group>"; };
@@ -1334,6 +1337,7 @@
 		813743CC1FEB5AC100857CFD /* iOSTheRoadToTheAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				8141C51923D30BA8008A831A /* screenOrientation */,
 				8190B8E923D212EB006928C1 /* thread */,
 				8190B8DF23CDFAE5006928C1 /* run loop */,
 				812059F523CA0B4A00BA1975 /* reactivecocoa */,
@@ -1399,6 +1403,13 @@
 				81BF2A5620F3998600144EB4 /* PrefixHeader.pch */,
 			);
 			path = iOSTheRoadToTheAdvanced;
+			sourceTree = "<group>";
+		};
+		8141C51923D30BA8008A831A /* screenOrientation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = screenOrientation;
 			sourceTree = "<group>";
 		};
 		8142C1C621BA52060080C63A /* 图片压缩 */ = {
@@ -1982,6 +1993,8 @@
 				817DF9B2238F6CC500F7EDA2 /* RuntimeKvoViewController.m */,
 				817DF9B42390B5F600F7EDA2 /* ZJExtensionActionModel.h */,
 				817DF9B52390B5F600F7EDA2 /* ZJExtensionActionModel.m */,
+				8141C51A23D3ED46008A831A /* ZJPropertyViewController.h */,
+				8141C51B23D3ED46008A831A /* ZJPropertyViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -2708,12 +2721,16 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2780,6 +2797,7 @@
 				8142D8EA20DAB1AB00C2E1A5 /* UIImage+MultiFormat.m in Sources */,
 				81FD9E31206D3E6B00DC3DC0 /* HW3DBannerView.m in Sources */,
 				815943922132752D002026BA /* EasyAlertGlobalConfig.m in Sources */,
+				8141C51C23D3ED46008A831A /* ZJPropertyViewController.m in Sources */,
 				8142D85020DAB06200C2E1A5 /* ZJImageSynthesusUtil.m in Sources */,
 				81FD9E40206D40C500DC3DC0 /* LableView.m in Sources */,
 				81D688FA21BB95F100E512AF /* YTKBatchRequestAgent.m in Sources */,

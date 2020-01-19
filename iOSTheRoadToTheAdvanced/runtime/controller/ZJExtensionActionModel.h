@@ -11,9 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJExtensionActionModel : NSObject
+
 - (instancetype)initWithParam:(NSDictionary *)param ;
+
 @property (nonatomic, strong) NSString *name;
+
 @property (nonatomic, strong) NSString *version;
+
 @end
 
 NS_ASSUME_NONNULL_END
