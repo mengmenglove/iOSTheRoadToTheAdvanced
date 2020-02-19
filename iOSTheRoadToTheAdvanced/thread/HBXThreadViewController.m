@@ -8,6 +8,10 @@
 
 #import "HBXThreadViewController.h"
 #import "HBXMyOpeation.h"
+#import "TheardSuperViewController.h"
+#import "HBXThreadViewController+explain.h"
+#import "HBXThreadViewController+loadHandle.h"
+
 
 @interface HBXThreadViewController ()
 @property(nonatomic,assign)NSInteger  ticketSurplusCount;
@@ -16,14 +20,21 @@
 
 @implementation HBXThreadViewController
 
++ (void)load {
+    NSLog(@"HBXThreadViewController 123");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+
+    [self helloKid];
     
 //    [NSThread detachNewThreadSelector:@selector(useInvocationOperation) toTarget:self withObject:nil];
    
 //    [self useInvocationOperation];
     // Do any additional setup after loading the view.
-    [self initTicketStatusNotSave];
+//    [self initTicketStatusNotSave];
 }
 
 
@@ -61,6 +72,10 @@
     // 5.添加操作，开始卖票
     [queue1 addOperation:op1];
     [queue2 addOperation:op2];
+}
+
+- (void)zq {
+    NSLog(@"za 1111");
 }
 
 /**

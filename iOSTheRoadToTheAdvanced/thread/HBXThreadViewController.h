@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TheardSuperViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HBXThreadViewController : UIViewController
+@class TheardSuperViewController;
+
+@interface HBXThreadViewController : TheardSuperViewController
 
 @end
 

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		34ABE60105037486DF801780 /* Pods_iOSTheRoadToTheAdvanced.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70BDA56D39ABA8EEDD8AD3 /* Pods_iOSTheRoadToTheAdvanced.framework */; };
+		810AC6BD23FD6ABB000F6B6B /* HBXThreadViewController+loadSpeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 810AC6BC23FD6ABB000F6B6B /* HBXThreadViewController+loadSpeed.m */; };
+		810AC6C023FD6B50000F6B6B /* HBXThreadViewController+explain.m in Sources */ = {isa = PBXBuildFile; fileRef = 810AC6BF23FD6B50000F6B6B /* HBXThreadViewController+explain.m */; };
+		810AC6C323FD6B97000F6B6B /* HBXThreadViewController+loadHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 810AC6C223FD6B97000F6B6B /* HBXThreadViewController+loadHandle.m */; };
+		810AC6C623FD6C39000F6B6B /* TheardSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810AC6C523FD6C39000F6B6B /* TheardSuperViewController.m */; };
 		810B0580228162940092385D /* HBXOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B057F228162940092385D /* HBXOperation.m */; };
 		811DD3162195738F00960F4F /* CallPhoneNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811DD3152195738F00960F4F /* CallPhoneNotificationViewController.m */; };
 		81205B1823CA13A600BA1975 /* ReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81205B1623CA13A600BA1975 /* ReactiveCocoaViewController.m */; };
@@ -294,6 +298,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		810AC6BB23FD6ABB000F6B6B /* HBXThreadViewController+loadSpeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HBXThreadViewController+loadSpeed.h"; sourceTree = "<group>"; };
+		810AC6BC23FD6ABB000F6B6B /* HBXThreadViewController+loadSpeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HBXThreadViewController+loadSpeed.m"; sourceTree = "<group>"; };
+		810AC6BE23FD6B50000F6B6B /* HBXThreadViewController+explain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HBXThreadViewController+explain.h"; sourceTree = "<group>"; };
+		810AC6BF23FD6B50000F6B6B /* HBXThreadViewController+explain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HBXThreadViewController+explain.m"; sourceTree = "<group>"; };
+		810AC6C123FD6B97000F6B6B /* HBXThreadViewController+loadHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HBXThreadViewController+loadHandle.h"; sourceTree = "<group>"; };
+		810AC6C223FD6B97000F6B6B /* HBXThreadViewController+loadHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HBXThreadViewController+loadHandle.m"; sourceTree = "<group>"; };
+		810AC6C423FD6C39000F6B6B /* TheardSuperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheardSuperViewController.h; sourceTree = "<group>"; };
+		810AC6C523FD6C39000F6B6B /* TheardSuperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheardSuperViewController.m; sourceTree = "<group>"; };
 		810B057E228162940092385D /* HBXOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXOperation.h; sourceTree = "<group>"; };
 		810B057F228162940092385D /* HBXOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXOperation.m; sourceTree = "<group>"; };
 		811DD3142195738F00960F4F /* CallPhoneNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallPhoneNotificationViewController.h; sourceTree = "<group>"; };
@@ -1970,6 +1982,14 @@
 				8190B8EE23D213CD006928C1 /* HBXThreadViewController.m */,
 				8190B8F023D21791006928C1 /* HBXMyOpeation.h */,
 				8190B8F123D21791006928C1 /* HBXMyOpeation.m */,
+				810AC6BB23FD6ABB000F6B6B /* HBXThreadViewController+loadSpeed.h */,
+				810AC6BC23FD6ABB000F6B6B /* HBXThreadViewController+loadSpeed.m */,
+				810AC6BE23FD6B50000F6B6B /* HBXThreadViewController+explain.h */,
+				810AC6BF23FD6B50000F6B6B /* HBXThreadViewController+explain.m */,
+				810AC6C123FD6B97000F6B6B /* HBXThreadViewController+loadHandle.h */,
+				810AC6C223FD6B97000F6B6B /* HBXThreadViewController+loadHandle.m */,
+				810AC6C423FD6C39000F6B6B /* TheardSuperViewController.h */,
+				810AC6C523FD6C39000F6B6B /* TheardSuperViewController.m */,
 			);
 			path = thread;
 			sourceTree = "<group>";
@@ -2756,6 +2776,7 @@
 				81E020E21FEC9FAE009709AA /* ThreadViewController.m in Sources */,
 				813743D21FEB5AC200857CFD /* ViewController.m in Sources */,
 				81E66DD51FF51E360077CCCB /* RunViewController.m in Sources */,
+				810AC6BD23FD6ABB000F6B6B /* HBXThreadViewController+loadSpeed.m in Sources */,
 				81FD9E4A206D413D00DC3DC0 /* WLScrollView.m in Sources */,
 				81D688FB21BB95F100E512AF /* YTKRequest.m in Sources */,
 				818C968D2265CBFE00EF4B59 /* HBXLearnModel.m in Sources */,
@@ -2802,6 +2823,7 @@
 				81FD9E40206D40C500DC3DC0 /* LableView.m in Sources */,
 				81D688FA21BB95F100E512AF /* YTKBatchRequestAgent.m in Sources */,
 				8142D8E320DAB1AB00C2E1A5 /* SDWebImageDecoder.m in Sources */,
+				810AC6C023FD6B50000F6B6B /* HBXThreadViewController+explain.m in Sources */,
 				815943822132752D002026BA /* EasyEmptyConfig.m in Sources */,
 				81DB9C8020EB2CE200B9F860 /* ZJDrawTool.m in Sources */,
 				81227C4621327998002B2E57 /* JDAuthorityManager.m in Sources */,
@@ -2883,6 +2905,7 @@
 				8122E1B1209AFB280087BF8A /* ImageFilterUtil.m in Sources */,
 				81D6891A21BBA42900E512AF /* HBXBaseRequest.m in Sources */,
 				81C4ADD52351DDD000797718 /* MASLayoutConstraint.m in Sources */,
+				810AC6C323FD6B97000F6B6B /* HBXThreadViewController+loadHandle.m in Sources */,
 				815943802132752D002026BA /* EasyAlertTypes.m in Sources */,
 				81A9D0312380125500350D67 /* VIResourceLoader.m in Sources */,
 				816885A020511B4C00932943 /* ConcreatBuild.m in Sources */,
@@ -2973,6 +2996,7 @@
 				81C4ADD12351DDD000797718 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				8142D84D20DAB00A00C2E1A5 /* UIImageSynthesisViewController.m in Sources */,
 				81227CE9213292D7002B2E57 /* HBXChangeIconViewController.m in Sources */,
+				810AC6C623FD6C39000F6B6B /* TheardSuperViewController.m in Sources */,
 				81C4ADDD2351E2FC00797718 /* ShowVideoViewController.m in Sources */,
 				8168859220510F2C00932943 /* HBXNSProxy.m in Sources */,
 				81DB9CB720EDB09C00B9F860 /* TOCropScrollView.m in Sources */,
